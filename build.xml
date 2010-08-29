@@ -3,7 +3,11 @@
 
 	<!-- properties -->
 	<property name="app.name" value="iBurn" />
-	
+
+	<property name="build.dir" value="bin" />
+	<property name="dist.dir" value="${build.dir}/dist" />
+	<property name="dist.apk" value="${app.name}-dist.apk" />
+
 	<property name="keystore" value="${basedir}/keystore/gaiagps.keystore" />
 	<property name="keystore.password" value="gaiagps2010" />
 	<property name="keystore.alias" value="gaiagps" />
@@ -30,8 +34,14 @@
 		</copy>
 	</target>
 
+	<!-- fix packages in source java files and manifest.xml -->
+	<target name="update-source">
+		<!-- update manifest file -->
+		<replace file="${build.dir}/AndroidManifest.xml" token="android:debuggable=&quot;true&quot;" value="android:debuggable=&quot;false&quot;" summary="true" />
+	</target>
+
 	<!-- build apk -->
-	<target name="build" depends="clean, copy-source">
+	<target name="build" depends="clean, copy-source, update-source">
 		<ant dir="${build.dir}" />
 		<ant dir="${build.dir}" target="release" />
 		<exec executable="jarsigner" dir="${build.dir}/bin">
@@ -55,10 +65,6 @@
 
 	<!-- build and create final dist apk -->
 	<target name="dist">
-		<property name="build.dir" value="bin" />
-		<property name="dist.dir" value="${build.dir}/dist" />
-		<property name="dist.apk" value="${app.name}-dist.apk" />
-		
 		<!-- build -->
 		<antcall target="build" />
 
