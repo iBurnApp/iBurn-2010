@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/map_layout"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/white">
+	<include
+		layout="@layout/map_header" />
+	<com.trailbehind.android.iburn.view.MapZoomControls
+		android:id="@+id/zoom_controls"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingRight="4dip"
+		android:layout_gravity="bottom|right" />
+</FrameLayout>

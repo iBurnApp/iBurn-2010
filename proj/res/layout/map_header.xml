@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="top"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/message_panel"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="5dip"
+		android:paddingTop="5dip"
+		android:paddingRight="10dip"
+		android:paddingBottom="4dip"
+		android:background="@drawable/translucent_bar_up">
+		<ProgressBar
+			android:id="@+id/progress_circular"
+			style="?android:attr/progressBarStyleSmall"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="4dip"
+			android:max="100" />
+		<TextView
+			android:id="@+id/label_message"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="4dip"
+			android:textColor="@android:color/white"
+			android:text="@string/msg_locating"
+			android:lineSpacingMultiplier="1.2"
+			android:gravity="center_vertical|center_horizontal" />
+	</LinearLayout>
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<com.trailbehind.android.iburn.view.CompassView
+			android:id="@+id/compass_view"
+			android:layout_width="100dip"
+			android:layout_height="28dip"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="10dip" />
+		<include
+			layout="@layout/map_button_bar" />
+	</RelativeLayout>
+</LinearLayout>

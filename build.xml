@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+<project name="iBurn" default="dist" basedir=".">
+
+	<!-- properties -->
+	<property name="app.name" value="iBurn" />
+	
+	<property name="keystore" value="${basedir}/keystore/gaiagps.keystore" />
+	<property name="keystore.password" value="gaiagps2010" />
+	<property name="keystore.alias" value="gaiagps" />
+
+	<property name="unsigned.apk" value="${app.name}-unsigned.apk" />
+	<property name="nonzipaligned.apk" value="${app.name}-nonzipaligned.apk" />
+
+	<!-- delete everything in dist dir -->
+	<target name="clean">
+		<delete includeemptydirs="true" failonerror="false" verbose="false">
+			<fileset dir="${build.dir}">
+				<include name="**/*" />
+			</fileset>
+		</delete>
+	</target>
+
+	<!-- copy proj to dist dir -->
+	<target name="copy-source">
+		<copy todir="${build.dir}" overwrite="true" verbose="false">
+			<fileset dir="proj">
+				<exclude name="**/bin/**" />
+				<exclude name="**/gen/**" />
+			</fileset>
+		</copy>
+	</target>
+
+	<!-- build apk -->
+	<target name="build" depends="clean, copy-source">
+		<ant dir="${build.dir}" />
+		<ant dir="${build.dir}" target="release" />
+		<exec executable="jarsigner" dir="${build.dir}/bin">
+			<arg value="-keystore" />
+			<arg value="${keystore}" />
+			<arg value="-storepass" />
+			<arg value="${keystore.password}" />
+			<arg value="-signedjar" />
+			<arg value="${nonzipaligned.apk}" />
+			<arg value="${unsigned.apk}" />
+			<arg value="${keystore.alias}" />
+		</exec>
+		<exec executable="zipalign" dir="${build.dir}/bin">
+			<arg value="-f" />
+			<arg value="-v" />
+			<arg value="4" />
+			<arg value="${nonzipaligned.apk}" />
+			<arg value="${dist.apk}" />
+		</exec>
+	</target>
+
+	<!-- build and create final dist apk -->
+	<target name="dist">
+		<property name="build.dir" value="bin" />
+		<property name="dist.dir" value="${build.dir}/dist" />
+		<property name="dist.apk" value="${app.name}-dist.apk" />
+		
+		<!-- build -->
+		<antcall target="build" />
+
+		<!-- ceate dist dir -->
+		<mkdir dir="${dist.dir}" />
+
+		<!-- move dist apk from build dir to dist dir -->
+		<move file="${build.dir}/bin/${dist.apk}" todir="${dist.dir}" />
+	</target>
+</project>

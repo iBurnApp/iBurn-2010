@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color
+		name="black">#ff000000</color>
+	<color
+		name="white">#ffffffff</color>
+	<color
+		name="translucent_very_light">#30000000</color>
+	<color
+		name="translucent_light">#80000000</color>
+	<color
+		name="translucent_dark">#99000000</color>
+	<color
+		name="translucenter_dark">#bf000000</color>
+	<color
+		name="bright_foreground_dark">#ffffffff</color>
+	<color
+		name="red">#ff0000</color>
+	<color
+		name="light_gray">#99dfdfdf</color>
+	<color
+		name="light_purple">#6386ce</color>
+	<color
+		name="light_yellow">#ffffe5</color>
+</resources>

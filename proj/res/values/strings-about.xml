@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- About Screen Text -->
+    <string name="copyright">
+\n\nCopyright:\t2010 TrailBehind Inc.
+ 	</string>
+ 	<string name="website">
+\nWebsites:\t\twww.gaiagps.com
+\n\t\t\t\twww.trailbehind.com
+ 	</string>
+ 	<string name="team">
+\n\nTeam:\t\t\tAbhishek Nath
+\n\t\t\t\tAnna Hentzel
+\n\t\t\t\tAndrew Johnson
+ 	</string>
+ 	<string name="about">
+\n\nput some about text
+ 	</string>
+</resources>

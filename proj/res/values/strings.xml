@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">iBurn</string>
+    
+    <!-- common string -->
+    <string name="close">Close</string>
+    <string name="version">Version</string>
+    
+    <!-- Titles -->
+    <string name="map_title">iBurn</string>
+    <string name="title_dialog_download">Downloading latest maps</string>
+    <string name="title_dialog_error">Error</string>
+    <string name="title_dialog_about">About</string>
+    
+    <!-- Message String -->
+    <string name="msg_locating">Waiting for better satellite signals. Make sure the sky is visible.</string>  
+        
+    <!-- Menu Strings -->
+    <string name="menu_mylocation">My Location</string>
+    <string name="menu_download">Re-download Maps</string>
+    <string name="menu_about">About</string>
+    
+    <!-- Toast Strings -->
+    <string name="toast_retrieving_current_loc">Waiting for location..</string>
+    <string name="toast_min_zoom">Map is at min zoom level</string>
+    <string name="toast_max_zoom">Map is at max zoom level</string>
+    <string name="toast_zoom_level">Zoom level is <xliff:g id="zoom_level">%1$s</xliff:g></string>
+    
+    <!-- Error Strings -->
+    <string name="error_gps_disabled">GPS is disabled. Tap here to go to system settings and check \'Use GPS Satellites\'. Press back key to return.</string>
+    <string name="error_download_network_error">Download failed. Network error.</string>
+    <string name="error_download_file_error">Download failed. File error.</string>
+    <string name="error_download_server_error">Download failed. Map server down. Try again later.</string>
+    <string name="error_download_unknown_error">Download failed.</string>
+    <string name="error_no_internet_download">No internet connection. Sorry, you can\'t download maps right now.</string>
+    <string name="error_sd_not_available">Unable to access external storage. Please make sure sd card is mounted.</string>
+</resources>
