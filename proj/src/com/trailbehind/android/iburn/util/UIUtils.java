@@ -193,4 +193,18 @@ public class UIUtils {
         view.startAnimation(anim);
         view.setVisibility(visibility);
     }
+    
+    static public int getPixelValue(int dp) {
+        // Get the screen's density scale
+        final float scale = Globals.sContext.getResources().getDisplayMetrics().density;
+        // Convert the dps to pixels, based on density scale
+        return (int) (dp * scale + 0.5f);
+    }
+
+    static public float getPixelValue(float dp) {
+        // Get the screen's density scale
+        final float scale = Globals.sContext.getResources().getDisplayMetrics().density;
+        // Convert the dps to pixels, based on density scale
+        return (dp * scale + 0.5f);
+    }
 }

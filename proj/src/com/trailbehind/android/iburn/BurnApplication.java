@@ -12,12 +12,7 @@ import com.nutiteq.location.providers.AndroidGPSProvider;
 import com.trailbehind.android.iburn.util.Globals;
 import com.trailbehind.android.iburn.util.IConstants;
 
-import dalvik.system.VMRuntime;
-
 public class BurnApplication extends Application implements IConstants {
-
-    /** The Constant TARGET_HEAP_UTILIZATION. */
-    final static private float TARGET_HEAP_UTILIZATION = 0.70f;
 
     /** The active location source. */
     private AppLocationProvider mActiveLocationProvider;
@@ -35,11 +30,6 @@ public class BurnApplication extends Application implements IConstants {
         super.onCreate();
 
         Log.d(TAG, "starting app");
-
-        final VMRuntime runtime = VMRuntime.getRuntime();
-        // set optimal target heap size for browsers
-        runtime.setTargetHeapUtilization(TARGET_HEAP_UTILIZATION);
-        runtime.setMinimumHeapSize(4 * 1024 * 1024);
 
         // init global params
         Globals.init(getBaseContext());

@@ -105,8 +105,11 @@ public class MapSource3785 extends EPSG3785 implements IMapSource {
      * int, int)
      */
     public String buildPath(final int mapX, final int mapY, final int zoom) {
-        int x = mapX / getTileSize();
+        final int x = mapX / getTileSize();
         int y = mapY / getTileSize();
+
+        final int maxY = 1 << zoom;
+        y = maxY - y - 1;
 
         String result = mBaseUrl.replace(PARAM_ZPARAM, Integer.toString(zoom));
         result = result.replace(PARAM_XPARAM, Integer.toString(x));

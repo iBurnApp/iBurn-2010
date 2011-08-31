@@ -5,15 +5,18 @@
 \n\nCopyright:\t2010 TrailBehind Inc.
  	</string>
  	<string name="website">
-\nWebsites:\t\twww.gaiagps.com
-\n\t\t\t\twww.trailbehind.com
+\n\nWebsites\n------------
+\ngithub.com/andrewljohnson/iBurn-2010
+\nwww.gaiagps.com
+\nwww.trailbehind.com
  	</string>
  	<string name="team">
-\n\nTeam:\t\t\tAbhishek Nath
-\n\t\t\t\tAnna Hentzel
-\n\t\t\t\tAndrew Johnson
+\n\nTeam\n-------
+\nAbhishek Nath
+\nAnna Hentzel
+\nAndrew Johnson
  	</string>
  	<string name="about">
-\n\nput some about text
+
  	</string>
 </resources>

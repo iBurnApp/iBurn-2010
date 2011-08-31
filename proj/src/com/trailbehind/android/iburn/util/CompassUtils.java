@@ -3,9 +3,6 @@ package com.trailbehind.android.iburn.util;
 import java.io.ByteArrayOutputStream;
 import java.lang.ref.WeakReference;
 
-import javax.microedition.lcdui.Graphics;
-import javax.microedition.lcdui.Image;
-
 import android.content.Context;
 import android.content.res.Configuration;
 import android.content.res.Resources;
@@ -22,6 +19,8 @@ import android.util.FloatMath;
 import android.view.View;
 
 import com.nutiteq.components.PlaceIcon;
+import com.nutiteq.wrappers.Graphics;
+import com.nutiteq.wrappers.Image;
 import com.trailbehind.android.iburn.R;
 
 /**

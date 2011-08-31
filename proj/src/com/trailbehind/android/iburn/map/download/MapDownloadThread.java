@@ -5,6 +5,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URI;
+import java.util.LinkedList;
 
 import org.apache.http.Header;
 import org.apache.http.HttpResponse;
@@ -14,18 +16,14 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 
 import android.content.Context;
-import android.graphics.Rect;
 import android.os.Environment;
 import android.os.PowerManager;
 import android.util.Log;
 
-import com.nutiteq.cache.Cache;
-import com.nutiteq.components.MapPos;
-import com.nutiteq.components.WgsPoint;
-import com.trailbehind.android.iburn.map.source.IMapSource;
+import com.trailbehind.android.iburn.map.MapActivity.FileCacheWriter;
+import com.trailbehind.android.iburn.map.MapActivity.FileCacheWriter.FileCacheInfo;
 import com.trailbehind.android.iburn.util.FastAndroidFileSystemCache;
 import com.trailbehind.android.iburn.util.IConstants;
-import com.trailbehind.android.iburn.util.MapUtils;
 import com.trailbehind.android.iburn.util.Utils;
 
 /**
@@ -46,6 +44,16 @@ public class MapDownloadThread extends Thread implements IConstants {
 
     private boolean mCancel;
 
+    /** The file cache writer. */
+    private FileCacheWriter mFileCacheWriter;
+
+    /** The thread number. */
+    final private int mThreadNumber;
+
+    DefaultHttpClient mDefaultHttpClient;
+
+    final private LinkedList<String> mUrlList;
+
     /**
      * Instantiates a new map download thread.
      * 
@@ -59,24 +67,22 @@ public class MapDownloadThread extends Thread implements IConstants {
      *            the cache
      */
     public MapDownloadThread(Context context, FastAndroidFileSystemCache cache,
-            MapDownloadListerner mapDownloadListerner) {
+            MapDownloadListerner mapDownloadListerner, DefaultHttpClient defaultHttpClient, int threadNumber,
+            FileCacheWriter fileCacheWriter, LinkedList<String> urlList) {
         mContext = context;
         mCache = cache;
         mMapDownloadListerner = mapDownloadListerner;
+        mDefaultHttpClient = defaultHttpClient;
+        mThreadNumber = threadNumber;
+        mFileCacheWriter = fileCacheWriter;
+        mUrlList = urlList;
     }
 
     /**
      * Executes the download in a separate thread.
      */
     public void run() {
-        Log.v(TAG, "Thread. new thread started..");
-
-        final IMapSource mapSource = BURN_MAP_SOURCE;
-
-        final WgsPoint startPoint = BURN_START_POINT;
-        final WgsPoint endPoint = BURN_END_POINT;
-
-        final int tileSize = mapSource.getTileSize();
+        Log.v(TAG, "Thread " + mThreadNumber + ". new thread started..");
 
         final File externalStoragePath = Environment.getExternalStorageDirectory();
         if (externalStoragePath != null) {
@@ -89,164 +95,138 @@ public class MapDownloadThread extends Thread implements IConstants {
             final PowerManager pm = (PowerManager) mContext.getSystemService(Context.POWER_SERVICE);
             PowerManager.WakeLock wakeLock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, TAG);
 
-            //  Create a new HttpClient  
-            final HttpClient client = new DefaultHttpClient();
+            //  use the existing HttpClient  
+            final HttpClient client = mDefaultHttpClient;
 
             try {
                 wakeLock.acquire();
 
-                int totalFileCount = 0;
-                final MapDownloadParamInfo[] paramInfoArr = new MapDownloadParamInfo[(mapSource.getMaxZoom() - mapSource
-                        .getMinZoom()) + 1];
-                for (int zoom = mapSource.getMinZoom(), endZoom = mapSource.getMaxZoom(), i = 0; zoom <= endZoom; zoom++, i++) {
-                    // switching to coord system
-                    final MapPos mapStartPos = mapSource.wgsToMapPos(endPoint.toInternalWgs(), zoom);
-                    final MapPos mapEndPos = mapSource.wgsToMapPos(startPoint.toInternalWgs(), zoom);
+                final HttpGet get = new HttpGet();
 
-                    final Rect overlayRect = new Rect();
-                    overlayRect.left = mapStartPos.getX() / tileSize;
-                    overlayRect.top = mapStartPos.getY() / tileSize;
+                int retryCount = 0;
+                String url = null;
 
-                    overlayRect.right = mapEndPos.getX() / tileSize;
-                    overlayRect.bottom = mapEndPos.getY() / tileSize;
-
-                    final int tilesCount = MapUtils.getTotalTileCount(overlayRect);
-                    if (tilesCount > 0) {
-                        totalFileCount += tilesCount;
-                    }
-
-                    paramInfoArr[i] = new MapDownloadParamInfo(overlayRect.left, overlayRect.top, overlayRect.right,
-                            overlayRect.bottom, zoom, tilesCount);
-                }
-
-                int totalTilesDownloaded = 0;
-                for (int i = 0, len = paramInfoArr.length; i < len; i++) {
+                while (retryCount != 0 || (url = mUrlList.poll()) != null) {
                     if (mCancel) {
                         mMapDownloadListerner.notifyCancel();
                         return;
                     }
+                    if (mFileCacheWriter.mError) {
+                        Log.v(TAG, "Thread " + mThreadNumber + ". FileCacheWriter error is true. Thread terminated.");
+                        throw new FileNotFoundException(mFileCacheWriter.mException.getMessage());
+                    }
 
-                    final MapDownloadParamInfo paramInfo = paramInfoArr[i];
+                    /*
+                     * if (mCache.contains(url.toString())) { tilesDownloaded++;
+                     * totalTilesDownloaded++; retryCount = 0;
+                     * 
+                     * mMapDownloadListerner.notifyProgress(
+                     * totalTilesDownloaded, totalFileCount);
+                     * 
+                     * Log.d(TAG, "Thread " + mThreadNumber +
+                     * ". skipping existing tile.. " + url); } else {
+                     */
+                    //  Create a Get Request
+                    get.setURI(URI.create(url));
 
-                    final int startX = paramInfo.mStartX;
-                    final int endX = paramInfo.mEndX;
+                    // Execute HTTP Request
+                    final HttpResponse response = client.execute(get);
 
-                    final int tileCount = paramInfo.mTotalFileCount;
-
-                    int tilesDownloaded = 0;
-                    int retryCount = 0;
-
-                    for (int x = startX; x <= endX; x++) {
-                        if (mCancel) {
-                            mMapDownloadListerner.notifyCancel();
-                            return;
+                    final int statusCode = response.getStatusLine().getStatusCode();
+                    if (statusCode == 200) {
+                        int contentLength = -1;
+                        final Header header = response.getFirstHeader("Content-Length");
+                        if (header != null) {
+                            contentLength = Integer.parseInt(header.getValue());
                         }
 
-                        for (int y = paramInfo.mStartY; y <= paramInfo.mEndY; y++) {
-                            final int tileX = x * tileSize;
-                            final int tileY = y * tileSize;
+                        byte data[] = new byte[BUFFER_SIZE];
+                        int bytesSoFar = 0;
 
-                            final String url = mapSource.buildPath(tileX, tileY, paramInfo.mZoom);
+                        final InputStream entityStream = response.getEntity().getContent();
+                        final ByteArrayOutputStream byteOutStream = new ByteArrayOutputStream();
 
-                            //  Create a Get Request
-                            final HttpGet get = new HttpGet(url);
-
-                            // Execute HTTP Request
-                            final HttpResponse response = client.execute(get);
-
-                            final int statusCode = response.getStatusLine().getStatusCode();
-                            if (statusCode == 200) {
-                                int contentLength = -1;
-                                final Header header = response.getFirstHeader("Content-Length");
-                                if (header != null) {
-                                    contentLength = Integer.parseInt(header.getValue());
-                                }
-
-                                byte data[] = new byte[BUFFER_SIZE];
-                                int bytesSoFar = 0;
-
-                                final InputStream entityStream = response.getEntity().getContent();
-                                final ByteArrayOutputStream byteOutStream = new ByteArrayOutputStream();
-
-                                try {
-                                    while (true) {
-                                        final int bytesRead = entityStream.read(data);
-                                        if (bytesRead != -1) {
-                                            bytesSoFar += bytesRead;
-                                            byteOutStream.write(data, 0, bytesRead);
-                                        } else {
-                                            if (contentLength == -1 || contentLength == bytesSoFar) {
-                                                mCache.cache(url, byteOutStream.toByteArray(),
-                                                        Cache.CACHE_LEVEL_PERSISTENT);
-                                                tilesDownloaded++;
-                                                totalTilesDownloaded++;
-                                                retryCount = 0;
-                                            } else {
-                                                Log.e(TAG, "Thread. mismatched content length. Bytes read "
-                                                        + bytesSoFar);
-                                            }
-                                            break;
-                                        }
-                                    }
-
-                                    mMapDownloadListerner.notifyProgress((totalTilesDownloaded * 100) / totalFileCount,
-                                            100);
-                                } catch (Exception e) {
-                                    final String msg = "Thread. unexpected error " + e.getMessage();
-                                    Log.e(TAG, msg, e);
-                                    if (retryCount < RETRY_MAX) {
-                                        retryCount++;
-                                        y--;
-                                    } else {
-                                        e.printStackTrace();
-                                        throw new InvalidServerResponseException(e.getMessage());
-                                    }
-                                }
-                            } else if (statusCode == 404) {
-                                Log.e(TAG, "Thread. received 404. skipping tile.");
-                                tilesDownloaded++;
-                                retryCount = 0;
-                            } else {
-                                final String msg = "Thread. unexpected response code " + statusCode + " for url " + url;
-                                Log.e(TAG, msg);
-                                if (retryCount < RETRY_MAX) {
-                                    retryCount++;
-                                    y--;
+                        try {
+                            while (true) {
+                                final int bytesRead = entityStream.read(data);
+                                if (bytesRead != -1) {
+                                    bytesSoFar += bytesRead;
+                                    byteOutStream.write(data, 0, bytesRead);
                                 } else {
-                                    throw new InvalidServerResponseException(msg);
+                                    retryCount = 0;
+
+                                    if (contentLength == -1 || contentLength == bytesSoFar) {
+                                        final FileCacheInfo bundle = new FileCacheInfo();
+                                        bundle.mUrl = new String(url);
+                                        bundle.mData = byteOutStream.toByteArray();
+
+                                        // Log.i(TAG, "Thread " +
+                                        // mThreadNumber +
+                                        // ". file downloaded. "
+                                        // + totalTilesDownloaded);
+                                        mFileCacheWriter.push(bundle);
+                                    } else {
+                                        Log.e(TAG, "Thread " + mThreadNumber
+                                                + ". mismatched content length. skipping tile. contentLength "
+                                                + contentLength + " Bytes read " + bytesSoFar);
+                                        mMapDownloadListerner.notifyProgress();
+                                    }
+
+                                    break;
                                 }
                             }
+                        } catch (Exception e) {
+                            final String msg = "Thread " + mThreadNumber + ". unexpected error " + e.getMessage();
+                            Log.e(TAG, msg, e);
+                            if (retryCount < RETRY_MAX) {
+                                retryCount++;
+                            } else {
+                                e.printStackTrace();
+                                throw new InvalidServerResponseException(e.getMessage());
+                            }
+                        } finally {
+                            try {
+                                if (byteOutStream != null) {
+                                    byteOutStream.close();
+                                }
+                            } catch (Exception e) {
+                            }
+                        }
+                    } else if (statusCode == 404 || statusCode == 403) {
+                        Log.e(TAG, "Thread " + mThreadNumber + ". received " + statusCode + ". skipping tile. " + url);
+                        retryCount = 0;
+                        mMapDownloadListerner.notifyProgress();
+                    } else {
+                        final String msg = "Thread " + mThreadNumber + ". unexpected response code " + statusCode
+                                + " for url " + url;
+                        Log.e(TAG, msg);
+                        if (retryCount < RETRY_MAX) {
+                            retryCount++;
+                        } else {
+                            throw new InvalidServerResponseException(msg);
                         }
                     }
                 }
 
                 mMapDownloadListerner.notifyComplete();
             } catch (FileNotFoundException fe) {
-                Log.e(TAG, "Thread. FILE ERROR.", fe);
+                Log.e(TAG, "Thread " + mThreadNumber + ". FILE ERROR.", fe);
                 mMapDownloadListerner.notifyError(STATUS_FILE_ERROR);
             } catch (NoHttpResponseException ie) {
-                Log.e(TAG, "Thread. NO HTTP RESP ERROR.", ie);
+                Log.e(TAG, "Thread " + mThreadNumber + ". NO HTTP RESP ERROR.", ie);
                 mMapDownloadListerner.notifyError(STATUS_SERVER_ERROR);
             } catch (InvalidServerResponseException ie) {
-                Log.e(TAG, "Thread. INVALID SERVER RESP ERROR.", ie);
+                Log.e(TAG, "Thread " + mThreadNumber + ". INVALID SERVER RESP ERROR.", ie);
                 mMapDownloadListerner.notifyError(STATUS_SERVER_ERROR);
             } catch (Exception e) {
                 if (Utils.isNetworkAvailable(mContext)) {
-                    Log.e(TAG, "Thread. UNKNOWN ERROR.", e);
+                    Log.e(TAG, "Thread " + mThreadNumber + ". UNKNOWN ERROR.", e);
                     mMapDownloadListerner.notifyError(STATUS_UNKNOWN_ERROR);
                 } else {
-                    Log.e(TAG, "Thread. NETWORK ERROR.", e);
+                    Log.e(TAG, "Thread " + mThreadNumber + ". NETWORK ERROR.", e);
                     mMapDownloadListerner.notifyError(STATUS_NETWORK_ERROR);
                 }
             } finally {
-                try {
-                    if (client != null) {
-                        client.getConnectionManager().shutdown();
-                    }
-                } catch (Exception e) {
-                    // we dont care
-                }
-
                 if (wakeLock != null) {
                     wakeLock.release();
                     wakeLock = null;
@@ -254,9 +234,9 @@ public class MapDownloadThread extends Thread implements IConstants {
             }
         }
 
-        Log.i(TAG, "Thread. thread ended..");
+        Log.i(TAG, "Thread " + mThreadNumber + ". thread ended..");
     }
-    
+
     synchronized public void cancel() {
         mCancel = true;
     }
@@ -281,7 +261,7 @@ public class MapDownloadThread extends Thread implements IConstants {
     }
 
     static public interface MapDownloadListerner {
-        public void notifyProgress(int progress, int total);
+        public void notifyProgress();
 
         public void notifyError(int status);
 

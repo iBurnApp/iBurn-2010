@@ -22,4 +22,6 @@
 		name="light_purple">#6386ce</color>
 	<color
 		name="light_yellow">#ffffe5</color>
+	<color
+		name="map_text_color">#ff821313</color>
 </resources>

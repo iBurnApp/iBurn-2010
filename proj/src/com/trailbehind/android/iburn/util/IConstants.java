@@ -1,6 +1,7 @@
 package com.trailbehind.android.iburn.util;
 
 import android.graphics.RectF;
+import android.os.Build.VERSION;
 
 import com.nutiteq.components.WgsPoint;
 import com.trailbehind.android.iburn.R;
@@ -10,7 +11,8 @@ import com.trailbehind.android.iburn.map.source.MapSource3785;
 public interface IConstants {
     public String TAG = "iBurn";
 
-    public String BURN_TILES_URL = "http://earthdev.burningman.com/osm_tiles_2010/ZPARAM/XPARAM/YPARAM.png";
+    public String BURN_TILES_URL = "http://iburn.s3.amazonaws.com/ZPARAM/XPARAM/YPARAM.png";
+    // "http://earthdev.burningman.com/osm_tiles_2010/ZPARAM/XPARAM/YPARAM.png";
 
     /** The Constant LINE_SEPARATOR. */
     public String LINE_SEPARATOR = System.getProperty("line.separator");
@@ -66,8 +68,6 @@ public interface IConstants {
     /** The Constant KEY_ID. */
     public String KEY_ID = "id";
 
-    public String KEY_COUNT = "count";
-
     /** The Constant KEY_LON. */
     final static public String KEY_LON = "lon";
 
@@ -81,16 +81,17 @@ public interface IConstants {
 
     public String RESOURCE_PATH_RED_PIN = "/res/drawable/red_pin_down.png";
 
-    public RectF BURN_MAP_RECT = new RectF(40.756f, -119.176f, 40.816f, -119.236f);
+    public RectF BURN_MAP_RECT = new RectF(-119.23454f, 40.802822f, -119.172673f, 40.759210f);
+    // 40.756f, -119.176f, 40.816f, -119.236f);
 
-    public WgsPoint BURN_START_POINT = new WgsPoint(BURN_MAP_RECT.top, BURN_MAP_RECT.left);
-    public WgsPoint BURN_END_POINT = new WgsPoint(BURN_MAP_RECT.bottom, BURN_MAP_RECT.right);
+    public WgsPoint BURN_START_POINT = new WgsPoint(BURN_MAP_RECT.left, BURN_MAP_RECT.top);
+    public WgsPoint BURN_END_POINT = new WgsPoint(BURN_MAP_RECT.right, BURN_MAP_RECT.bottom);
 
-    public WgsPoint BURN_CENTER_POINT = new WgsPoint(BURN_MAP_RECT.centerY(), BURN_MAP_RECT.centerX());
+    public WgsPoint BURN_CENTER_POINT = new WgsPoint(BURN_MAP_RECT.centerX(), BURN_MAP_RECT.centerY());
 
     public int BURN_DEFULT_ZOOM = 14;
 
-    public IMapSource BURN_MAP_SOURCE = new MapSource3785(1, TAG, TAG, R.drawable.icon, BURN_TILES_URL, 256, 10, 17, 50);
+    public IMapSource BURN_MAP_SOURCE = new MapSource3785(1, TAG, TAG, R.drawable.icon, BURN_TILES_URL, 256, 10, Integer.parseInt(VERSION.SDK) > 10 ? 19 : 18, 50);
 
     // status codes ---------
 
@@ -125,6 +126,8 @@ public interface IConstants {
 
     /** The buffer size used to stream the data. */
     public int BUFFER_SIZE = 4096;
+
+    public int DOWNLOAD_THREAD_COUNT = Integer.parseInt(VERSION.SDK) > 10 ? 16 : 12;
 
     // pref key ----------
 

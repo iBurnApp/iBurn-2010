@@ -145,7 +145,7 @@ public class Utils implements IConstants {
         final StringBuilder buff = new StringBuilder();
 
         buff.append(context.getString(R.string.version));
-        buff.append(":\t\t");
+        buff.append(": ");
         buff.append(versionName);
         buff.append(" (");
         buff.append(versionCode);

@@ -88,7 +88,7 @@ public class CustomMapView extends MapView implements IConstants {
      * @see android.view.View#onSizeChanged(int, int, int, int)
      */
     @Override
-    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
+    public void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
         if (w != 0 && h != 0 && mComponent != null) {
             if (oldw != w && oldh != h) {

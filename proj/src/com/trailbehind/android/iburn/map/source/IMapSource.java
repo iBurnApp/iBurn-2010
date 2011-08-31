@@ -7,12 +7,12 @@ package com.trailbehind.android.iburn.map.source;
 import java.io.IOException;
 
 import com.nutiteq.maps.GeoMap;
-import com.nutiteq.maps.LocalMap;
+import com.nutiteq.maps.UnstreamedMap;
 
 /**
  * The Interface IMapSource.
  */
-public interface IMapSource extends GeoMap, LocalMap {
+public interface IMapSource extends GeoMap, UnstreamedMap {
 
     /*
      * (non-Javadoc)

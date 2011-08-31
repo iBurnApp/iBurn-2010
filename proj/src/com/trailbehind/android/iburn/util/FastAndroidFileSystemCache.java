@@ -1,5 +1,6 @@
 package com.trailbehind.android.iburn.util;
 
+import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -47,21 +48,26 @@ public class FastAndroidFileSystemCache implements Cache, IConstants {
      * 
      * @see com.nutiteq.cache.Cache#cache(java.lang.String, byte[], int)
      */
-    synchronized public void cache(final String cacheKey, final byte[] data, final int cacheLevel) {
+    public void cache(final String cacheKey, final byte[] data, final int cacheLevel) {
         final String cacheableKey = normalizeKey(cacheKey);
 
         final File cacheFile = new File(mCacheDir, cacheableKey);
         cacheFile.getParentFile().mkdirs();
 
-        FileOutputStream fos = null;
+        BufferedOutputStream fos = null;
         try {
-            fos = new FileOutputStream(cacheFile);
+            fos = new BufferedOutputStream(new FileOutputStream(cacheFile));
             fos.write(data);
         } catch (final IOException e) {
             Log.e(TAG, "Error writing " + cacheableKey, e);
             throw new RuntimeException(e);
         } finally {
-            IOUtils.closeStream(fos);
+            try {
+                if (fos != null) {
+                    fos.close();
+                }
+            } catch (Exception e) {
+            }
         }
     }
 
@@ -74,7 +80,25 @@ public class FastAndroidFileSystemCache implements Cache, IConstants {
      * @return the string
      */
     private String normalizeKey(final String cacheKey) {
-        return cacheKey.replaceAll("://", "_").replaceAll("[^a-zA-Z\\d/]", "_");
+        // return cacheKey.replaceAll("://", "_").replaceAll("[^a-zA-Z\\d/]",
+        // "_");
+        String s = cacheKey;
+        final int index = cacheKey.indexOf("://");
+        if (index != -1) {
+            s = cacheKey.substring(0, index) + "_" + cacheKey.substring(index + 3);
+        }
+
+        final char[] buff = s.toCharArray();
+        final int len = buff.length;
+        for (int i = 0; i < len; i++) {
+            char c = buff[i];
+            if (c == '.' || c == '?' || c == '&' || c == ':' || c == ';') {
+                buff[i] = '_';
+            }
+        }
+        // String a = cacheKey.replaceAll("://",
+        // "_").replaceAll("[^a-zA-Z\\d/]", "_");
+        return new String(buff);
     }
 
     /*

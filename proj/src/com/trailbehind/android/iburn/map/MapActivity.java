@@ -2,7 +2,26 @@ package com.trailbehind.android.iburn.map;
 
 import java.io.File;
 import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Set;
+
+import org.apache.http.HttpVersion;
+import org.apache.http.client.params.HttpClientParams;
+import org.apache.http.conn.ClientConnectionManager;
+import org.apache.http.conn.params.ConnManagerParams;
+import org.apache.http.conn.params.ConnPerRouteBean;
+import org.apache.http.conn.scheme.PlainSocketFactory;
+import org.apache.http.conn.scheme.Scheme;
+import org.apache.http.conn.scheme.SchemeRegistry;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager;
+import org.apache.http.params.BasicHttpParams;
+import org.apache.http.params.HttpConnectionParams;
+import org.apache.http.params.HttpParams;
+import org.apache.http.params.HttpProtocolParams;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -12,6 +31,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Rect;
 import android.location.Location;
 import android.location.LocationManager;
 import android.location.LocationProvider;
@@ -54,19 +74,20 @@ import com.nutiteq.location.NutiteqLocationMarker;
 import com.nutiteq.ui.DefaultZoomIndicator;
 import com.nutiteq.ui.ThreadDrivenPanning;
 import com.trailbehind.android.iburn.BurnApplication;
-import com.trailbehind.android.iburn.R;
 import com.trailbehind.android.iburn.BurnApplication.AppLocationListener;
 import com.trailbehind.android.iburn.BurnApplication.AppLocationProvider;
+import com.trailbehind.android.iburn.R;
 import com.trailbehind.android.iburn.map.download.MapDownloadThread;
 import com.trailbehind.android.iburn.map.download.MapDownloadThread.MapDownloadListerner;
+import com.trailbehind.android.iburn.map.source.IMapSource;
 import com.trailbehind.android.iburn.util.CompassUtils;
+import com.trailbehind.android.iburn.util.CompassUtils.CompassPlaceIcon;
 import com.trailbehind.android.iburn.util.FastAndroidFileSystemCache;
 import com.trailbehind.android.iburn.util.Globals;
 import com.trailbehind.android.iburn.util.IConstants;
 import com.trailbehind.android.iburn.util.MapUtils;
 import com.trailbehind.android.iburn.util.UIUtils;
 import com.trailbehind.android.iburn.util.Utils;
-import com.trailbehind.android.iburn.util.CompassUtils.CompassPlaceIcon;
 import com.trailbehind.android.iburn.view.CompassView;
 import com.trailbehind.android.iburn.view.CustomMapView;
 import com.trailbehind.android.iburn.view.MapZoomControls;
@@ -157,9 +178,16 @@ public class MapActivity extends Activity implements IConstants {
     /** The vibrator. */
     private Vibrator mVibrator;
 
-    private MapDownloadThread mMapDownloadThread;
+    private MapDownloadThread[] mMapDownloadThreads;
+
+    private DefaultHttpClient mDefaultHttpClient1;
+
+    /** The file cache writer. */
+    private FileCacheWriter mFileCacheWriter;
 
     private int mErrorMsgId;
+
+    private int mTotalTileCount;
 
     /** Called when the activity is first created. */
     @Override
@@ -184,8 +212,8 @@ public class MapActivity extends Activity implements IConstants {
                 final boolean mapDownloaded = Globals.sSharedPreferences.getBoolean(PREF_KEY_MAP_DOWNLOADED, false);
                 if (!mapDownloaded || force) {
                     showDialog(DIALOG_DOWNLOAD_PROGRESS);
-                    mActivityHandler.sendMessageDelayed(mActivityHandler
-                            .obtainMessage(ActivityHandler.MESSAGE_START_DOWNLOAD), 500);
+                    mActivityHandler.sendMessageDelayed(
+                            mActivityHandler.obtainMessage(ActivityHandler.MESSAGE_START_DOWNLOAD), 50);
                 }
             } else {
                 showDialog(DIALOG_SDCARD_NOT_AVAILABLE);
@@ -223,6 +251,14 @@ public class MapActivity extends Activity implements IConstants {
      */
     @Override
     public void onDestroy() {
+        try {
+            if (mDefaultHttpClient1 != null) {
+                mDefaultHttpClient1.getConnectionManager().shutdown();
+            }
+        } catch (Exception e) {
+            // we dont care
+        }
+
         getBurnApplication().onDestroy();
 
         doCleanup();
@@ -255,17 +291,17 @@ public class MapActivity extends Activity implements IConstants {
                         }
                     }).create();
         case DIALOG_NO_INTERNET_DOWNLOAD:
-            return new AlertDialog.Builder(MapActivity.this).setTitle(R.string.title_dialog_error).setMessage(
-                    R.string.error_no_internet_download).setPositiveButton(android.R.string.ok,
-                    new DialogInterface.OnClickListener() {
+            return new AlertDialog.Builder(MapActivity.this).setTitle(R.string.title_dialog_error)
+                    .setMessage(R.string.error_no_internet_download)
+                    .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int whichButton) {
                             removeDialog(DIALOG_NO_INTERNET_DOWNLOAD);
                         }
                     }).create();
         case DIALOG_SDCARD_NOT_AVAILABLE:
-            return new AlertDialog.Builder(this).setIcon(R.drawable.ic_dialog_menu_generic).setTitle(
-                    R.string.title_dialog_error).setMessage(R.string.error_sd_not_available).setPositiveButton(
-                    android.R.string.ok, new DialogInterface.OnClickListener() {
+            return new AlertDialog.Builder(this).setIcon(R.drawable.ic_dialog_menu_generic)
+                    .setTitle(R.string.title_dialog_error).setMessage(R.string.error_sd_not_available)
+                    .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int whichButton) {
                             removeDialog(DIALOG_SDCARD_NOT_AVAILABLE);
                         }
@@ -274,18 +310,26 @@ public class MapActivity extends Activity implements IConstants {
             mProgressDialog = new ProgressDialog(MapActivity.this);
             mProgressDialog.setTitle(R.string.title_dialog_download);
             mProgressDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
-            mProgressDialog.setMax(100);
             mProgressDialog.setButton(getText(android.R.string.cancel), new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int whichButton) {
                     removeDialog(DIALOG_DOWNLOAD_PROGRESS);
-                    mMapDownloadThread.cancel();
+                    for (int i = 0, len = mMapDownloadThreads.length; i < len; i++) {
+                        MapDownloadThread t = mMapDownloadThreads[i];
+                        if (t != null) {
+                            t.cancel();
+                        }
+                        mMapDownloadThreads[i] = null;
+                    }
+
+                    mFileCacheWriter.stopRunning();
+                    mFileCacheWriter = null;
                 }
             });
             return mProgressDialog;
         case DIALOG_DOWNLOAD_ERROR:
-            return new AlertDialog.Builder(MapActivity.this).setIcon(R.drawable.ic_dialog_menu_generic).setTitle(
-                    R.string.title_dialog_error).setMessage(mErrorMsgId).setPositiveButton(android.R.string.ok,
-                    new DialogInterface.OnClickListener() {
+            return new AlertDialog.Builder(MapActivity.this).setIcon(R.drawable.ic_dialog_menu_generic)
+                    .setTitle(R.string.title_dialog_error).setMessage(mErrorMsgId)
+                    .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int whichButton) {
                             removeDialog(DIALOG_SDCARD_NOT_AVAILABLE);
                         }
@@ -350,6 +394,8 @@ public class MapActivity extends Activity implements IConstants {
 
         mVibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
         mActivityHandler.sendMessage(mActivityHandler.obtainMessage(ActivityHandler.MESSAGE_INIT_FILE_SYSTEM_DIR));
+
+        mMapDownloadThreads = new MapDownloadThread[DOWNLOAD_THREAD_COUNT];
     }
 
     /**
@@ -373,8 +419,8 @@ public class MapActivity extends Activity implements IConstants {
         setupMapView();
 
         // setup loc source
-        mActivityHandler.sendMessageDelayed(mActivityHandler
-                .obtainMessage(ActivityHandler.MESSAGE_INIT_LOCATION_SOURCE_N_MAP_LISTENER), 1000);
+        mActivityHandler.sendMessageDelayed(
+                mActivityHandler.obtainMessage(ActivityHandler.MESSAGE_INIT_LOCATION_SOURCE_N_MAP_LISTENER), 1000);
 
         // create zoom controls
         setupZoomControls();
@@ -396,7 +442,7 @@ public class MapActivity extends Activity implements IConstants {
             mMapComponent.setControlKeysHandler(mControlKeysHandler);
 
             mMapComponent.setZoomLevelIndicator(new DefaultZoomIndicator(BURN_MAP_SOURCE.getMinZoom(), BURN_MAP_SOURCE
-                    .getMinZoom()));
+                    .getMaxZoom()));
             mMapComponent.setFileSystem(new AndroidFileSystem());
             mMapComponent.setTouchClickTolerance(BasicMapComponent.FINGER_CLICK_TOLERANCE);
 
@@ -488,6 +534,22 @@ public class MapActivity extends Activity implements IConstants {
                 mMapComponent.setNetworkCache(cachingChain);
             }
         }
+    }
+
+    private FastAndroidFileSystemCache getNewSavedMapCache() {
+        final File externalStoragePath = Environment.getExternalStorageDirectory();
+        if (externalStoragePath != null) {
+            final File appDir = new File(externalStoragePath, APP_DIR_ON_SD_CARD);
+            appDir.mkdirs();
+
+            final File cacheDir = new File(appDir, DIR_MAP_CACHE);
+            cacheDir.mkdirs();
+
+            FastAndroidFileSystemCache savedMapCache = new FastAndroidFileSystemCache(getBaseContext(), cacheDir);
+            savedMapCache.initialize();
+            return savedMapCache;
+        }
+        return null;
     }
 
     /**
@@ -608,8 +670,7 @@ public class MapActivity extends Activity implements IConstants {
 
             @Override
             public void onClick(View v) {
-                mMapComponent.moveMap(BURN_CENTER_POINT);
-                mMapComponent.setZoom(BURN_DEFULT_ZOOM);
+                mMapComponent.setMiddlePoint(BURN_CENTER_POINT, BURN_DEFULT_ZOOM);
             }
         });
 
@@ -660,7 +721,7 @@ public class MapActivity extends Activity implements IConstants {
             mMapComponent.startMapping();
         } catch (Exception e) {
             try {
-                Log.d(TAG, "error starting mapping.. cleaningup first..");
+                Log.e(TAG, "error starting mapping.. cleaningup first..", e);
                 if (mMapView != null) {
                     mMapView.clean();
                     mMapView = null;
@@ -683,8 +744,8 @@ public class MapActivity extends Activity implements IConstants {
      * Show zoom level toast.
      */
     private void showZoomLevelToast() {
-        UIUtils.showDefaultToast(getBaseContext(), String.format(getString(R.string.toast_zoom_level), mMapComponent
-                .getZoom()), false);
+        UIUtils.showDefaultToast(getBaseContext(),
+                String.format(getString(R.string.toast_zoom_level), mMapComponent.getZoom()), false);
     }
 
     // manage receivers ----------
@@ -798,8 +859,8 @@ public class MapActivity extends Activity implements IConstants {
      */
     public LocationMarker getDummyLocationMarker() {
         if (mDummyLocationMarker == null) {
-            mDummyLocationMarker = new NutiteqLocationMarker(new PlaceIcon(com.nutiteq.utils.Utils
-                    .createImage(PATH_BLANK_IMAGE)), 3000, false);
+            mDummyLocationMarker = new NutiteqLocationMarker(new PlaceIcon(
+                    com.nutiteq.utils.Utils.createImage(PATH_BLANK_IMAGE)), 3000, false);
         }
         return mDummyLocationMarker;
     }
@@ -924,6 +985,67 @@ public class MapActivity extends Activity implements IConstants {
         }
     }
 
+    DefaultHttpClient getHttpClient() {
+        // Create and initialize HTTP parameters
+        HttpParams params = new BasicHttpParams();
+        ConnManagerParams.setMaxConnectionsPerRoute(params, new ConnPerRouteBean(10));
+        ConnManagerParams.setMaxTotalConnections(params, 100);
+        HttpProtocolParams.setVersion(params, HttpVersion.HTTP_1_1);
+        HttpProtocolParams.setUserAgent(params, "Mozilla");
+
+        HttpConnectionParams.setStaleCheckingEnabled(params, false);
+
+        // Default connection and socket timeout of 20 seconds. Tweak to
+        // taste.
+        HttpConnectionParams.setConnectionTimeout(params, 30 * 1000);
+        HttpConnectionParams.setSoTimeout(params, 30 * 1000);
+        HttpConnectionParams.setSocketBufferSize(params, 8192);
+        HttpClientParams.setRedirecting(params, true);
+
+        // Create and initialize scheme registry
+        SchemeRegistry schemeRegistry = new SchemeRegistry();
+        schemeRegistry.register(new Scheme("http", PlainSocketFactory.getSocketFactory(), 80));
+
+        // Create an HttpClient with the ThreadSafeClientConnManager.
+        // This connection manager must be used if more than one thread will
+        // be using the HttpClient.
+        ClientConnectionManager cm = new ThreadSafeClientConnManager(params, schemeRegistry);
+        return new DefaultHttpClient(cm, params);
+    }
+
+    LinkedList<String> getUrlList() {
+        final IMapSource mapSource = BURN_MAP_SOURCE;
+
+        final WgsPoint startPoint = BURN_START_POINT;
+        final WgsPoint endPoint = BURN_END_POINT;
+
+        final int tileSize = mapSource.getTileSize();
+
+        final LinkedList<String> urlList = new LinkedList<String>();
+        for (int zoom = mapSource.getMinZoom(), endZoom = mapSource.getMaxZoom(), i = 0; zoom <= endZoom; zoom++, i++) {
+            // switching to coord system
+            final MapPos mapStartPos = mapSource.wgsToMapPos(startPoint.toInternalWgs(), zoom);
+            final MapPos mapEndPos = mapSource.wgsToMapPos(endPoint.toInternalWgs(), zoom);
+
+            final Rect overlayRect = new Rect();
+            overlayRect.left = mapStartPos.getX() / tileSize;
+            overlayRect.top = mapStartPos.getY() / tileSize;
+
+            overlayRect.right = mapEndPos.getX() / tileSize;
+            overlayRect.bottom = mapEndPos.getY() / tileSize;
+
+            for (int x = overlayRect.left; x <= overlayRect.right; x++) {
+                for (int y = overlayRect.top; y <= overlayRect.bottom; y++) {
+                    final int tileX = x * tileSize;
+                    final int tileY = y * tileSize;
+
+                    urlList.add(mapSource.buildPath(tileX, tileY, zoom));
+                }
+            }
+        }
+        return urlList;
+    }
+
     // protected methods ----------
 
     protected AppLocationProvider getActiveLocationProvider() {
@@ -984,6 +1106,10 @@ public class MapActivity extends Activity implements IConstants {
         private static final int MESSAGE_DOWNLOAD_ERROR = 14;
 
         private static final int MESSAGE_END_DOWNLOAD = 15;
+
+        private int mLastCount = 0;
+
+        private long mStartTime = 0;
 
         /*
          * (non-Javadoc)
@@ -1070,55 +1196,53 @@ public class MapActivity extends Activity implements IConstants {
                 }
                     break;
                 case MESSAGE_START_DOWNLOAD: {
-                    mMapDownloadThread = new MapDownloadThread(getBaseContext(), mSavedMapCache,
-                            new MapDownloadListerner() {
+                    mLastCount = 0;
+                    mStartTime = System.currentTimeMillis();
 
-                                @Override
-                                public void notifyProgress(int progress, int total) {
-                                    final Message msg = obtainMessage(ActivityHandler.MESSAGE_DOWNLOAD_PROGRESS);
+                    if (mDefaultHttpClient1 == null) {
+                        mDefaultHttpClient1 = getHttpClient();
+                    }
 
-                                    Bundle data = new Bundle();
-                                    data.putInt(KEY_COUNT, progress);
+                    FastAndroidFileSystemCache cache = getNewSavedMapCache();
+                    MapDownloadListerner mapDownloadListerner = new MapDownloadListernerImpl();
 
-                                    msg.setData(data);
-                                    sendMessageDelayed(msg, 100);
-                                }
+                    mFileCacheWriter = new FileCacheWriter(cache, mapDownloadListerner);
+                    mFileCacheWriter.start();
 
-                                @Override
-                                public void notifyError(int status) {
-                                    final Message msg = obtainMessage(ActivityHandler.MESSAGE_DOWNLOAD_ERROR);
-
-                                    Bundle data = new Bundle();
-                                    data.putInt(KEY_ID, status);
-
-                                    msg.setData(data);
-                                    sendMessageDelayed(msg, 100);
-                                }
-
-                                @Override
-                                public void notifyComplete() {
-                                    sendMessageDelayed(obtainMessage(ActivityHandler.MESSAGE_END_DOWNLOAD), 100);
-                                    final Message msg = obtainMessage(ActivityHandler.MESSAGE_SAVE_PREF_BOOL);
-
-                                    Bundle data = new Bundle();
-                                    data.putBoolean(PREF_KEY_MAP_DOWNLOADED, true);
-
-                                    msg.setData(data);
-                                    sendMessageDelayed(msg, 100);
-                                }
-
-                                @Override
-                                public void notifyCancel() {
-                                    sendMessageDelayed(obtainMessage(ActivityHandler.MESSAGE_END_DOWNLOAD), 100);
-                                }
-                            });
-                    mMapDownloadThread.start();
+                    LinkedList<String> urlList = getUrlList();
+                    mTotalTileCount = urlList.size();
+                    for (int i = 0, len = mMapDownloadThreads.length; i < len; i++) {
+                        MapDownloadThread t = new MapDownloadThread(getBaseContext(), cache, mapDownloadListerner,
+                                mDefaultHttpClient1, i + 1, mFileCacheWriter, urlList);
+                        mMapDownloadThreads[i] = t;
+                        t.start();
+                    }
                 }
                     break;
                 case MESSAGE_DOWNLOAD_PROGRESS:
-                    mProgressDialog.setProgress(bundle.getInt(KEY_COUNT));
+                    ++mLastCount;
+                    if (mLastCount % 1000 == 0) {
+                        long t = System.currentTimeMillis();
+                        Log.d(TAG, "Downloaded 1000 files in " + ((t - mStartTime) / 1000f) + " seconds");
+                        mStartTime = t;
+                    }
+                    mProgressDialog.setProgress(mLastCount);
+                    mProgressDialog.setMax(mTotalTileCount);
                     break;
                 case MESSAGE_DOWNLOAD_ERROR:
+                    for (int i = 0, len = mMapDownloadThreads.length; i < len; i++) {
+                        MapDownloadThread t = mMapDownloadThreads[i];
+                        if (t != null) {
+                            t.cancel();
+                        }
+                        mMapDownloadThreads[i] = null;
+                    }
+
+                    if (mFileCacheWriter != null) {
+                        mFileCacheWriter.stopRunning();
+                        mFileCacheWriter = null;
+                    }
+
                     removeDialog(DIALOG_DOWNLOAD_PROGRESS);
                     switch (bundle.getInt(KEY_ID)) {
                     case STATUS_FILE_ERROR:
@@ -1137,7 +1261,23 @@ public class MapActivity extends Activity implements IConstants {
                     showDialog(DIALOG_DOWNLOAD_ERROR);
                     break;
                 case MESSAGE_END_DOWNLOAD:
-                    removeDialog(DIALOG_DOWNLOAD_PROGRESS);
+                    boolean isAnyAlive = false;
+                    for (MapDownloadThread t : mMapDownloadThreads) {
+                        if (t != null) {
+                            if (t.isAlive()) {
+                                isAnyAlive = true;
+                                break;
+                            }
+                        }
+                    }
+                    if (!isAnyAlive) {
+                        if (mFileCacheWriter != null) {
+                            mFileCacheWriter.stopRunning();
+                            mFileCacheWriter = null;
+                        }
+
+                        removeDialog(DIALOG_DOWNLOAD_PROGRESS);
+                    }
                     break;
                 default:
                     break;
@@ -1145,6 +1285,181 @@ public class MapActivity extends Activity implements IConstants {
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
+        }
+    }
+
+    private class MapDownloadListernerImpl implements MapDownloadListerner {
+
+        @Override
+        public void notifyProgress() {
+            final Message msg = mActivityHandler.obtainMessage(ActivityHandler.MESSAGE_DOWNLOAD_PROGRESS);
+            mActivityHandler.sendMessageDelayed(msg, 100);
+        }
+
+        @Override
+        public void notifyError(int status) {
+            final Message msg = mActivityHandler.obtainMessage(ActivityHandler.MESSAGE_DOWNLOAD_ERROR);
+
+            Bundle data = new Bundle();
+            data.putInt(KEY_ID, status);
+
+            msg.setData(data);
+            mActivityHandler.sendMessageDelayed(msg, 100);
+        }
+
+        @Override
+        public void notifyComplete() {
+            mActivityHandler.sendMessageDelayed(mActivityHandler.obtainMessage(ActivityHandler.MESSAGE_END_DOWNLOAD),
+                    100);
+            final Message msg = mActivityHandler.obtainMessage(ActivityHandler.MESSAGE_SAVE_PREF_BOOL);
+
+            Bundle data = new Bundle();
+            data.putBoolean(PREF_KEY_MAP_DOWNLOADED, true);
+
+            msg.setData(data);
+            mActivityHandler.sendMessageDelayed(msg, 100);
+        }
+
+        @Override
+        public void notifyCancel() {
+            mActivityHandler.sendMessageDelayed(mActivityHandler.obtainMessage(ActivityHandler.MESSAGE_END_DOWNLOAD),
+                    100);
+        }
+    }
+
+    /**
+     * The Class FileCacheWriter.
+     */
+    static public class FileCacheWriter extends Thread {
+
+        /** The cache. */
+        final private FastAndroidFileSystemCache mCache;
+
+        /** The stack. */
+        private List<FileCacheInfo> mStack = Collections.synchronizedList(new ArrayList<FileCacheInfo>());
+
+        /** The keep running. */
+        private boolean mKeepRunning = true;
+
+        /** The lock. */
+        private Object mLock = new Object();
+
+        private MapDownloadListerner mMapDownloadListerner;
+
+        /** The error. */
+        public boolean mError;
+
+        /** The exception. */
+        public Exception mException;
+
+        /**
+         * The Class FileCacheInfo.
+         */
+        static public class FileCacheInfo {
+
+            /** The url. */
+            public String mUrl;
+
+            /** The data. */
+            public byte[] mData;
+        }
+
+        /**
+         * Instantiates a new file cache writer.
+         * 
+         * @param cache
+         *            the cache
+         */
+        FileCacheWriter(FastAndroidFileSystemCache cache, MapDownloadListerner mapDownloadListerner) {
+            mCache = cache;
+            mMapDownloadListerner = mapDownloadListerner;
+        }
+
+        /**
+         * Push.
+         * 
+         * @param data
+         *            the data
+         */
+        synchronized public void push(FileCacheInfo data) {
+            while (mStack.size() >= 300) {
+                try {
+                    Thread.currentThread().sleep(50);
+                } catch (Exception e) {
+
+                }
+            }
+            mStack.add(data);
+
+            try {
+                synchronized (mLock) {
+                    mLock.notify();
+                }
+            } catch (Exception e) {
+                Log.e(TAG, "Thread. Error while notifying.", e);
+            }
+        }
+
+        /**
+         * Stop running.
+         */
+        public void stopRunning() {
+            mKeepRunning = false;
+            try {
+                synchronized (mLock) {
+                    mLock.notify();
+                }
+            } catch (Exception e) {
+                Log.e(TAG, "Thread. Error while notifying.", e);
+            }
+        }
+
+        /*
+         * (non-Javadoc)
+         * 
+         * @see java.lang.Thread#run()
+         */
+        public void run() {
+            long startTime = System.currentTimeMillis();
+            while (mKeepRunning || !mStack.isEmpty()) {
+                // Log.i(TAG, "writer running.. " + mStack.size());
+                if (!mStack.isEmpty()) {
+                    try {
+                        final FileCacheInfo info = mStack.get(0);
+                        mStack.remove(info);
+
+                        mCache.cache(info.mUrl, info.mData, Cache.CACHE_LEVEL_PERSISTENT);
+                        notifyChange();
+                    } catch (Exception e) {
+                        mError = true;
+                        mException = e;
+                        Log.e(TAG, "Thread. Error in writting file.", e);
+                    }
+                } else {
+                    try {
+                        // Log.i(TAG, "writer waiting.. " + mStack.size());
+                        synchronized (mLock) {
+                            mLock.wait();
+                        }
+                    } catch (Exception e) {
+                        Log.e(TAG, "Thread. Error while waiting.", e);
+                    }
+                }
+            }
+            long t = System.currentTimeMillis();
+            Log.i(TAG, "Thread. FileCacheWriter thread ended. Total time " + ((t - startTime) / 1000f) + " seconds");
+        }
+
+        /**
+         * Notify change.
+         * 
+         * @param id
+         *            the id
+         * @param fileCount
+         *            the file count
+         */
+        private void notifyChange() {
+            mMapDownloadListerner.notifyProgress();
         }
     }
 
