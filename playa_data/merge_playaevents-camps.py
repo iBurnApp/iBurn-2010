@@ -11,7 +11,7 @@ import json
 from string_util import cleanString
 
 # Threshold under which to discard partial string matches
-MATCH_THRESHOLD = .6
+MATCH_THRESHOLD = .7
 
 location_file = open('./data/camp-locations-2012.json')
 playa_file = open('./data/playaevents-camps-2012.json')
@@ -36,7 +36,7 @@ if scraper_file:
         max_match_playa_camp_index = -1
         if scraper_camp != None:
             for index, playa_camp in enumerate(playa_json):
-                if scraper_camp != None:
+                if playa_camp != None:
                     match = Levenshtein.ratio(cleanString(playa_camp['name']), cleanString(scraper_camp['name']))
                     if match > max_match:
                         max_match = match
