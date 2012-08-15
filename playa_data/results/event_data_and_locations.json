@@ -2520,9 +2520,7 @@
             "name": "100'th Monkey Camp"
         }, 
         "id": 6460, 
-        "latitude": "", 
         "location": "Edelweiss & 9:45", 
-        "longitude": "", 
         "matched_name": "Laughing Monkey Camp", 
         "occurrence_set": [
             {
@@ -2943,10 +2941,10 @@
             "name": "VegCamp"
         }, 
         "id": 6537, 
-        "latitude": "40.789673", 
-        "location": "w/in Snowflake Village  ", 
-        "longitude": "-119.220244", 
-        "matched_name": "Videogasm", 
+        "latitude": "40.775479", 
+        "location": "Foxglove & 4:45", 
+        "longitude": "-119.207551", 
+        "matched_name": "Amazecamp", 
         "occurrence_set": [
             {
                 "end_time": "2012-08-27 01:00:00", 
@@ -2972,10 +2970,10 @@
             "name": "VegCamp"
         }, 
         "id": 6120, 
-        "latitude": "40.789673", 
-        "location": "w/in Snowflake Village  ", 
-        "longitude": "-119.220244", 
-        "matched_name": "Videogasm", 
+        "latitude": "40.775479", 
+        "location": "Foxglove & 4:45", 
+        "longitude": "-119.207551", 
+        "matched_name": "Amazecamp", 
         "occurrence_set": [
             {
                 "end_time": "2012-08-27 18:00:00", 
@@ -4313,9 +4311,7 @@
             "name": "Bat Country"
         }, 
         "id": 6488, 
-        "latitude": "", 
         "location": "Esplanade & 8:30", 
-        "longitude": "", 
         "matched_name": "Bat Country", 
         "occurrence_set": [
             {
@@ -5300,39 +5296,6 @@
     {
         "all_day": false, 
         "check_location": true, 
-        "description": "Beginner belly dance basics.", 
-        "hosted_by_camp": {
-            "id": 4623, 
-            "name": "LAFer Camp and Porta Gallery"
-        }, 
-        "id": 7942, 
-        "latitude": "40.786634", 
-        "location": "Columbine & 7:30", 
-        "longitude": "-119.218697", 
-        "matched_name": "LAFer Camp and Porta Gallery", 
-        "occurrence_set": [
-            {
-                "end_time": "2012-08-27 17:30:00", 
-                "start_time": "2012-08-27 16:30:00"
-            }, 
-            {
-                "end_time": "2012-08-29 17:30:00", 
-                "start_time": "2012-08-29 16:30:00"
-            }
-        ], 
-        "other_location": "LAFer Camp and Porta Gallery", 
-        "print_description": "Beginning basic belly dance as taught by a world reknown performer. .The basics of music theory, arm, leg, footwork, , and chest movements covered.", 
-        "slug": "belly-dance-basics", 
-        "title": "Belly dance basics", 
-        "url": "http://www.danceaholic.htmlplanet.com/", 
-        "year": {
-            "id": 8, 
-            "year": "2012"
-        }
-    }, 
-    {
-        "all_day": false, 
-        "check_location": true, 
         "description": "Basic belly dance movement from world neknown performer's system. Basics of music theory, foot patterns, arm and legwork, and stomach work included.", 
         "hosted_by_camp": {
             "id": 4623, 
@@ -5355,6 +5318,39 @@
         ], 
         "other_location": "Safer Sex camp", 
         "print_description": "Basic belly dance movement patterned after well-known performer's system. Basics of music, footwork, arm and legwork, and abdomenwork included.", 
+        "slug": "belly-dance-basics", 
+        "title": "Belly dance basics", 
+        "url": "http://www.danceaholic.htmlplanet.com/", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": true, 
+        "description": "Beginner belly dance basics.", 
+        "hosted_by_camp": {
+            "id": 4623, 
+            "name": "LAFer Camp and Porta Gallery"
+        }, 
+        "id": 7942, 
+        "latitude": "40.786634", 
+        "location": "Columbine & 7:30", 
+        "longitude": "-119.218697", 
+        "matched_name": "LAFer Camp and Porta Gallery", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-27 17:30:00", 
+                "start_time": "2012-08-27 16:30:00"
+            }, 
+            {
+                "end_time": "2012-08-29 17:30:00", 
+                "start_time": "2012-08-29 16:30:00"
+            }
+        ], 
+        "other_location": "LAFer Camp and Porta Gallery", 
+        "print_description": "Beginning basic belly dance as taught by a world reknown performer. .The basics of music theory, arm, leg, footwork, , and chest movements covered.", 
         "slug": "belly-dance-basics", 
         "title": "Belly dance basics", 
         "url": "http://www.danceaholic.htmlplanet.com/", 
@@ -6950,9 +6946,7 @@
             "name": "100'th Monkey Camp"
         }, 
         "id": 7128, 
-        "latitude": "", 
         "location": "Edelweiss & 9:45", 
-        "longitude": "", 
         "matched_name": "Laughing Monkey Camp", 
         "occurrence_set": [
             {
@@ -7407,6 +7401,35 @@
         "slug": "bodhi-film-festival", 
         "title": "BODHI Film Festival", 
         "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
+        "description": "Do you have a sore body from sleeping on the playa, or biking all week? This playshop will hit all the right points, and leave you lying on the floor in sheer body bliss. We will roll around on small inflatable balls and swimming noodles, and stretch with resistance bands (provided, but bring if you have). These simple lazy awesome techniques are guaranteed to bliss out your body just like a fine massage, whenever and wherever you need it. Great for all ages, and all bodies, no experience required.\r\nMmmm, body feel good!", 
+        "hosted_by_camp": {
+            "id": 4500, 
+            "name": "Chakralicious Camp"
+        }, 
+        "id": 8183, 
+        "latitude": "40.776591", 
+        "location": "Dandelion & 4:45", 
+        "longitude": "-119.208762", 
+        "matched_name": "Chakralicious Camp", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-31 12:15:00", 
+                "start_time": "2012-08-31 10:45:00"
+            }
+        ], 
+        "other_location": "Stage Dome", 
+        "print_description": "Do you have a sore body from sleeping on the playa or biking all week? This playshop will hit all the right points & leave you in sheer body bliss.", 
+        "slug": "body-bliss-the-lazy-way", 
+        "title": "Body Bliss the Lazy Way", 
+        "url": "http://www.chakraliciouscamp.org/", 
         "year": {
             "id": 8, 
             "year": "2012"
@@ -8000,9 +8023,7 @@
             "name": "Root Society"
         }, 
         "id": 6511, 
-        "latitude": "", 
         "location": "Esplanade & 2:00", 
-        "longitude": "", 
         "matched_name": "Root Society", 
         "occurrence_set": [
             {
@@ -8029,9 +8050,7 @@
             "name": "Root Society"
         }, 
         "id": 8156, 
-        "latitude": "", 
         "location": "Esplanade & 2:00", 
-        "longitude": "", 
         "matched_name": "Root Society", 
         "occurrence_set": [
             {
@@ -8904,9 +8923,7 @@
             "name": "100'th Monkey Camp"
         }, 
         "id": 7299, 
-        "latitude": "", 
         "location": "Edelweiss & 9:45", 
-        "longitude": "", 
         "matched_name": "Laughing Monkey Camp", 
         "occurrence_set": [
             {
@@ -9236,6 +9253,35 @@
     {
         "all_day": false, 
         "check_location": false, 
+        "description": "This year is the FIRST year for a Burners Against Scalpers Group.It's time to high five each other and chill from the heat. Come play and visit a bit at the on Playa meet and greet. This will be a time to just chill in the shade and visit with people from our group,community, people walking by or just to that cuttie over there (that's me haha). A layed back place to get your social butterfly going and get out of the heat. I will be pulling people on skies behind my art boat before this is all over. Come over and visit us and let's relax and congregate together.\r\n\r\nI do need some help from you all on here. No money needed but I will ask this, since I do not have it in the budget for mass booze (some booze just not a mass) and beer, I must ask that you bring your cup and whatever you have laying around your camp that will get you off and that you are willing to share with you friend here at the Burners Against Scalpers Party. If you have extra, and want to donate to this on playa event, just bring it to the meet and greet and we can mix it into something. Also if anyone wants to help plan this and kick it off, I welcome ideas and more ideas. I am not the best planner of events so please give your ideas and maybe your help setting up or planning or what ever...see you all there.", 
+        "hosted_by_camp": {
+            "id": 4345, 
+            "name": "Titicaca"
+        }, 
+        "id": 8202, 
+        "latitude": "40.776545", 
+        "location": "Dandelion & 4:15", 
+        "longitude": "-119.204256", 
+        "matched_name": "Titicaca", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-29 18:30:00", 
+                "start_time": "2012-08-29 15:00:00"
+            }
+        ], 
+        "other_location": "4:17ish Dandelion", 
+        "print_description": "This year is the FIRST year for a Burners Against Scalpers Group.It's time to high five each other and chill from the heat. Come play and visit a bit.", 
+        "slug": "burners-against-scalpers-meet-greet", 
+        "title": "BURNERS AGAINST SCALPERS MEET & GREET", 
+        "url": "http://www.facebook.com/BurnersAgainstScalpers", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
         "description": "Bring your wifi capable device to the 2-6 o'clock side of the playa to tap into\u00a0BwBNet, an intra-playa wifi network (not connected to the default www) where you can access valuable BM info/maps and stay connected with friends and projects going on around BRC. The creator of\u00a0BwB Net\u00a0will host Q&A salon sessions Tuesday and Thursday from 1-2pm. afterward, from 2-3pm,\u00a0BwB\u00a0will host a general Q&A where you can learn about\u00a0BwB's mission,current projects around the world, andhow to get involved or set up a\u00a0BwB\u00a0chapter in your hometown. While you're here, enjoy our live music stage and have a piece of your lovely outfit (really, you look just gorgeous) extra-snazzified at our daily live screen-printing booth.", 
         "hosted_by_camp": {
             "id": 4979, 
@@ -9516,35 +9562,6 @@
     {
         "all_day": false, 
         "check_location": false, 
-        "description": "Every year the Burning Nerds gather to talk research, policy, and the future of deep thought at Black Rock City.  Join us this year at Ashram Galactica, the finest hotel in Black Rock City, where we will build a 15 foot Ivory Tower that represents our academic aspirations. Built from scrap lumber and constructed by nerds, we will then burn the tower at the end of the mixer.  Join us for the construction and the destruction. And email us if you want to help.", 
-        "hosted_by_camp": {
-            "id": 4728, 
-            "name": "Ashram Galactica"
-        }, 
-        "id": 7944, 
-        "latitude": "40.790378", 
-        "location": "Edelweiss & 8:15", 
-        "longitude": "-119.219430", 
-        "matched_name": "Ashram Galactica", 
-        "occurrence_set": [
-            {
-                "end_time": "2012-08-31 17:00:00", 
-                "start_time": "2012-08-31 14:30:00"
-            }
-        ], 
-        "other_location": "", 
-        "print_description": "Join the Nerds: meet researchers, talk theory and build something. This year we will construct a 15 foot Ivory Tower that we will burn at event's end", 
-        "slug": "burning-nerds-mixer", 
-        "title": "Burning Nerds Mixer", 
-        "url": "http://www.facebook.com/pages/Burning-Nerds/155945874442738", 
-        "year": {
-            "id": 8, 
-            "year": "2012"
-        }
-    }, 
-    {
-        "all_day": false, 
-        "check_location": false, 
         "description": "Join the nerds of Burning Man to celebrate the Census, on-playa research and a love of the brain. Nerds of all types welcome.", 
         "hosted_by_camp": {
             "id": 4728, 
@@ -9563,6 +9580,35 @@
         ], 
         "other_location": "", 
         "print_description": "Join the nerds of Burning Man to celebrate the Census, on-playa research and a love of the brain. Nerds of all types welcome.", 
+        "slug": "burning-nerds-mixer", 
+        "title": "Burning Nerds Mixer", 
+        "url": "http://www.facebook.com/pages/Burning-Nerds/155945874442738", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
+        "description": "Every year the Burning Nerds gather to talk research, policy, and the future of deep thought at Black Rock City.  Join us this year at Ashram Galactica, the finest hotel in Black Rock City, where we will build a 15 foot Ivory Tower that represents our academic aspirations. Built from scrap lumber and constructed by nerds, we will then burn the tower at the end of the mixer.  Join us for the construction and the destruction. And email us if you want to help.", 
+        "hosted_by_camp": {
+            "id": 4728, 
+            "name": "Ashram Galactica"
+        }, 
+        "id": 7944, 
+        "latitude": "40.790378", 
+        "location": "Edelweiss & 8:15", 
+        "longitude": "-119.219430", 
+        "matched_name": "Ashram Galactica", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-31 17:00:00", 
+                "start_time": "2012-08-31 14:30:00"
+            }
+        ], 
+        "other_location": "", 
+        "print_description": "Join the Nerds: meet researchers, talk theory and build something. This year we will construct a 15 foot Ivory Tower that we will burn at event's end", 
         "slug": "burning-nerds-mixer", 
         "title": "Burning Nerds Mixer", 
         "url": "http://www.facebook.com/pages/Burning-Nerds/155945874442738", 
@@ -10929,7 +10975,7 @@
                 "start_time": "2012-08-31 06:00:00"
             }
         ], 
-        "other_location": "around CCC somewhere", 
+        "other_location": "6 & Dandelion", 
         "print_description": "Join DJ mash @ the BuzzInn for a swarm of warm & chill beats.  RamonaMayhem beequeaths you with hot honey'd herbal teal. Leave your stingers behind...", 
         "slug": "chillout-set-sunrise", 
         "title": "ChillOut Set @ Sunrise", 
@@ -11020,6 +11066,35 @@
         "print_description": "It\u2019s that most wonderful time of the year, Christmas! We invite all Naughty and Nice boys and girls to come celebrate with us! Happy Holidays.", 
         "slug": "christmas-in-paradise", 
         "title": "Christmas in Paradise", 
+        "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": true, 
+        "check_location": false, 
+        "description": "We are celebrating Christmas at home this year, and we want you to join us! Come for some christmas candy and caroling and stay for the Santa Dance Party and Parade.  We are teaming up with two other Santa camps to spread christmas love and joy around the playa. \r\n Good cheer will most certainly abound.\r\nMerry Christmas, y'all!", 
+        "hosted_by_camp": {
+            "id": 4741, 
+            "name": "C.R.T.T."
+        }, 
+        "id": 8197, 
+        "latitude": "40.785183", 
+        "location": "Esplanade & 7:15", 
+        "longitude": "-119.215361", 
+        "matched_name": "C.R.T.T.", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-29 23:59:00", 
+                "start_time": "2012-08-29 00:00:00"
+            }
+        ], 
+        "other_location": "7:30 and Esplanade", 
+        "print_description": "We r celebrating xmas at home this year; join us 4 Xmas candy and caroling and stay for our Santa Dance Party and Parade.", 
+        "slug": "christmas-on-the-playaill-be-home-for-christmas", 
+        "title": "Christmas on the Playa/I'll Be Home For Christmas", 
         "url": "", 
         "year": {
             "id": 8, 
@@ -11506,6 +11581,134 @@
         "print_description": "Trying to piece together your night or looking for an honest ear to listen to your adventures? Stop by for coffee, aspirin, chai, & some tough love.", 
         "slug": "coffee-asprin", 
         "title": "Coffee & Asprin", 
+        "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": true, 
+        "check_location": false, 
+        "description": "Start your morning (or walk of shame home from last night) with some hot, dusty coffee and some... well, interesting yet profound advice from the oldest, wisest, and, perhaps, drunkest ladies on the Playa. \r\n Just like sweet ol nanna used to do, in our purdiest of muu-muus and with our (sometimes) sweet and (occasionally) lucid words of advice, we will make even the ugliest of situations seem like it's going to be OK.", 
+        "hosted_by_camp": {
+            "id": 4741, 
+            "name": "C.R.T.T."
+        }, 
+        "id": 8199, 
+        "latitude": "40.785183", 
+        "location": "Esplanade & 7:15", 
+        "longitude": "-119.215361", 
+        "matched_name": "C.R.T.T.", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-27 23:59:00", 
+                "start_time": "2012-08-27 00:00:00"
+            }
+        ], 
+        "other_location": "7:30 and Esplanade", 
+        "print_description": "Start your mornings off right with some hot coffee and... well, interesting advice from the oldest, wisest, and, perhaps, drunkest ladies on the Playa", 
+        "slug": "coffee-with-advice-ladies", 
+        "title": " Coffee with Advice Ladies", 
+        "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
+        "description": "Start your morning (or walk of shame home from last night) with some hot, dusty coffee and some... well, interesting yet profound advice from the oldest, wisest, and, perhaps, drunkest, mu-mu clad ladies on the Playa. \r\n Just like sweet ol nanna used to do, in our purdiest of muu-muus and with our (sometimes) sweet and (occasionally) lucid words of advice, we will make even the ugliest of situations seem like it's going to be OK.", 
+        "hosted_by_camp": {
+            "id": 4741, 
+            "name": "C.R.T.T."
+        }, 
+        "id": 8200, 
+        "latitude": "40.785183", 
+        "location": "Esplanade & 7:15", 
+        "longitude": "-119.215361", 
+        "matched_name": "C.R.T.T.", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-28 11:00:00", 
+                "start_time": "2012-08-28 09:00:00"
+            }
+        ], 
+        "other_location": "7:30 and Esplanade", 
+        "print_description": "Start your morning with coffee and... well, interesting, advice from the oldest, wisest, and, perhaps, drunkest, mu-mu clad ladies on the the Playa.", 
+        "slug": "coffee-with-advice-ladies", 
+        "title": "Coffee with Advice Ladies", 
+        "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
+        "description": "Start your morning (or walk of shame home from last night) with some hot, dusty coffee and some... well, interesting yet profound advice from the oldest, wisest, and, perhaps, drunkest mu-mu clad ladies on the Playa. \r\n Just like sweet ol nanna used to do, in our purdiest of housecoats and with our (sometimes) sweet and (occasionally) lucid words of advice, we will make even the ugliest of situations seem like it's going to be OK.", 
+        "hosted_by_camp": {
+            "id": 4741, 
+            "name": "C.R.T.T."
+        }, 
+        "id": 8201, 
+        "latitude": "40.785183", 
+        "location": "Esplanade & 7:15", 
+        "longitude": "-119.215361", 
+        "matched_name": "C.R.T.T.", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-29 10:00:00", 
+                "start_time": "2012-08-29 09:00:00"
+            }
+        ], 
+        "other_location": "7:30 and Esplanade", 
+        "print_description": "Start your morning off with some coffee and, well, interesting advice from the oldest, wisest, and, perhaps, drunkest mu-mu clad ladies on the playa.", 
+        "slug": "coffee-with-advice-ladies", 
+        "title": "Coffee with Advice Ladies", 
+        "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
+        "description": "Start your morning (or walk of shame home from last night) with some hot, dusty coffee and some... well, interesting yet profound advice from the oldest, wisest, and, perhaps, drunkest muumuu-clad ladies on the Playa. \r\n Just like beloved nanna (God rest her soul) used to do, in our purdiest of housecoats and with our (sometimes) sweet and (occasionally) lucid words of advice, we will make even the ugliest of situations seem like it's going to be OK.", 
+        "hosted_by_camp": {
+            "id": 4741, 
+            "name": "C.R.T.T."
+        }, 
+        "id": 8213, 
+        "latitude": "40.785183", 
+        "location": "Esplanade & 7:15", 
+        "longitude": "-119.215361", 
+        "matched_name": "C.R.T.T.", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-27 11:00:00", 
+                "start_time": "2012-08-27 09:00:00"
+            }, 
+            {
+                "end_time": "2012-08-28 11:00:00", 
+                "start_time": "2012-08-28 09:00:00"
+            }, 
+            {
+                "end_time": "2012-08-29 11:00:00", 
+                "start_time": "2012-08-29 09:00:00"
+            }, 
+            {
+                "end_time": "2012-08-30 11:00:00", 
+                "start_time": "2012-08-30 09:00:00"
+            }
+        ], 
+        "other_location": "7:30 and Esplanade", 
+        "print_description": "Start your morning with coffee and some... well, interesting advice from the oldest, wisest, and perhaps, drunkest muumuu-clad ladies on the playa", 
+        "slug": "coffee-with-advice-ladies", 
+        "title": "Coffee with Advice Ladies", 
         "url": "", 
         "year": {
             "id": 8, 
@@ -12007,64 +12210,6 @@
         }
     }, 
     {
-        "all_day": false, 
-        "check_location": false, 
-        "description": "What is the thing that you would least like to tell a group of strangers?  Bring your answer to our shame-busting circle.", 
-        "hosted_by_camp": {
-            "id": 4296, 
-            "name": "Camp Contact & AuthentiCamp"
-        }, 
-        "id": 6149, 
-        "latitude": "40.781931", 
-        "location": "w/in Nectar Village  ", 
-        "longitude": "-119.219022", 
-        "matched_name": "Camp Contact & AuthentiCamp", 
-        "occurrence_set": [
-            {
-                "end_time": "2012-08-30 11:00:00", 
-                "start_time": "2012-08-30 09:30:00"
-            }
-        ], 
-        "other_location": "", 
-        "print_description": "What is the thing that you would least like to tell a group of strangers?  Bring your answer to our shame-busting circle.", 
-        "slug": "confessional", 
-        "title": "Confessional", 
-        "url": "http://burningman.campcontact.org/", 
-        "year": {
-            "id": 8, 
-            "year": "2012"
-        }
-    }, 
-    {
-        "all_day": false, 
-        "check_location": true, 
-        "description": "Confess!  Forgive me, Playa, for I have sinned.  Come atone your wrongdoings and scrub your conscience clean.  Our heathen priestess is here for you!", 
-        "hosted_by_camp": {
-            "id": 4782, 
-            "name": "Amazecamp"
-        }, 
-        "id": 6807, 
-        "latitude": "40.775479", 
-        "location": "Foxglove & 4:45", 
-        "longitude": "-119.207551", 
-        "matched_name": "Amazecamp", 
-        "occurrence_set": [
-            {
-                "end_time": "2012-09-02 12:00:00", 
-                "start_time": "2012-09-02 10:00:00"
-            }
-        ], 
-        "other_location": "Amazecamp", 
-        "print_description": "Confess! Forgive me, Playa, for I have sinned. Come atone your wrongdoings and scrub your conscience clean.  Our heathen priestess is here for you!", 
-        "slug": "confessional", 
-        "title": "Confessional", 
-        "url": "", 
-        "year": {
-            "id": 8, 
-            "year": "2012"
-        }
-    }, 
-    {
         "all_day": true, 
         "check_location": true, 
         "description": "Open day & night to those in need.  Looking for Priests, Jewish Mothers, and Lay Persons to hear confessions as well as those wishing to confess", 
@@ -12108,6 +12253,64 @@
         "slug": "confessional", 
         "title": "Confessional", 
         "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": true, 
+        "description": "Confess!  Forgive me, Playa, for I have sinned.  Come atone your wrongdoings and scrub your conscience clean.  Our heathen priestess is here for you!", 
+        "hosted_by_camp": {
+            "id": 4782, 
+            "name": "Amazecamp"
+        }, 
+        "id": 6807, 
+        "latitude": "40.775479", 
+        "location": "Foxglove & 4:45", 
+        "longitude": "-119.207551", 
+        "matched_name": "Amazecamp", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-09-02 12:00:00", 
+                "start_time": "2012-09-02 10:00:00"
+            }
+        ], 
+        "other_location": "Amazecamp", 
+        "print_description": "Confess! Forgive me, Playa, for I have sinned. Come atone your wrongdoings and scrub your conscience clean.  Our heathen priestess is here for you!", 
+        "slug": "confessional", 
+        "title": "Confessional", 
+        "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
+        "description": "What is the thing that you would least like to tell a group of strangers?  Bring your answer to our shame-busting circle.", 
+        "hosted_by_camp": {
+            "id": 4296, 
+            "name": "Camp Contact & AuthentiCamp"
+        }, 
+        "id": 6149, 
+        "latitude": "40.781931", 
+        "location": "w/in Nectar Village  ", 
+        "longitude": "-119.219022", 
+        "matched_name": "Camp Contact & AuthentiCamp", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-30 11:00:00", 
+                "start_time": "2012-08-30 09:30:00"
+            }
+        ], 
+        "other_location": "", 
+        "print_description": "What is the thing that you would least like to tell a group of strangers?  Bring your answer to our shame-busting circle.", 
+        "slug": "confessional", 
+        "title": "Confessional", 
+        "url": "http://burningman.campcontact.org/", 
         "year": {
             "id": 8, 
             "year": "2012"
@@ -12448,59 +12651,6 @@
             "id": 4296, 
             "name": "Camp Contact & AuthentiCamp"
         }, 
-        "id": 6305, 
-        "latitude": "40.781931", 
-        "location": "w/in Nectar Village  ", 
-        "longitude": "-119.219022", 
-        "matched_name": "Camp Contact & AuthentiCamp", 
-        "occurrence_set": [
-            {
-                "end_time": "2012-08-27 15:00:00", 
-                "start_time": "2012-08-27 13:30:00"
-            }, 
-            {
-                "end_time": "2012-08-28 15:00:00", 
-                "start_time": "2012-08-28 13:30:00"
-            }, 
-            {
-                "end_time": "2012-08-29 15:00:00", 
-                "start_time": "2012-08-29 13:30:00"
-            }, 
-            {
-                "end_time": "2012-08-30 15:00:00", 
-                "start_time": "2012-08-30 13:30:00"
-            }, 
-            {
-                "end_time": "2012-08-31 15:00:00", 
-                "start_time": "2012-08-31 13:30:00"
-            }, 
-            {
-                "end_time": "2012-09-01 15:00:00", 
-                "start_time": "2012-09-01 13:30:00"
-            }, 
-            {
-                "end_time": "2012-09-02 15:00:00", 
-                "start_time": "2012-09-02 13:30:00"
-            }
-        ], 
-        "other_location": "", 
-        "print_description": "Everything you need to know to engage in that seductive, connecting, and transformative movement practice that is Contact Improv Dance.", 
-        "slug": "contact-improvisation-dance-fundamentals-class", 
-        "title": "Contact Improvisation Dance Fundamentals Class", 
-        "url": "http://burningman.campcontact.org/", 
-        "year": {
-            "id": 8, 
-            "year": "2012"
-        }
-    }, 
-    {
-        "all_day": false, 
-        "check_location": false, 
-        "description": "Everything you need to know to engage in that seductive, connecting, and transformative movement practice that is Contact Improv Dance.", 
-        "hosted_by_camp": {
-            "id": 4296, 
-            "name": "Camp Contact & AuthentiCamp"
-        }, 
         "id": 6308, 
         "latitude": "40.781931", 
         "location": "w/in Nectar Village  ", 
@@ -12534,6 +12684,59 @@
             {
                 "end_time": "2012-09-02 16:30:00", 
                 "start_time": "2012-09-02 15:00:00"
+            }
+        ], 
+        "other_location": "", 
+        "print_description": "Everything you need to know to engage in that seductive, connecting, and transformative movement practice that is Contact Improv Dance.", 
+        "slug": "contact-improvisation-dance-fundamentals-class", 
+        "title": "Contact Improvisation Dance Fundamentals Class", 
+        "url": "http://burningman.campcontact.org/", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
+        "description": "Everything you need to know to engage in that seductive, connecting, and transformative movement practice that is Contact Improv Dance.", 
+        "hosted_by_camp": {
+            "id": 4296, 
+            "name": "Camp Contact & AuthentiCamp"
+        }, 
+        "id": 6305, 
+        "latitude": "40.781931", 
+        "location": "w/in Nectar Village  ", 
+        "longitude": "-119.219022", 
+        "matched_name": "Camp Contact & AuthentiCamp", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-27 15:00:00", 
+                "start_time": "2012-08-27 13:30:00"
+            }, 
+            {
+                "end_time": "2012-08-28 15:00:00", 
+                "start_time": "2012-08-28 13:30:00"
+            }, 
+            {
+                "end_time": "2012-08-29 15:00:00", 
+                "start_time": "2012-08-29 13:30:00"
+            }, 
+            {
+                "end_time": "2012-08-30 15:00:00", 
+                "start_time": "2012-08-30 13:30:00"
+            }, 
+            {
+                "end_time": "2012-08-31 15:00:00", 
+                "start_time": "2012-08-31 13:30:00"
+            }, 
+            {
+                "end_time": "2012-09-01 15:00:00", 
+                "start_time": "2012-09-01 13:30:00"
+            }, 
+            {
+                "end_time": "2012-09-02 15:00:00", 
+                "start_time": "2012-09-02 13:30:00"
             }
         ], 
         "other_location": "", 
@@ -14402,6 +14605,35 @@
     }, 
     {
         "all_day": false, 
+        "check_location": true, 
+        "description": "A black man\u2019s perspective to dancing on the playa. We\u2019ll start with fundamentals of rhythm and dance then move to the very basics of salsa and swing. Once you get enough to handle yourself at the next wedding or street festival, we\u2019ll settle into playa freestyle. Freestyle begins with FUNK! Learn to understand where most Electronic Dance Music (EDM) finds its roots. Find the moves that suit you. Don\u2019t just pass by the sound camps, PARTICIPATE! Birgins and seasoned Burners welcome.\r\n\r\nLocated in the Illumilodie Lazer Dome @ Silicon Village", 
+        "hosted_by_camp": {
+            "id": 4571, 
+            "name": "Silicon Village"
+        }, 
+        "id": 8205, 
+        "latitude": "40.779168", 
+        "location": "Dandelion & 6:00", 
+        "longitude": "-119.216859", 
+        "matched_name": "Silicon Village", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-28 17:00:00", 
+                "start_time": "2012-08-28 15:00:00"
+            }
+        ], 
+        "other_location": "Illumelodie Dome", 
+        "print_description": "A black man\u2019s perspective to dancing on the playa. Learn to appreciate and participate with rhythm and dance on the playa. Not a spectactor sport!", 
+        "slug": "dancing-with-the-art-cars", 
+        "title": "Dancing With the Art Cars", 
+        "url": "http://www.siliconvillageburners.org/", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
         "check_location": false, 
         "description": "Ladies, come into our specially air conditioned art workshop and let one of our talented and fun artists turn your beautiful body into a canvas for a live expression of the female form as art. Enjoy cold drinks and snacks while you are transformed! Then hit the Critical Tits parade and share your art with the community. First come first served, space very limited.", 
         "hosted_by_camp": {
@@ -15083,9 +15315,7 @@
             "name": "Synesthesia"
         }, 
         "id": 7079, 
-        "latitude": "", 
         "location": "2:00 & Alyssum", 
-        "longitude": "", 
         "matched_name": "Synesthesia", 
         "occurrence_set": [
             {
@@ -15334,9 +15564,7 @@
             "name": "Mushroom Forest Disc Golf"
         }, 
         "id": 6615, 
-        "latitude": "", 
         "location": "2:00 & Iris", 
-        "longitude": "", 
         "matched_name": "Mushroom Forest Disc Golf", 
         "occurrence_set": [
             {
@@ -15970,7 +16198,7 @@
     {
         "all_day": false, 
         "check_location": true, 
-        "description": "Come join us daily and open the dHive bar with hot-house DJ drone & beetender RamonaMayhem. \r\n \r\nWe'll Flash Mob to creative trickster Max Laman's \"Do the Honeybee\" at 2pm stinger sharp! (You-Tube it for tune & dance pre-playa practice:\r\n  http://www.youtube.com/watch?v=DpyY9_9y9Qw&feature=youtube_gdata_player) Wear your finest faux fleur, black & gold Beetire, wings optional.  Antennae furnished upon request while supplies last. After the two minute Flash-dance, we invite you fresh live beEts by DJ Drone and to enjoy honey sweetened peppermint mate and lemon flavored ice water in our sweet lil speakbeezy.  \r\n\r\nOne award daily to best HoneyBee.  >'='<\r\nBee the change!\r\n(p.s.  It is our bHumble hope we'll have over 100 bees dancing when when we open Friday!!)", 
+        "description": "Come join us daily and open the dHive bar with hot-house DJ drone & beetender RamonaMayhem. \r\n \r\nWe'll Flash Mob to creative trickster Max Laman's \"Do the Honeybee\" at 2pm stinger sharp! (You-Tube it for tune & dance pre-playa practice:\r\n  http://www.youtube.com/watch?v=DpyY9_9y9Qw&feature=youtube_gdata_player) Wear your finest faux fleur, black & gold Beetire, wings optional.  Antennae furnished upon request while supplies last. After the two minute Flash-dance, we invite you fresh live beEts by DJ Drone and to enjoy honey sweetened peppermint mate and lemon flavored ice water in our sweet lil speakbeezy.  \r\n\r\nOne award daily to best HoneyBee.  >'='<\r\nBee the change!\r\n(p.s.  It is our bHumble hope we'll have over 100 bees dancing when when we open Wednesday!!)", 
         "hosted_by_camp": {
             "id": 4571, 
             "name": "Silicon Village"
@@ -16002,7 +16230,7 @@
                 "start_time": "2012-08-31 13:45:00"
             }
         ], 
-        "other_location": "Somewhere near CCC", 
+        "other_location": "6 & Dandelion", 
         "print_description": "Do the waggle dance @ the BuzzInn each day opening the dHive bar.  Pre-playa song/video queue: \"Do the Honey Bee\" Beetire required, wings optional!", 
         "slug": "do-the-honeybee-flash-mob", 
         "title": "Do the Honeybee Flash Mob!", 
@@ -16607,9 +16835,7 @@
             "name": "100'th Monkey Camp"
         }, 
         "id": 6451, 
-        "latitude": "", 
         "location": "Edelweiss & 9:45", 
-        "longitude": "", 
         "matched_name": "Laughing Monkey Camp", 
         "occurrence_set": [
             {
@@ -17685,15 +17911,15 @@
             "id": 4609, 
             "name": "PO9 Village"
         }, 
-        "id": 6316, 
+        "id": 6330, 
         "latitude": "40.792755", 
         "location": "9:00 Plaza @ 6:00", 
         "longitude": "-119.214643", 
         "matched_name": "PO9 Village", 
         "occurrence_set": [
             {
-                "end_time": "2012-08-28 16:30:00", 
-                "start_time": "2012-08-28 13:00:00"
+                "end_time": "2012-08-30 14:00:00", 
+                "start_time": "2012-08-30 12:00:00"
             }
         ], 
         "other_location": "at Eurotache, part of the PO9 Village", 
@@ -17714,15 +17940,15 @@
             "id": 4609, 
             "name": "PO9 Village"
         }, 
-        "id": 6330, 
+        "id": 6316, 
         "latitude": "40.792755", 
         "location": "9:00 Plaza @ 6:00", 
         "longitude": "-119.214643", 
         "matched_name": "PO9 Village", 
         "occurrence_set": [
             {
-                "end_time": "2012-08-30 14:00:00", 
-                "start_time": "2012-08-30 12:00:00"
+                "end_time": "2012-08-28 16:30:00", 
+                "start_time": "2012-08-28 13:00:00"
             }
         ], 
         "other_location": "at Eurotache, part of the PO9 Village", 
@@ -18048,6 +18274,35 @@
         "slug": "experimental-open-mic-full-solar-salvation", 
         "title": "Experimental Open Mic + Full Solar Salvation", 
         "url": "http://ftb-brc.org/", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
+        "description": "It's not just a Bay Area thing - people everywhere are intentionally constructing romantic relationships that don't conform to the \"monogamous\" cultural norm. Join a conversation led by regular people -- not \"experts\", just practitioners -- about exploring and navigating open relationships in the modern world.", 
+        "hosted_by_camp": {
+            "id": 4500, 
+            "name": "Chakralicious Camp"
+        }, 
+        "id": 8236, 
+        "latitude": "40.776591", 
+        "location": "Dandelion & 4:45", 
+        "longitude": "-119.208762", 
+        "matched_name": "Chakralicious Camp", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-31 17:30:00", 
+                "start_time": "2012-08-31 16:00:00"
+            }
+        ], 
+        "other_location": "Stage Dome", 
+        "print_description": "Exploring Open Relationships", 
+        "slug": "exploring-open-relationships", 
+        "title": "Exploring Open Relationships", 
+        "url": "http://www.chakraliciouscamp.org/", 
         "year": {
             "id": 8, 
             "year": "2012"
@@ -18518,6 +18773,35 @@
         "slug": "female-circle-jerk-aka-oval-ascension", 
         "title": "Female Circle Jerk aka Oval Ascension ", 
         "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
+        "description": "Amrita. Divine waters. Female ejaculation. Come to learn more about this phenomenon, as well as a few techniques for helping your lover to experience it for herself. There will be a short demo at the end by the workshop's leaders.", 
+        "hosted_by_camp": {
+            "id": 4500, 
+            "name": "Chakralicious Camp"
+        }, 
+        "id": 8235, 
+        "latitude": "40.776591", 
+        "location": "Dandelion & 4:45", 
+        "longitude": "-119.208762", 
+        "matched_name": "Chakralicious Camp", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-30 15:30:00", 
+                "start_time": "2012-08-30 14:00:00"
+            }
+        ], 
+        "other_location": "Temple Dome", 
+        "print_description": "Amrita. Divine waters. Come to learn more about this phenomenon, as well as a few techniques for helping your lover to experience it for herself.", 
+        "slug": "female-ejaculation-for-lovers", 
+        "title": "Female Ejaculation for Lovers", 
+        "url": "http://www.chakraliciouscamp.org/", 
         "year": {
             "id": 8, 
             "year": "2012"
@@ -19459,9 +19743,7 @@
             "name": "100'th Monkey Camp"
         }, 
         "id": 6463, 
-        "latitude": "", 
         "location": "Edelweiss & 9:45", 
-        "longitude": "", 
         "matched_name": "Laughing Monkey Camp", 
         "occurrence_set": [
             {
@@ -20652,6 +20934,10 @@
             "name": "GEO Dust II"
         }, 
         "id": 6360, 
+        "latitude": "40.776764", 
+        "location": "3:00 & Jasmine", 
+        "longitude": "-119.194014", 
+        "matched_name": "Geodesia", 
         "occurrence_set": [
             {
                 "end_time": "2012-09-01 19:00:00", 
@@ -20677,6 +20963,10 @@
             "name": "GEO Dust II"
         }, 
         "id": 6356, 
+        "latitude": "40.776764", 
+        "location": "3:00 & Jasmine", 
+        "longitude": "-119.194014", 
+        "matched_name": "Geodesia", 
         "occurrence_set": [
             {
                 "end_time": "2012-08-29 16:30:00", 
@@ -20869,7 +21159,7 @@
         "print_description": "Feeling blocked? Learn EFT Energy Meridian Tapping to release blocks & let your life force flow. Side effects may include increased joy & resiliency.", 
         "slug": "get-unstuck-with-eft-tapping", 
         "title": "Get Unstuck with EFT Tapping", 
-        "url": "http://www.oceandrops.org/", 
+        "url": "http://www.joyfulcommunicationeft.com/", 
         "year": {
             "id": 8, 
             "year": "2012"
@@ -21102,6 +21392,35 @@
         "slug": "glamcocks-where-the-wild-things-are-sunset-party", 
         "title": "GLAMCOCKS: Where the Wild Things Are Sunset Party", 
         "url": "http://www.facebook.com/GlamCocks", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
+        "description": "Fertilize your inner glitter rocker, dance,strut and wiggle to the sounds of Bowie,T.Rex,Joan Jett,Roxy Music, Mott The Hoople, peppered with a little punk rock to measure!", 
+        "hosted_by_camp": {
+            "id": 4439, 
+            "name": "Tsunami Camp"
+        }, 
+        "id": 8198, 
+        "latitude": "40.779251", 
+        "location": "4:30 Portal  ", 
+        "longitude": "-119.205859", 
+        "matched_name": "Tsunami Camp", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-29 23:00:00", 
+                "start_time": "2012-08-29 21:00:00"
+            }
+        ], 
+        "other_location": "430 portal", 
+        "print_description": "Dance,strut and wiggle to the sounds of Bowie,T.Rex,Joan Jett,Roxy Music, Mott The Hoople, peppered with a little punk...", 
+        "slug": "glamglitterpunk-rock-dance", 
+        "title": "Glam/Glitter/Punk Rock dance!", 
+        "url": "", 
         "year": {
             "id": 8, 
             "year": "2012"
@@ -21991,9 +22310,7 @@
             "name": "Root Society"
         }, 
         "id": 7976, 
-        "latitude": "", 
         "location": "Esplanade & 2:00", 
-        "longitude": "", 
         "matched_name": "Root Society", 
         "occurrence_set": [
             {
@@ -22857,6 +23174,35 @@
     {
         "all_day": false, 
         "check_location": false, 
+        "description": "Learn simple techniques for head, neck and face massage.  Bring a partner or make a new friend. Bringing a towel is recommended.", 
+        "hosted_by_camp": {
+            "id": 4751, 
+            "name": "Super Friends"
+        }, 
+        "id": 8229, 
+        "latitude": "40.781045", 
+        "location": "2:30 & Edelweiss", 
+        "longitude": "-119.193851", 
+        "matched_name": "Super Friends", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-29 14:30:00", 
+                "start_time": "2012-08-29 13:00:00"
+            }
+        ], 
+        "other_location": "", 
+        "print_description": "Learn simple techniques for head, neck and face massage.  Bring a partner or make a new friend. Bringing a towel is recommended.", 
+        "slug": "head-neck-face-massage-class", 
+        "title": "Head, Neck & Face massage class", 
+        "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
         "description": "Come and enjoy massage, reiki, facials, foot rubs, acro-yoga, astrology, I-Ching, tarot readings, chakra toning, sound healing and relationship counseling for friends and couples.", 
         "hosted_by_camp": {
             "id": 4508, 
@@ -23188,10 +23534,10 @@
             "name": "Camp Here"
         }, 
         "id": 6630, 
-        "latitude": "40.779238", 
-        "location": "3:00 & Edelweiss", 
-        "longitude": "-119.196770", 
-        "matched_name": "Campo Alegre", 
+        "latitude": "40.797645", 
+        "location": "10:00 & Geranium", 
+        "longitude": "-119.210794", 
+        "matched_name": "Camp Charlie", 
         "occurrence_set": [
             {
                 "end_time": "2012-08-29 21:00:00", 
@@ -23217,9 +23563,7 @@
             "name": "Bayesian Conspiracy"
         }, 
         "id": 7011, 
-        "latitude": "", 
         "location": "w/in Playagon  ", 
-        "longitude": "", 
         "matched_name": "Bayesian Conspiracy", 
         "occurrence_set": [
             {
@@ -23246,9 +23590,7 @@
             "name": "Playagon"
         }, 
         "id": 8097, 
-        "latitude": "", 
         "location": "Edelweiss & 2:30", 
-        "longitude": "", 
         "matched_name": "Playagon", 
         "occurrence_set": [
             {
@@ -23579,6 +23921,43 @@
         "slug": "hoegarden-happy-hour", 
         "title": "HoeGarden Happy Hour", 
         "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": true, 
+        "description": "You'll want to smile, but if you do, don't say we didn't warn you. Line up solo or with your crew in front of quadruple barreled firing squad of air powered cannons. Get blasted with a kaleidoscopic array of non-toxic, water-based paint at non-painful speeds. Guaranteed to get full body spray and potential of rainbow colored teeth.", 
+        "hosted_by_camp": {
+            "id": 4981, 
+            "name": "Holi High Camp"
+        }, 
+        "id": 8208, 
+        "latitude": "40.778918", 
+        "location": "3:00 & Foxglove", 
+        "longitude": "-119.195951", 
+        "matched_name": "Holi High Camp", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-29 16:00:00", 
+                "start_time": "2012-08-29 12:00:00"
+            }, 
+            {
+                "end_time": "2012-08-30 16:00:00", 
+                "start_time": "2012-08-30 12:00:00"
+            }, 
+            {
+                "end_time": "2012-08-31 16:00:00", 
+                "start_time": "2012-08-31 12:00:00"
+            }
+        ], 
+        "other_location": "3:00 & F", 
+        "print_description": "Line up in front of 4 air powered paint cannons blasting a kaleidoscopic array of non-toxic, water-based paint. Guaranteed full body spray & potential", 
+        "slug": "holi-high-camp", 
+        "title": "Holi High Camp", 
+        "url": "http://www.holihighcamp.com/", 
         "year": {
             "id": 8, 
             "year": "2012"
@@ -23985,9 +24364,7 @@
             "name": "Homojitoville"
         }, 
         "id": 7055, 
-        "latitude": "", 
         "location": "Edelweiss & 8:45", 
-        "longitude": "", 
         "matched_name": "Homojitoville", 
         "occurrence_set": [
             {
@@ -24014,6 +24391,10 @@
             "name": "The Hive"
         }, 
         "id": 7837, 
+        "latitude": "40.782705", 
+        "location": "Esplanade & 2:30", 
+        "longitude": "-119.198885", 
+        "matched_name": "Hive, The", 
         "occurrence_set": [
             {
                 "end_time": "2012-08-28 23:00:00", 
@@ -24025,6 +24406,35 @@
         "slug": "honey-bar", 
         "title": "Honey Bar", 
         "url": "http://www.coveredinbees.info/", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
+        "description": "In its 6th year on the playa, Honey Dusted returns as one of the most anticipated gay parties at the burn. Friday night we reveal a transformed indoor/outdoor space with plenty of room for the dusty children to congregate: intimate dance floor, full moon fire spinning, fire cauldrons, black light courtyard garden, pop up cocktails, and other unexpected delights. Join us till dawn!\r\n\r\nDJ Lineup includes:\r\n   Space Otter\r\n   m*j*r -- [chaotic neutral]\r\n   char(7) -- [MentzerHaus]", 
+        "hosted_by_camp": {
+            "id": 4794, 
+            "name": "Comfort & Joy Village"
+        }, 
+        "id": 8227, 
+        "latitude": "40.786516", 
+        "location": "7:30 & Edelweiss", 
+        "longitude": "-119.220632", 
+        "matched_name": "Comfort & Joy Village", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-09-01 11:00:00", 
+                "start_time": "2012-08-31 23:00:00"
+            }
+        ], 
+        "other_location": "majorjohn", 
+        "print_description": "In its 6th year on the playa, Honey Dusted returns as one of the most anticipated gay parties at the burn.", 
+        "slug": "honey-dusted-6", 
+        "title": "Honey Dusted 6", 
+        "url": "http://www.facebook.com/events/448255325195919/", 
         "year": {
             "id": 8, 
             "year": "2012"
@@ -24705,9 +25115,7 @@
             "name": "Bat Country"
         }, 
         "id": 6489, 
-        "latitude": "", 
         "location": "Esplanade & 8:30", 
-        "longitude": "", 
         "matched_name": "Bat Country", 
         "occurrence_set": [
             {
@@ -25057,9 +25465,7 @@
             "name": "Playagon"
         }, 
         "id": 7508, 
-        "latitude": "", 
         "location": "Edelweiss & 2:30", 
-        "longitude": "", 
         "matched_name": "Playagon", 
         "occurrence_set": [
             {
@@ -26920,35 +27326,6 @@
             "id": 4296, 
             "name": "Camp Contact & AuthentiCamp"
         }, 
-        "id": 6227, 
-        "latitude": "40.781931", 
-        "location": "w/in Nectar Village  ", 
-        "longitude": "-119.219022", 
-        "matched_name": "Camp Contact & AuthentiCamp", 
-        "occurrence_set": [
-            {
-                "end_time": "2012-09-01 18:00:00", 
-                "start_time": "2012-09-01 16:30:00"
-            }
-        ], 
-        "other_location": "", 
-        "print_description": "The second highest concentration of nerve endings in our bodies is in our tongues. Experience the divine through saliva swapping.", 
-        "slug": "kissing-puja", 
-        "title": "Kissing Puja", 
-        "url": "", 
-        "year": {
-            "id": 8, 
-            "year": "2012"
-        }
-    }, 
-    {
-        "all_day": false, 
-        "check_location": false, 
-        "description": "The second highest concentration of nerve endings in our bodies is in our tongues. Experience the divine through saliva swapping.", 
-        "hosted_by_camp": {
-            "id": 4296, 
-            "name": "Camp Contact & AuthentiCamp"
-        }, 
         "id": 6229, 
         "latitude": "40.781931", 
         "location": "w/in Nectar Village  ", 
@@ -26965,6 +27342,35 @@
         "slug": "kissing-puja", 
         "title": "Kissing Puja", 
         "url": "http://burningman.campcontact.org/", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
+        "description": "The second highest concentration of nerve endings in our bodies is in our tongues. Experience the divine through saliva swapping.", 
+        "hosted_by_camp": {
+            "id": 4296, 
+            "name": "Camp Contact & AuthentiCamp"
+        }, 
+        "id": 6227, 
+        "latitude": "40.781931", 
+        "location": "w/in Nectar Village  ", 
+        "longitude": "-119.219022", 
+        "matched_name": "Camp Contact & AuthentiCamp", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-09-01 18:00:00", 
+                "start_time": "2012-09-01 16:30:00"
+            }
+        ], 
+        "other_location": "", 
+        "print_description": "The second highest concentration of nerve endings in our bodies is in our tongues. Experience the divine through saliva swapping.", 
+        "slug": "kissing-puja", 
+        "title": "Kissing Puja", 
+        "url": "", 
         "year": {
             "id": 8, 
             "year": "2012"
@@ -27241,6 +27647,35 @@
         "slug": "kundalini-yoga-and-the-ten-bodies", 
         "title": "Kundalini Yoga and the Ten Bodies", 
         "url": "http://www.chakraliciouscamp.org/", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
+        "description": "Learn practices and meditations from Kundalini Yoga to cultivate the intuitive mind.", 
+        "hosted_by_camp": {
+            "id": 4500, 
+            "name": "Chakralicious Camp"
+        }, 
+        "id": 8182, 
+        "latitude": "40.776591", 
+        "location": "Dandelion & 4:45", 
+        "longitude": "-119.208762", 
+        "matched_name": "Chakralicious Camp", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-28 10:30:00", 
+                "start_time": "2012-08-28 09:00:00"
+            }
+        ], 
+        "other_location": "Stage Dome", 
+        "print_description": "Learn practices and meditations from Kundalini Yoga to cultivate the intuitive mind.", 
+        "slug": "kundalini-yoga-cultivating-the-intuitive-mind", 
+        "title": "Kundalini Yoga: Cultivating the Intuitive Mind ", 
+        "url": "http://www.pranaworks.com/", 
         "year": {
             "id": 8, 
             "year": "2012"
@@ -28209,9 +28644,7 @@
             "name": "Synesthesia"
         }, 
         "id": 7078, 
-        "latitude": "", 
         "location": "2:00 & Alyssum", 
-        "longitude": "", 
         "matched_name": "Synesthesia", 
         "occurrence_set": [
             {
@@ -28651,6 +29084,80 @@
     }, 
     {
         "all_day": false, 
+        "check_location": false, 
+        "description": "Real, live music from kick ass rockers. Thursday-Saturday, 4-7P & 9P-12A. \"Life is too damn short for crappy music.\"  Come dance your ass off with Greg and Doug, the organic jukebox duo from the Great White North.  These guys know rock: with a mental catalogue of over 3,000 tracks, they can move the crowd like Jagger.\r\n\r\nStar Star Roadhouse is a destination\u2026 a local joint for wayward Burners looking for something different.  Here you can catch a live show: classic rock, moody blues or bluegrass\u2026 a rare experience at Burning Man. The sound system will be modest: what you'd expect to find at a honky tonk venue with live music.  Shows will be twice daily from 4-7, and 9-midnight, with an occasional after hours exception. We will be collaborating with many promoters on playa to book a variety of live bands. Yoga & dance classes will also be offered.\r\n\r\nThe stage will be decked out in classic Americana and vintage California-Nevada highway stylings, with colorful lighting, a sun bleached facade, shaded dance floor and lounge area with comfortable seating. Billiards and darts provide additional play and other interactive games are in the plans.\r\n\r\nFor added excitement and a visually stunning art experience, Artist Jamie Vaida & Crew are building the Fertility Twin mutant vehicles with indirect LED lighting, flame effects, and audio. They will either be parked near the stage or out rocking the playa with classic tunes transporting participants physically and musically.\r\n\r\nWe believe that the live music experience is unique and often absent at Burning Man and \u201cStar Star Roadhouse\u201d would be thrilled to offer it to the community.", 
+        "hosted_by_camp": {
+            "id": 4938, 
+            "name": "Star Star Roadhouse @ Black Star Village"
+        }, 
+        "id": 7951, 
+        "latitude": "40.792214", 
+        "location": "8:30 & Edelweiss", 
+        "longitude": "-119.218265", 
+        "matched_name": "Star Star Roadhouse @ Black Star Village", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-30 19:00:00", 
+                "start_time": "2012-08-30 16:00:00"
+            }, 
+            {
+                "end_time": "2012-08-31 19:00:00", 
+                "start_time": "2012-08-31 16:00:00"
+            }, 
+            {
+                "end_time": "2012-09-01 19:00:00", 
+                "start_time": "2012-09-01 16:00:00"
+            }
+        ], 
+        "other_location": "", 
+        "print_description": "Real, live music from kick ass rockers. Dance your ass off Thursday-Saturday, 4-7P & 9P-12A. \"Life is too damn short for crappy music!\" 8:30 & E", 
+        "slug": "live-rock-music", 
+        "title": "LIVE ROCK MUSIC", 
+        "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
+        "description": "Real, live music from kick ass rockers. Thursday-Saturday, 4-7P & 9P-12A. \"Life is too damn short for crappy music.\"  Come dance your ass off with Greg and Doug, the organic jukebox duo from the Great White North.  These guys know rock: with a mental catalogue of over 3,000 tracks, they can move the crowd like Jagger.\r\n\r\nStar Star Roadhouse is a destination\u2026 a local joint for wayward Burners looking for something different.  Here you can catch a live show: classic rock, moody blues or bluegrass\u2026 a rare experience at Burning Man. The sound system will be modest: what you'd expect to find at a honky tonk venue with live music.  Shows will be twice daily from 4-7, and 9-midnight, with an occasional after hours exception. We will be collaborating with many promoters on playa to book a variety of live bands. Yoga & dance classes will also be offered.\r\n\r\nThe stage will be decked out in classic Americana and vintage California-Nevada highway stylings, with colorful lighting, a sun bleached facade, shaded dance floor and lounge area with comfortable seating. Billiards and darts provide additional play and other interactive games are in the plans.\r\n\r\nFor added excitement and a visually stunning art experience, Artist Jamie Vaida & Crew are building the Fertility Twin mutant vehicles with indirect LED lighting, flame effects, and audio. They will either be parked near the stage or out rocking the playa with classic tunes transporting participants physically and musically.\r\n\r\nWe believe that the live music experience is unique and often absent at Burning Man and \u201cStar Star Roadhouse\u201d would be thrilled to offer it to the community.", 
+        "hosted_by_camp": {
+            "id": 4938, 
+            "name": "Star Star Roadhouse @ Black Star Village"
+        }, 
+        "id": 7950, 
+        "latitude": "40.792214", 
+        "location": "8:30 & Edelweiss", 
+        "longitude": "-119.218265", 
+        "matched_name": "Star Star Roadhouse @ Black Star Village", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-30 00:00:00", 
+                "start_time": "2012-08-30 21:00:00"
+            }, 
+            {
+                "end_time": "2012-08-31 00:00:00", 
+                "start_time": "2012-08-31 21:00:00"
+            }, 
+            {
+                "end_time": "2012-09-01 00:00:00", 
+                "start_time": "2012-09-01 21:00:00"
+            }
+        ], 
+        "other_location": "8:30 & E", 
+        "print_description": "Real, live music from kick ass rockers. Dance your ass off Thursday-Saturday, 4-7P & 9P-12A. \"Life is too damn short for crappy music!\"", 
+        "slug": "live-rock-music", 
+        "title": "LIVE ROCK MUSIC", 
+        "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
         "check_location": true, 
         "description": "A cross pollinated Intro into Permaculture. Implementing ecologically and socially responsible practices, based on the intelligence of nature exhibited through the emergence of life. Lecture/Discussion from 11-12 in the SSV Main Hall, followed by interactive activity from 12-1 in a smaller more intimate space.", 
         "hosted_by_camp": {
@@ -29007,6 +29514,39 @@
     {
         "all_day": false, 
         "check_location": false, 
+        "description": "Early Burner Special!  Sunday, Tuesday & Thursday, 8-11PM.  Paddle up to the Tropical Treehouse & toast the evening with a Mai Thai or Virgin Thais in your own keepsake souvenir glow in the dark cup - the next best thing to bioluminescence.  The first 100 guests will also receive a sarong to help keep them toasty at night and protected from the sun in the day.  \r\nNo need to bring a cup, but bring your ID!  \r\nColumbine & 7:45\r\nSunday, Tuesday & Thursday, 8-11", 
+        "hosted_by_camp": {
+            "id": 4879, 
+            "name": "Tropical Treehouse"
+        }, 
+        "id": 8231, 
+        "latitude": "40.787795", 
+        "location": "Columbine & 7:45", 
+        "longitude": "40.787795", 
+        "matched_name": "Tropical Treehouse", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-28 23:00:00", 
+                "start_time": "2012-08-28 20:00:00"
+            }, 
+            {
+                "end_time": "2012-08-30 23:00:00", 
+                "start_time": "2012-08-30 20:00:00"
+            }
+        ], 
+        "other_location": "Columbine & 7:45", 
+        "print_description": "Early Burner Special!  Sunday, Tuesday & Thursday, 8-11PM.  Mai Thais, Virgin Thais, Sarongs & Souvenier cups.  Bring your ID!", 
+        "slug": "mai-thais-and-sarongs", 
+        "title": "Mai Thais and Sarongs!", 
+        "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
         "description": "Majinga the Magician and the Magique Bazaar present a show of illusion and comedy on at Camp Walter. Renew your sense of Wonder! From the fertile imagination of a fellow burner celebrating 14 continuous years at Black Rock City.", 
         "hosted_by_camp": {
             "id": 4547, 
@@ -29071,9 +29611,7 @@
             "name": "100'th Monkey Camp"
         }, 
         "id": 6447, 
-        "latitude": "", 
         "location": "Edelweiss & 9:45", 
-        "longitude": "", 
         "matched_name": "Laughing Monkey Camp", 
         "occurrence_set": [
             {
@@ -30121,8 +30659,8 @@
         "matched_name": "Chakralicious Camp", 
         "occurrence_set": [
             {
-                "end_time": "2012-08-28 13:30:00", 
-                "start_time": "2012-08-28 12:00:00"
+                "end_time": "2012-08-29 17:30:00", 
+                "start_time": "2012-08-29 16:00:00"
             }
         ], 
         "other_location": "Temple Dome", 
@@ -31301,15 +31839,15 @@
             "id": 4571, 
             "name": "Silicon Village"
         }, 
-        "id": 6187, 
+        "id": 6184, 
         "latitude": "40.779168", 
         "location": "Dandelion & 6:00", 
         "longitude": "-119.216859", 
         "matched_name": "Silicon Village", 
         "occurrence_set": [
             {
-                "end_time": "2012-08-30 10:00:00", 
-                "start_time": "2012-08-30 09:00:00"
+                "end_time": "2012-08-28 11:00:00", 
+                "start_time": "2012-08-28 10:00:00"
             }
         ], 
         "other_location": "BRC University at Silicon Village", 
@@ -31330,15 +31868,15 @@
             "id": 4571, 
             "name": "Silicon Village"
         }, 
-        "id": 6184, 
+        "id": 6187, 
         "latitude": "40.779168", 
         "location": "Dandelion & 6:00", 
         "longitude": "-119.216859", 
         "matched_name": "Silicon Village", 
         "occurrence_set": [
             {
-                "end_time": "2012-08-28 11:00:00", 
-                "start_time": "2012-08-28 10:00:00"
+                "end_time": "2012-08-30 10:00:00", 
+                "start_time": "2012-08-30 09:00:00"
             }
         ], 
         "other_location": "BRC University at Silicon Village", 
@@ -31559,6 +32097,64 @@
     {
         "all_day": false, 
         "check_location": false, 
+        "description": "We will experience the collective mind through our felt sensation, and bring a yin quality of awareness to the joints and bones of out unified SELF", 
+        "hosted_by_camp": {
+            "id": 4336, 
+            "name": "Sweaty Betty's Misting Parlor / Mon Salon"
+        }, 
+        "id": 8214, 
+        "latitude": "40.785119", 
+        "location": "Edelweiss & 7:15", 
+        "longitude": "-119.220430", 
+        "matched_name": "Sweaty Betty's Misting Parlor / Mon Salon", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-30 10:30:00", 
+                "start_time": "2012-08-30 09:00:00"
+            }
+        ], 
+        "other_location": "\u2022\u2022\u2022\u2022\u2022\u2022 7:15 & Edelweiss\u2022\u2022\u2022\u2022\u2022\u2022 ", 
+        "print_description": "We will experience the collective mind through our felt sensation, and bring a yin quality of awareness to the joints and bones of out unified SELF", 
+        "slug": "morpho-genetic-yin-yoga", 
+        "title": "Morpho-Genetic Yin Yoga", 
+        "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
+        "description": "We will experience the collective mind through our felt sensation, and bring a yin quality of awareness to the joints and bones of out unified SELF", 
+        "hosted_by_camp": {
+            "id": 4336, 
+            "name": "Sweaty Betty's Misting Parlor / Mon Salon"
+        }, 
+        "id": 8211, 
+        "latitude": "40.785119", 
+        "location": "Edelweiss & 7:15", 
+        "longitude": "-119.220430", 
+        "matched_name": "Sweaty Betty's Misting Parlor / Mon Salon", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-30 10:45:00", 
+                "start_time": "2012-08-30 09:00:00"
+            }
+        ], 
+        "other_location": "\u2022\u2022\u2022\u2022\u2022\u2022 7:15 & Edelweiss\u2022\u2022\u2022\u2022\u2022\u2022 ", 
+        "print_description": "We will experience the collective mind through our felt sensation, and bring a yin quality of awareness to the joints and bones of out unified SELF", 
+        "slug": "morpho-genetic-yin-yoga", 
+        "title": "Morpho-Genetic Yin Yoga", 
+        "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
         "description": "Move and groove to the rockin' soulful sounds of Motown with Iron Rose in the Big Red Pill. Let's get retro!", 
         "hosted_by_camp": {
             "id": 4369, 
@@ -31710,10 +32306,10 @@
             "name": "VegCamp"
         }, 
         "id": 6153, 
-        "latitude": "40.789673", 
-        "location": "w/in Snowflake Village  ", 
-        "longitude": "-119.220244", 
-        "matched_name": "Videogasm", 
+        "latitude": "40.775479", 
+        "location": "Foxglove & 4:45", 
+        "longitude": "-119.207551", 
+        "matched_name": "Amazecamp", 
         "occurrence_set": [
             {
                 "end_time": "2012-08-29 23:30:00", 
@@ -31739,10 +32335,10 @@
             "name": "VegCamp"
         }, 
         "id": 6168, 
-        "latitude": "40.789673", 
-        "location": "w/in Snowflake Village  ", 
-        "longitude": "-119.220244", 
-        "matched_name": "Videogasm", 
+        "latitude": "40.775479", 
+        "location": "Foxglove & 4:45", 
+        "longitude": "-119.207551", 
+        "matched_name": "Amazecamp", 
         "occurrence_set": [
             {
                 "end_time": "2012-09-01 01:15:00", 
@@ -31768,10 +32364,10 @@
             "name": "VegCamp"
         }, 
         "id": 6148, 
-        "latitude": "40.789673", 
-        "location": "w/in Snowflake Village  ", 
-        "longitude": "-119.220244", 
-        "matched_name": "Videogasm", 
+        "latitude": "40.775479", 
+        "location": "Foxglove & 4:45", 
+        "longitude": "-119.207551", 
+        "matched_name": "Amazecamp", 
         "occurrence_set": [
             {
                 "end_time": "2012-08-29 21:30:00", 
@@ -31797,10 +32393,10 @@
             "name": "VegCamp"
         }, 
         "id": 6145, 
-        "latitude": "40.789673", 
-        "location": "w/in Snowflake Village  ", 
-        "longitude": "-119.220244", 
-        "matched_name": "Videogasm", 
+        "latitude": "40.775479", 
+        "location": "Foxglove & 4:45", 
+        "longitude": "-119.207551", 
+        "matched_name": "Amazecamp", 
         "occurrence_set": [
             {
                 "end_time": "2012-08-29 01:45:00", 
@@ -31826,10 +32422,10 @@
             "name": "VegCamp"
         }, 
         "id": 6174, 
-        "latitude": "40.789673", 
-        "location": "w/in Snowflake Village  ", 
-        "longitude": "-119.220244", 
-        "matched_name": "Videogasm", 
+        "latitude": "40.775479", 
+        "location": "Foxglove & 4:45", 
+        "longitude": "-119.207551", 
+        "matched_name": "Amazecamp", 
         "occurrence_set": [
             {
                 "end_time": "2012-08-27 21:30:00", 
@@ -31859,10 +32455,10 @@
             "name": "VegCamp"
         }, 
         "id": 6165, 
-        "latitude": "40.789673", 
-        "location": "w/in Snowflake Village  ", 
-        "longitude": "-119.220244", 
-        "matched_name": "Videogasm", 
+        "latitude": "40.775479", 
+        "location": "Foxglove & 4:45", 
+        "longitude": "-119.207551", 
+        "matched_name": "Amazecamp", 
         "occurrence_set": [
             {
                 "end_time": "2012-08-31 00:45:00", 
@@ -31888,10 +32484,10 @@
             "name": "VegCamp"
         }, 
         "id": 6125, 
-        "latitude": "40.789673", 
-        "location": "w/in Snowflake Village  ", 
-        "longitude": "-119.220244", 
-        "matched_name": "Videogasm", 
+        "latitude": "40.775479", 
+        "location": "Foxglove & 4:45", 
+        "longitude": "-119.207551", 
+        "matched_name": "Amazecamp", 
         "occurrence_set": [
             {
                 "end_time": "2012-08-28 01:15:00", 
@@ -31917,10 +32513,10 @@
             "name": "VegCamp"
         }, 
         "id": 6799, 
-        "latitude": "40.789673", 
-        "location": "w/in Snowflake Village  ", 
-        "longitude": "-119.220244", 
-        "matched_name": "Videogasm", 
+        "latitude": "40.775479", 
+        "location": "Foxglove & 4:45", 
+        "longitude": "-119.207551", 
+        "matched_name": "Amazecamp", 
         "occurrence_set": [
             {
                 "end_time": "2012-08-30 22:00:00", 
@@ -31946,10 +32542,10 @@
             "name": "VegCamp"
         }, 
         "id": 6134, 
-        "latitude": "40.789673", 
-        "location": "w/in Snowflake Village  ", 
-        "longitude": "-119.220244", 
-        "matched_name": "Videogasm", 
+        "latitude": "40.775479", 
+        "location": "Foxglove & 4:45", 
+        "longitude": "-119.207551", 
+        "matched_name": "Amazecamp", 
         "occurrence_set": [
             {
                 "end_time": "2012-08-28 21:30:00", 
@@ -31975,10 +32571,10 @@
             "name": "VegCamp"
         }, 
         "id": 6163, 
-        "latitude": "40.789673", 
-        "location": "w/in Snowflake Village  ", 
-        "longitude": "-119.220244", 
-        "matched_name": "Videogasm", 
+        "latitude": "40.775479", 
+        "location": "Foxglove & 4:45", 
+        "longitude": "-119.207551", 
+        "matched_name": "Amazecamp", 
         "occurrence_set": [
             {
                 "end_time": "2012-08-30 23:30:00", 
@@ -32004,10 +32600,10 @@
             "name": "VegCamp"
         }, 
         "id": 6158, 
-        "latitude": "40.789673", 
-        "location": "w/in Snowflake Village  ", 
-        "longitude": "-119.220244", 
-        "matched_name": "Videogasm", 
+        "latitude": "40.775479", 
+        "location": "Foxglove & 4:45", 
+        "longitude": "-119.207551", 
+        "matched_name": "Amazecamp", 
         "occurrence_set": [
             {
                 "end_time": "2012-08-30 01:15:00", 
@@ -32033,10 +32629,10 @@
             "name": "VegCamp"
         }, 
         "id": 6124, 
-        "latitude": "40.789673", 
-        "location": "w/in Snowflake Village  ", 
-        "longitude": "-119.220244", 
-        "matched_name": "Videogasm", 
+        "latitude": "40.775479", 
+        "location": "Foxglove & 4:45", 
+        "longitude": "-119.207551", 
+        "matched_name": "Amazecamp", 
         "occurrence_set": [
             {
                 "end_time": "2012-08-27 23:30:00", 
@@ -32066,10 +32662,10 @@
             "name": "VegCamp"
         }, 
         "id": 6160, 
-        "latitude": "40.789673", 
-        "location": "w/in Snowflake Village  ", 
-        "longitude": "-119.220244", 
-        "matched_name": "Videogasm", 
+        "latitude": "40.775479", 
+        "location": "Foxglove & 4:45", 
+        "longitude": "-119.207551", 
+        "matched_name": "Amazecamp", 
         "occurrence_set": [
             {
                 "end_time": "2012-08-30 21:00:00", 
@@ -32095,10 +32691,10 @@
             "name": "VegCamp"
         }, 
         "id": 6142, 
-        "latitude": "40.789673", 
-        "location": "w/in Snowflake Village  ", 
-        "longitude": "-119.220244", 
-        "matched_name": "Videogasm", 
+        "latitude": "40.775479", 
+        "location": "Foxglove & 4:45", 
+        "longitude": "-119.207551", 
+        "matched_name": "Amazecamp", 
         "occurrence_set": [
             {
                 "end_time": "2012-08-29 00:00:00", 
@@ -32340,35 +32936,6 @@
     {
         "all_day": false, 
         "check_location": true, 
-        "description": "Learn to play a carpenter's saw and kitchen spoons. Extra! Old Time Clawhammer banjo lessons by appointment - leave message in our mailbox.", 
-        "hosted_by_camp": {
-            "id": 4956, 
-            "name": "A Shack Of Sit"
-        }, 
-        "id": 6636, 
-        "latitude": "40.789502", 
-        "location": "w/in Snowflake  ", 
-        "longitude": "-119.220269", 
-        "matched_name": "Shack Of Sit, A", 
-        "occurrence_set": [
-            {
-                "end_time": "2012-08-28 11:00:00", 
-                "start_time": "2012-08-28 10:00:00"
-            }
-        ], 
-        "other_location": "In Snowflake Village", 
-        "print_description": "Learn to play a carpenter's saw and kitchen spoons. Extra! Old Time Clawhammer banjo lessons by appointment - leave message in our mailbox.", 
-        "slug": "music-lessons", 
-        "title": "Music Lessons", 
-        "url": "", 
-        "year": {
-            "id": 8, 
-            "year": "2012"
-        }
-    }, 
-    {
-        "all_day": false, 
-        "check_location": true, 
         "description": "Learn to play a carpenter's saw and kitchen spoons, Classes on Tuesday and Thursday. Extra! Old Time Clawhammer banjo lessons by appointment - leave message in our mailbox.", 
         "hosted_by_camp": {
             "id": 4956, 
@@ -32387,6 +32954,35 @@
         ], 
         "other_location": "In Snowflake Village", 
         "print_description": "Tu & Th. Learn to play a carpenter's saw and kitchen spoons. Extra! Old Time Clawhammer banjo lessons by appointment - put message in our mailbox.", 
+        "slug": "music-lessons", 
+        "title": "Music Lessons", 
+        "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": true, 
+        "description": "Learn to play a carpenter's saw and kitchen spoons. Extra! Old Time Clawhammer banjo lessons by appointment - leave message in our mailbox.", 
+        "hosted_by_camp": {
+            "id": 4956, 
+            "name": "A Shack Of Sit"
+        }, 
+        "id": 6636, 
+        "latitude": "40.789502", 
+        "location": "w/in Snowflake  ", 
+        "longitude": "-119.220269", 
+        "matched_name": "Shack Of Sit, A", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-28 11:00:00", 
+                "start_time": "2012-08-28 10:00:00"
+            }
+        ], 
+        "other_location": "In Snowflake Village", 
+        "print_description": "Learn to play a carpenter's saw and kitchen spoons. Extra! Old Time Clawhammer banjo lessons by appointment - leave message in our mailbox.", 
         "slug": "music-lessons", 
         "title": "Music Lessons", 
         "url": "", 
@@ -32894,9 +33490,7 @@
             "name": "Synesthesia"
         }, 
         "id": 7073, 
-        "latitude": "", 
         "location": "2:00 & Alyssum", 
-        "longitude": "", 
         "matched_name": "Synesthesia", 
         "occurrence_set": [
             {
@@ -33023,10 +33617,6 @@
         "longitude": "-119.208762", 
         "matched_name": "Chakralicious Camp", 
         "occurrence_set": [
-            {
-                "end_time": "2012-08-29 00:00:00", 
-                "start_time": "2012-08-29 21:00:00"
-            }, 
             {
                 "end_time": "2012-08-30 00:00:00", 
                 "start_time": "2012-08-30 21:00:00"
@@ -34443,8 +35033,8 @@
         "matched_name": "Chakralicious Camp", 
         "occurrence_set": [
             {
-                "end_time": "2012-08-28 17:30:00", 
-                "start_time": "2012-08-28 16:00:00"
+                "end_time": "2012-08-28 13:30:00", 
+                "start_time": "2012-08-28 12:00:00"
             }
         ], 
         "other_location": "Temple Dome", 
@@ -34881,6 +35471,10 @@
             "name": "The Phage"
         }, 
         "id": 7329, 
+        "latitude": "40.779407", 
+        "location": "w/in The Institute  ", 
+        "longitude": "-119.209352", 
+        "matched_name": "Phage, The", 
         "occurrence_set": [
             {
                 "end_time": "2012-08-27 21:30:00", 
@@ -35336,35 +35930,6 @@
     {
         "all_day": false, 
         "check_location": false, 
-        "description": "Come ye all and join Captain Cock and his band of wenches as they shiver yer timbers with Pirate Yoga. Yer booty is sure to be plundered. BYOC.", 
-        "hosted_by_camp": {
-            "id": 4259, 
-            "name": "Slutgarden"
-        }, 
-        "id": 6397, 
-        "latitude": "40.790760", 
-        "location": "Esplanade & 9:00 Portal", 
-        "longitude": "-119.213372", 
-        "matched_name": "Slutgarden", 
-        "occurrence_set": [
-            {
-                "end_time": "2012-08-29 10:00:00", 
-                "start_time": "2012-08-29 09:00:00"
-            }
-        ], 
-        "other_location": "", 
-        "print_description": "Come ye all and join Captain Cock and his band of wenches as they shiver yer timbers with Pirate Yoga. Yer booty is sure to be plundered. BYOC.", 
-        "slug": "pirate-yoga", 
-        "title": "Pirate Yoga", 
-        "url": "", 
-        "year": {
-            "id": 8, 
-            "year": "2012"
-        }
-    }, 
-    {
-        "all_day": false, 
-        "check_location": false, 
         "description": "Meditative exercise + pirate puns = yoga for the pirate in everyone!  Bring your mat and pirate gear.  Downward-facing scurvy dog!", 
         "hosted_by_camp": {
             "id": 4441, 
@@ -35383,6 +35948,35 @@
         ], 
         "other_location": "", 
         "print_description": "Meditative exercise + pirate puns = yoga for the pirate in everyone!  Bring your mat and pirate gear.  Downward-facing scurvy dog!", 
+        "slug": "pirate-yoga", 
+        "title": "Pirate Yoga", 
+        "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
+        "description": "Come ye all and join Captain Cock and his band of wenches as they shiver yer timbers with Pirate Yoga. Yer booty is sure to be plundered. BYOC.", 
+        "hosted_by_camp": {
+            "id": 4259, 
+            "name": "Slutgarden"
+        }, 
+        "id": 6397, 
+        "latitude": "40.790760", 
+        "location": "Esplanade & 9:00 Portal", 
+        "longitude": "-119.213372", 
+        "matched_name": "Slutgarden", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-29 10:00:00", 
+                "start_time": "2012-08-29 09:00:00"
+            }
+        ], 
+        "other_location": "", 
+        "print_description": "Come ye all and join Captain Cock and his band of wenches as they shiver yer timbers with Pirate Yoga. Yer booty is sure to be plundered. BYOC.", 
         "slug": "pirate-yoga", 
         "title": "Pirate Yoga", 
         "url": "", 
@@ -35458,9 +36052,7 @@
             "name": "100'th Monkey Camp"
         }, 
         "id": 7226, 
-        "latitude": "", 
         "location": "Edelweiss & 9:45", 
-        "longitude": "", 
         "matched_name": "Laughing Monkey Camp", 
         "occurrence_set": [
             {
@@ -35792,9 +36384,7 @@
             "name": "Playagon"
         }, 
         "id": 7426, 
-        "latitude": "", 
         "location": "Edelweiss & 2:30", 
-        "longitude": "", 
         "matched_name": "Playagon", 
         "occurrence_set": [
             {
@@ -36366,6 +36956,35 @@
         "print_description": "After a tough day roaming Black rock city, come by our 2nd floor lounge overlooking all of black rock city for a refreshing libation. Daily 5pm to 6pm", 
         "slug": "playaview-lounge-at-5", 
         "title": "playaview lounge at 5", 
+        "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": true, 
+        "description": "The Lollipop Guild is an inclusive group of gay friends who embrace all humanity. We are gathered to express ourselves as individuals and members of the Burning Man community. In the spirit of love and celebration, we will perform non-binding, diverse and creative Playa weddings for all.", 
+        "hosted_by_camp": {
+            "id": 4216, 
+            "name": "Lollipop Guild"
+        }, 
+        "id": 8193, 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-30 17:00:00", 
+                "start_time": "2012-08-30 15:00:00"
+            }, 
+            {
+                "end_time": "2012-09-01 17:00:00", 
+                "start_time": "2012-09-01 15:00:00"
+            }
+        ], 
+        "other_location": "7:45 & E (BloPopOasis)", 
+        "print_description": "The Lollipop Guild will perform non-binding, diverse and creative Playa Weddings for all. Form a bond with anyone, any number of anyone's or anything!", 
+        "slug": "playa-weddings", 
+        "title": "Playa Weddings", 
         "url": "", 
         "year": {
             "id": 8, 
@@ -37236,9 +37855,7 @@
             "name": "Warp Zone"
         }, 
         "id": 6535, 
-        "latitude": "", 
         "location": "Geranium & 4:45", 
-        "longitude": "", 
         "matched_name": "Warp Zone", 
         "occurrence_set": [
             {
@@ -37464,10 +38081,10 @@
             "name": "Flow Camp"
         }, 
         "id": 7054, 
-        "latitude": "40.777735", 
-        "location": "Foxglove & 3:15", 
-        "longitude": "-119.197237", 
-        "matched_name": "Flattery Camp", 
+        "latitude": "40.791450", 
+        "location": "Edelweiss & 8:30", 
+        "longitude": "-119.218604", 
+        "matched_name": "Loadie Camp", 
         "occurrence_set": [
             {
                 "end_time": "2012-08-29 11:00:00", 
@@ -37522,9 +38139,7 @@
             "name": "100'th Monkey Camp"
         }, 
         "id": 6191, 
-        "latitude": "", 
         "location": "Edelweiss & 9:45", 
-        "longitude": "", 
         "matched_name": "Laughing Monkey Camp", 
         "occurrence_set": [
             {
@@ -37745,10 +38360,10 @@
             "name": "Camp Here"
         }, 
         "id": 7108, 
-        "latitude": "40.779238", 
-        "location": "3:00 & Edelweiss", 
-        "longitude": "-119.196770", 
-        "matched_name": "Campo Alegre", 
+        "latitude": "40.797645", 
+        "location": "10:00 & Geranium", 
+        "longitude": "-119.210794", 
+        "matched_name": "Camp Charlie", 
         "occurrence_set": [
             {
                 "end_time": "2012-08-30 14:00:00", 
@@ -38705,6 +39320,64 @@
     {
         "all_day": false, 
         "check_location": false, 
+        "description": "Great Creme Brulees in paradise only happens once in a blue moon. This is your last chance to get some on that 2nd full moon of the month. Dance your ass off on DJ Wubson's crazy mixes. Refreshments at the bar.", 
+        "hosted_by_camp": {
+            "id": 4768, 
+            "name": "Kreme Burners"
+        }, 
+        "id": 8188, 
+        "latitude": "40.793382", 
+        "location": "Begonia & 9:30", 
+        "longitude": "-119.212117", 
+        "matched_name": "Kreme Burners", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-31 19:00:00", 
+                "start_time": "2012-08-31 16:00:00"
+            }
+        ], 
+        "other_location": "9:30 B", 
+        "print_description": "Join us for our 2nd event. Get in the dodecadance with a Creme Brulee. DJ Wubson at the nobs.", 
+        "slug": "rave-de-creme-brulees-blue-moon", 
+        "title": "Rave de Creme Brulees Blue Moon ", 
+        "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
+        "description": "Join us for our opening event. Enjoy the best cremes brulees on the playa, show us your hoola hoops skill, get your body dust free with a bath of deep \"Wubsonian\" bass. The bar will be opened.", 
+        "hosted_by_camp": {
+            "id": 4768, 
+            "name": "Kreme Burners"
+        }, 
+        "id": 8187, 
+        "latitude": "40.793382", 
+        "location": "Begonia & 9:30", 
+        "longitude": "-119.212117", 
+        "matched_name": "Kreme Burners", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-29 19:00:00", 
+                "start_time": "2012-08-29 16:00:00"
+            }
+        ], 
+        "other_location": "9:30 B", 
+        "print_description": "Join us for our opening event. Get in the dodecadance with a Creme Brulee. DJ Wubson at the nobs.", 
+        "slug": "rave-de-creme-brulees-opening", 
+        "title": "Rave de Creme Brulees Opening", 
+        "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
         "description": "Create fully embodied surrender as your offering, as your gift. Delicate territory but so satisfying when done artfully. Women LOVE it!!", 
         "hosted_by_camp": {
             "id": 4296, 
@@ -39129,6 +39802,10 @@
         "matched_name": "Sacred Spaces Village", 
         "occurrence_set": [
             {
+                "end_time": "2012-08-28 17:00:00", 
+                "start_time": "2012-08-28 14:30:00"
+            }, 
+            {
                 "end_time": "2012-08-31 17:00:00", 
                 "start_time": "2012-08-31 14:30:00"
             }
@@ -39529,7 +40206,7 @@
                 "start_time": "2012-08-30 10:00:00"
             }
         ], 
-        "other_location": "Habitat for Insanity Camp", 
+        "other_location": "Habitat for Insanity 6:30 and F", 
         "print_description": "Craving a real, a rapid, a wild and a drastic shift in your yoga practice? In your life? Learn to let go and propel you years ahead in your practice.", 
         "slug": "revolutionized-yoga-structurally-integrated-yoga", 
         "title": "Revolutionized Yoga: Structurally Integrated Yoga", 
@@ -39796,6 +40473,35 @@
         ], 
         "other_location": "", 
         "print_description": "Give yourself over to absolute pleasure and join the Six Minute Players shadowcast as they perform their seventh season of RHPS!", 
+        "slug": "rocky-horror-picture-show", 
+        "title": "Rocky Horror Picture Show", 
+        "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
+        "description": "Joint he Six Minute Players for their seventh season performing Rocky Horror Picture Show!", 
+        "hosted_by_camp": {
+            "id": 4951, 
+            "name": "Videogasm"
+        }, 
+        "id": 8224, 
+        "latitude": "40.789673", 
+        "location": "w/in Snowflake Village  ", 
+        "longitude": "-119.220244", 
+        "matched_name": "Videogasm", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-09-01 02:00:00", 
+                "start_time": "2012-08-31 23:45:00"
+            }
+        ], 
+        "other_location": "", 
+        "print_description": "Joint he Six Minute Players for their seventh season performing Rocky Horror Picture Show!", 
         "slug": "rocky-horror-picture-show", 
         "title": "Rocky Horror Picture Show", 
         "url": "", 
@@ -40260,6 +40966,35 @@
     }, 
     {
         "all_day": false, 
+        "check_location": false, 
+        "description": "Whether you are enjoying a 1-night relationship that started on an art car somewhere deep playa, are comfortable in an established commited partnership, or are anywhere in between; passionate sex is an activity that is fun for all consenting adults! Join Yarah Sutra for this discussion and interactive workshop about how to make any sexual encounter a wildly sacred one. She will share an orgasmic map through the chakra erogenous zones offering vital breathing techniques, sexercises, energetic guidance, movement styles, PLUS a few juicy extras that have been a beautiful part of her personal repertoire for reaching the all mighty and very accessible FBO: Full Body Orgasm (\u201cIt\u2019s not a myth!\u201d). You will leave with knowledge and tools (to practice later) that support you in reaching states of sexual ecstasy and altered states of consciousness with your partner. Cum to evolve through sexuality!\r\n- For both couples and singles (learn some new techniques to experience with your next lover) Please bring WATER, towel, and yoga mat if possible. (adult content; please note this is not a sex party)", 
+        "hosted_by_camp": {
+            "id": 4500, 
+            "name": "Chakralicious Camp"
+        }, 
+        "id": 8233, 
+        "latitude": "40.776591", 
+        "location": "Dandelion & 4:45", 
+        "longitude": "-119.208762", 
+        "matched_name": "Chakralicious Camp", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-28 17:30:00", 
+                "start_time": "2012-08-28 16:00:00"
+            }
+        ], 
+        "other_location": "Temple Dome", 
+        "print_description": "Join Yarah Sutra for this workshop about how to make any sexual encounter a wildly sacred one by sharing an orgasmic map through the chakras.", 
+        "slug": "sacred-sexplorations-orgasmic-map-4-chakra-zones", 
+        "title": "Sacred Sexplorations: Orgasmic Map 4 Chakra Zones ", 
+        "url": "http://www.yarahvolkman.com/", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
         "check_location": true, 
         "description": "Poetry and Story Time at The Library California. Poetry, stories, sagas, tales. Bring your own. Hear others. Come be shaken, stirred, entertained, surprised. The Library is part of Camp Althing in lovely Hushville, Dandelion and 5:00.", 
         "hosted_by_camp": {
@@ -40602,9 +41337,7 @@
             "name": "100'th Monkey Camp"
         }, 
         "id": 6194, 
-        "latitude": "", 
         "location": "Edelweiss & 9:45", 
-        "longitude": "", 
         "matched_name": "Laughing Monkey Camp", 
         "occurrence_set": [
             {
@@ -40746,6 +41479,35 @@
             "id": 4311, 
             "name": "HeeBeeGeeBee Healers"
         }, 
+        "id": 6584, 
+        "latitude": "40.781931", 
+        "location": "w/in Nectar Village  ", 
+        "longitude": "-119.219022", 
+        "matched_name": "HeeBeeGeeBee Healers", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-28 12:15:00", 
+                "start_time": "2012-08-28 11:30:00"
+            }
+        ], 
+        "other_location": "", 
+        "print_description": "Learn how to hypnotize yourself.  A great way to relax and ground.  Five minutes of hypnosis is like one hour of sleep.  Led by Merlin.", 
+        "slug": "self-hypnosis", 
+        "title": "Self Hypnosis", 
+        "url": "http://heebeegeebeehealers.org/", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
+        "description": "Learn how to hypnotize yourself.  A great way to relax and ground.  Five minutes of hypnosis is like one hour of sleep.  Come learn how to do this simple life changing thing that can be done anywhere, anytime and works on just about everything.  Led by Merlin.", 
+        "hosted_by_camp": {
+            "id": 4311, 
+            "name": "HeeBeeGeeBee Healers"
+        }, 
         "id": 6585, 
         "latitude": "40.781931", 
         "location": "w/in Nectar Village  ", 
@@ -40769,28 +41531,65 @@
     }, 
     {
         "all_day": false, 
-        "check_location": false, 
-        "description": "Learn how to hypnotize yourself.  A great way to relax and ground.  Five minutes of hypnosis is like one hour of sleep.  Come learn how to do this simple life changing thing that can be done anywhere, anytime and works on just about everything.  Led by Merlin.", 
+        "check_location": true, 
+        "description": "If you were in a relationship with someone who treated you like you treat yourself, would you choose to stay in that relationship? Commit to a life of self-love and self-compassion; marry your deeper purpose in a ceremony that will transform your life and open you to fulfillment within.", 
         "hosted_by_camp": {
-            "id": 4311, 
-            "name": "HeeBeeGeeBee Healers"
+            "id": 4690, 
+            "name": "Red Lightning"
         }, 
-        "id": 6584, 
-        "latitude": "40.781931", 
-        "location": "w/in Nectar Village  ", 
-        "longitude": "-119.219022", 
-        "matched_name": "HeeBeeGeeBee Healers", 
+        "id": 8190, 
+        "latitude": "40.796156", 
+        "location": "Edelweiss & 9:30", 
+        "longitude": "-119.213693", 
+        "matched_name": "Red Lightning", 
         "occurrence_set": [
             {
-                "end_time": "2012-08-28 12:15:00", 
-                "start_time": "2012-08-28 11:30:00"
+                "end_time": "2012-08-29 18:00:00", 
+                "start_time": "2012-08-29 16:00:00"
+            }, 
+            {
+                "end_time": "2012-08-30 18:00:00", 
+                "start_time": "2012-08-30 16:00:00"
+            }, 
+            {
+                "end_time": "2012-08-31 18:00:00", 
+                "start_time": "2012-08-31 16:00:00"
             }
         ], 
         "other_location": "", 
-        "print_description": "Learn how to hypnotize yourself.  A great way to relax and ground.  Five minutes of hypnosis is like one hour of sleep.  Led by Merlin.", 
-        "slug": "self-hypnosis", 
-        "title": "Self Hypnosis", 
-        "url": "http://heebeegeebeehealers.org/", 
+        "print_description": "Commit to a life of self-love and self-compassion. Marry your deeper purpose and find fulfillment within. A ceremony that will transform your life.", 
+        "slug": "self-marriage-ceremony-for-women", 
+        "title": "Self-Marriage Ceremony for Women", 
+        "url": "http://selfmarriageceremonies.com/", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": true, 
+        "description": "If you were in a relationship with someone who treated you like you treat yourself, would you choose to stay in that relationship? Commit to a life of self-love and self-compassion; marry your deeper purpose in a ceremony that will transform your life and open you to fulfillment within.", 
+        "hosted_by_camp": {
+            "id": 4690, 
+            "name": "Red Lightning"
+        }, 
+        "id": 8191, 
+        "latitude": "40.796156", 
+        "location": "Edelweiss & 9:30", 
+        "longitude": "-119.213693", 
+        "matched_name": "Red Lightning", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-09-02 18:30:00", 
+                "start_time": "2012-09-02 16:30:00"
+            }
+        ], 
+        "other_location": "", 
+        "print_description": "Commit to a life of self-love and self-compassion. Marry your deeper purpose and find fulfillment within. A ceremony that will transform your life.", 
+        "slug": "self-marriage-ceremony-for-women-and-men", 
+        "title": "Self-Marriage Ceremony for Women and Men", 
+        "url": "http://selfmarriageceremonies.com/", 
         "year": {
             "id": 8, 
             "year": "2012"
@@ -40899,9 +41698,7 @@
             "name": "Synesthesia"
         }, 
         "id": 7302, 
-        "latitude": "", 
         "location": "2:00 & Alyssum", 
-        "longitude": "", 
         "matched_name": "Synesthesia", 
         "occurrence_set": [
             {
@@ -40914,6 +41711,35 @@
         "slug": "sensational-eating", 
         "title": "Sensational Eating", 
         "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
+        "description": "Come ready to explore the seven levels of intimacy with your partner through contact yoga, sensual massage, and compassionate communication. Take your relationship through trust building and passion ignition. Be prepared to give and receive in this clothing optional, no camera zone of intimate exploration. Bring towels and mats.", 
+        "hosted_by_camp": {
+            "id": 4500, 
+            "name": "Chakralicious Camp"
+        }, 
+        "id": 8234, 
+        "latitude": "40.776591", 
+        "location": "Dandelion & 4:45", 
+        "longitude": "-119.208762", 
+        "matched_name": "Chakralicious Camp", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-28 19:30:00", 
+                "start_time": "2012-08-28 18:00:00"
+            }
+        ], 
+        "other_location": "Temple Dome", 
+        "print_description": "Sensual Chakra Play", 
+        "slug": "sensual-chakra-play", 
+        "title": "Sensual Chakra Play", 
+        "url": "http://www.sacredcenters.com/", 
         "year": {
             "id": 8, 
             "year": "2012"
@@ -41253,15 +42079,15 @@
             "id": 4296, 
             "name": "Camp Contact & AuthentiCamp"
         }, 
-        "id": 6637, 
+        "id": 6131, 
         "latitude": "40.781931", 
         "location": "w/in Nectar Village  ", 
         "longitude": "-119.219022", 
         "matched_name": "Camp Contact & AuthentiCamp", 
         "occurrence_set": [
             {
-                "end_time": "2012-08-31 11:30:00", 
-                "start_time": "2012-08-31 10:30:00"
+                "end_time": "2012-08-28 17:30:00", 
+                "start_time": "2012-08-28 16:30:00"
             }
         ], 
         "other_location": "", 
@@ -41282,15 +42108,15 @@
             "id": 4296, 
             "name": "Camp Contact & AuthentiCamp"
         }, 
-        "id": 6131, 
+        "id": 6637, 
         "latitude": "40.781931", 
         "location": "w/in Nectar Village  ", 
         "longitude": "-119.219022", 
         "matched_name": "Camp Contact & AuthentiCamp", 
         "occurrence_set": [
             {
-                "end_time": "2012-08-28 17:30:00", 
-                "start_time": "2012-08-28 16:30:00"
+                "end_time": "2012-08-31 11:30:00", 
+                "start_time": "2012-08-31 10:30:00"
             }
         ], 
         "other_location": "", 
@@ -41556,9 +42382,7 @@
             "name": "100'th Monkey Camp"
         }, 
         "id": 6436, 
-        "latitude": "", 
         "location": "Edelweiss & 9:45", 
-        "longitude": "", 
         "matched_name": "Laughing Monkey Camp", 
         "occurrence_set": [
             {
@@ -41681,6 +42505,35 @@
         "print_description": "No garb below the knees.  House music, select cocktails, & drinks.  Late afternoon Dance party!!  Short skirts preferred.  That includes the men too!!", 
         "slug": "short-skirt-party", 
         "title": "Short Skirt Party", 
+        "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
+        "description": "Want a personal momento of Fertility 2.0.  Bring a t-shirt, tank, bandana or whatever and visit Camp Make Good Choices for one of our custom print designs.  We provide the design, ink and hardware...you bring the fabric.", 
+        "hosted_by_camp": {
+            "id": 4234, 
+            "name": "Camp Make Good Choices"
+        }, 
+        "id": 8225, 
+        "latitude": "40.787419", 
+        "location": "Dandelion & 7:45", 
+        "longitude": "-119.219454", 
+        "matched_name": "Camp Make Good Choices", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-31 15:00:00", 
+                "start_time": "2012-08-31 14:00:00"
+            }
+        ], 
+        "other_location": "", 
+        "print_description": "Want a personal momento of Fertility 2.0.  Bring a t-shirt, bandana or whatever and visit Camp Make Good Choices for one of our custom print designs.", 
+        "slug": "silk-screen-printing", 
+        "title": "Silk Screen Printing", 
         "url": "", 
         "year": {
             "id": 8, 
@@ -41885,9 +42738,7 @@
             "name": "100'th Monkey Camp"
         }, 
         "id": 6196, 
-        "latitude": "", 
         "location": "Edelweiss & 9:45", 
-        "longitude": "", 
         "matched_name": "Laughing Monkey Camp", 
         "occurrence_set": [
             {
@@ -41899,35 +42750,6 @@
         "print_description": "Caring for your skin on the Playa.", 
         "slug": "skin-care-on-the-playa", 
         "title": "Skin care on the Playa", 
-        "url": "", 
-        "year": {
-            "id": 8, 
-            "year": "2012"
-        }
-    }, 
-    {
-        "all_day": false, 
-        "check_location": true, 
-        "description": "Ancient Tibetan monks once tested their focus by meditating in sky-burial sites, surrounded by vultures and human bones. We will do the next best thing - try to maintain your center as you balance on a tightrope surrounded by jeering crowds armed with air horns, bad jokes, and unprovoked cruelty. Learn to let it all go.", 
-        "hosted_by_camp": {
-            "id": 5005, 
-            "name": "Flow Camp"
-        }, 
-        "id": 7051, 
-        "latitude": "40.777735", 
-        "location": "Foxglove & 3:15", 
-        "longitude": "-119.197237", 
-        "matched_name": "Flattery Camp", 
-        "occurrence_set": [
-            {
-                "end_time": "2012-08-29 13:00:00", 
-                "start_time": "2012-08-29 12:00:00"
-            }
-        ], 
-        "other_location": "", 
-        "print_description": "Tibetan monks once tested their focus by meditating in burial sites with vultures and human bones. We'll use a tightrope, air horns, and bad jokes.", 
-        "slug": "slackline-in-the-boneyard", 
-        "title": "Slackline in the Boneyard", 
         "url": "", 
         "year": {
             "id": 8, 
@@ -41951,6 +42773,35 @@
         ], 
         "other_location": "Flow Dome - 9:15 & C", 
         "print_description": "A simple slackline. Participants try to balance while everyone else shouts curses to make them fall. Jk. We're friendly.", 
+        "slug": "slackline-in-the-boneyard", 
+        "title": "Slackline in the Boneyard", 
+        "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": true, 
+        "description": "Ancient Tibetan monks once tested their focus by meditating in sky-burial sites, surrounded by vultures and human bones. We will do the next best thing - try to maintain your center as you balance on a tightrope surrounded by jeering crowds armed with air horns, bad jokes, and unprovoked cruelty. Learn to let it all go.", 
+        "hosted_by_camp": {
+            "id": 5005, 
+            "name": "Flow Camp"
+        }, 
+        "id": 7051, 
+        "latitude": "40.791450", 
+        "location": "Edelweiss & 8:30", 
+        "longitude": "-119.218604", 
+        "matched_name": "Loadie Camp", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-29 13:00:00", 
+                "start_time": "2012-08-29 12:00:00"
+            }
+        ], 
+        "other_location": "", 
+        "print_description": "Tibetan monks once tested their focus by meditating in burial sites with vultures and human bones. We'll use a tightrope, air horns, and bad jokes.", 
         "slug": "slackline-in-the-boneyard", 
         "title": "Slackline in the Boneyard", 
         "url": "", 
@@ -42194,6 +43045,35 @@
         "slug": "slutty-saturday", 
         "title": "Slutty Saturday", 
         "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": true, 
+        "description": "Open to all aroma enthusiasts and Rogue Scenters,\r\nbut especially AromaThera Potty Project Participants... bring your bodies, bring your blends!\r\nI hope you will still join us if you can at our\r\n\r\nSmell In & Potluck (drink luck?)\r\nLamay Camp, Kidsville\r\nMonday 6pm to 9pm\r\nWe'll get a chance to meet each other, smell each other's wares and get clear on anything iffy. It will be more fun than that sounds.", 
+        "hosted_by_camp": {
+            "id": 4284, 
+            "name": "Kidsville"
+        }, 
+        "id": 8226, 
+        "latitude": "40.777002", 
+        "location": "Dandelion & 5:30", 
+        "longitude": "-119.212390", 
+        "matched_name": "Kidsville", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-27 21:00:00", 
+                "start_time": "2012-08-27 18:00:00"
+            }
+        ], 
+        "other_location": "Lamay Camp, Kidsville", 
+        "print_description": "Open to all aroma enthusiasts and Rogue Scenters,\r\nbut especially AromaThera Potty Project Participants... bring your bodies, bring your blends!", 
+        "slug": "smell-in-aromathera-potty-project", 
+        "title": "Smell-In: AromaThera Potty Project", 
+        "url": "http://www.anarreshealth.ca/node/1529", 
         "year": {
             "id": 8, 
             "year": "2012"
@@ -42545,9 +43425,7 @@
             "name": "100'th Monkey Camp"
         }, 
         "id": 7227, 
-        "latitude": "", 
         "location": "Edelweiss & 9:45", 
-        "longitude": "", 
         "matched_name": "Laughing Monkey Camp", 
         "occurrence_set": [
             {
@@ -42752,35 +43630,6 @@
     }, 
     {
         "all_day": false, 
-        "check_location": false, 
-        "description": "Exploring the language of energy through movement, sound, breath & intention in a playful way to help bring balance and transformation into your life.", 
-        "hosted_by_camp": {
-            "id": 4687, 
-            "name": "Sacred Spaces Village"
-        }, 
-        "id": 6706, 
-        "latitude": "40.796170", 
-        "location": "Edelweiss & 9:45", 
-        "longitude": "-119.212687", 
-        "matched_name": "Sacred Spaces Village", 
-        "occurrence_set": [
-            {
-                "end_time": "2012-08-28 10:00:00", 
-                "start_time": "2012-08-28 09:00:00"
-            }
-        ], 
-        "other_location": "", 
-        "print_description": "Exploring the language of energy through movement, sound, breath & intention in a playful way to help bring balance and transformation into your life.", 
-        "slug": "soul-alchemy-through-movement-sound-and-breath", 
-        "title": "Soul Alchemy Through Movement, Sound, and Breath", 
-        "url": "http://sacredspacesvillage.org/", 
-        "year": {
-            "id": 8, 
-            "year": "2012"
-        }
-    }, 
-    {
-        "all_day": false, 
         "check_location": true, 
         "description": "Exploring the language of energy through movement, sound, breath and intention in a playful way to help bring balance and transformation into your life", 
         "hosted_by_camp": {
@@ -42800,6 +43649,35 @@
         ], 
         "other_location": "", 
         "print_description": "Exploring the language of energy through movement, sound, breath & intention in a playful way to help bring balance and transformation into your life", 
+        "slug": "soul-alchemy-through-movement-sound-and-breath", 
+        "title": "Soul Alchemy Through Movement, Sound, and Breath", 
+        "url": "http://sacredspacesvillage.org/", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
+        "description": "Exploring the language of energy through movement, sound, breath & intention in a playful way to help bring balance and transformation into your life.", 
+        "hosted_by_camp": {
+            "id": 4687, 
+            "name": "Sacred Spaces Village"
+        }, 
+        "id": 6706, 
+        "latitude": "40.796170", 
+        "location": "Edelweiss & 9:45", 
+        "longitude": "-119.212687", 
+        "matched_name": "Sacred Spaces Village", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-28 10:00:00", 
+                "start_time": "2012-08-28 09:00:00"
+            }
+        ], 
+        "other_location": "", 
+        "print_description": "Exploring the language of energy through movement, sound, breath & intention in a playful way to help bring balance and transformation into your life.", 
         "slug": "soul-alchemy-through-movement-sound-and-breath", 
         "title": "Soul Alchemy Through Movement, Sound, and Breath", 
         "url": "http://sacredspacesvillage.org/", 
@@ -42890,6 +43768,35 @@
         "slug": "sound-healing-journey", 
         "title": "Sound Healing Journey", 
         "url": "http://www.AlethaSound.com/", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": true, 
+        "description": "Orion (aka Hamilton Souther) is a Master Ayahauscaro, who uses electronic music to share heightened states of consciousness.  He, along with his lovely and cosmic operatic wife, Speckra, rock all of the dimensions of time and space, creating a truly unique healing space.  This is something not to miss dear burner friends!", 
+        "hosted_by_camp": {
+            "id": 4542, 
+            "name": "Media Mecca"
+        }, 
+        "id": 8220, 
+        "latitude": "40.781844", 
+        "location": "Inner Circle @ 10:45", 
+        "longitude": "-119.213590", 
+        "matched_name": "Media Mecca", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-28 19:00:00", 
+                "start_time": "2012-08-28 18:00:00"
+            }
+        ], 
+        "other_location": "Camp Above the Limit 9:15 & Begonia the rest of the week....", 
+        "print_description": "The jungle medicine of Ayahuasca Icaros merge with the potency of electronic music, to create a space of heightened states of consciousness.", 
+        "slug": "source-trance-performance-by-walking-with-giants", 
+        "title": "Source Trance Performance by Walking with Giants", 
+        "url": "http://trancegiants.com/", 
         "year": {
             "id": 8, 
             "year": "2012"
@@ -43541,6 +44448,10 @@
             "name": "The Hive"
         }, 
         "id": 7839, 
+        "latitude": "40.782705", 
+        "location": "Esplanade & 2:30", 
+        "longitude": "-119.198885", 
+        "matched_name": "Hive, The", 
         "occurrence_set": [
             {
                 "end_time": "2012-08-28 23:45:00", 
@@ -43864,9 +44775,7 @@
             "name": "Identi-T Farm"
         }, 
         "id": 7319, 
-        "latitude": "", 
         "location": "Geranium & 4:15", 
-        "longitude": "", 
         "matched_name": "Identi-T Farm", 
         "occurrence_set": [
             {
@@ -44510,6 +45419,47 @@
     }, 
     {
         "all_day": false, 
+        "check_location": false, 
+        "description": "\"The quickest way to still the mind is to move the body.\" ~ Gabrielle Roth\r\n\r\nThe 5Rhythms is an in-bodied, out of your mind  dance experience not to be missed. It is a simple, powerful moving meditation that anyone \u2013 of any age, size, or physical ability - can practice. There are no steps to follow, no choreography to learn, no way to do it wrong. The only requirement is a body that is still breathing, a heart that is still beating, and mind that is still curious! \r\n\r\nJust like light, sound or ocean waves, a dancing body when moving freely passes through five distinct rhythmic patterns. These patterns continuously repeat themselves in a wave of motion.\r\n\r\nThe 5Rhythms are:\r\n\r\nFLOWING \u2013 the fluid, continuous, grounded glide of our own movements\r\n\r\nSTACCATO \u2013 the percussive, pulsing beat that shapes us a thousand different ways\r\n\r\nCHAOS \u2013 the rhythm of letting go, releasing into the catalytic wildness of our dance that can never be planned or repeated\r\n\r\nLYRICAL \u2013 the rhythm of trance, where the weight of self-consciousness dissolves, where we lighten up and disappear into our own uniqueness\r\n\r\nSTILLNESS \u2013 the quiet emptiness, where gentle movements rise and fall, start and end, in a field of silence\r\n\r\nPlease join RhythmWave as we return to the Black Rock City for our sixth year with this gorgeous dance/meditation practice that we love to share with you!", 
+        "hosted_by_camp": {
+            "id": 4328, 
+            "name": "RhythmWave"
+        }, 
+        "id": 6140, 
+        "latitude": "40.775049", 
+        "location": "Foxglove & 4:45", 
+        "longitude": "-119.207548", 
+        "matched_name": "RhythmWave", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-27 21:30:00", 
+                "start_time": "2012-08-27 19:30:00"
+            }, 
+            {
+                "end_time": "2012-08-28 21:30:00", 
+                "start_time": "2012-08-28 19:30:00"
+            }, 
+            {
+                "end_time": "2012-08-30 21:30:00", 
+                "start_time": "2012-08-30 19:30:00"
+            }, 
+            {
+                "end_time": "2012-08-31 21:30:00", 
+                "start_time": "2012-08-31 19:30:00"
+            }
+        ], 
+        "other_location": "", 
+        "print_description": "5Rhythms on a shaded bamboo floor-an in-bodied, out-of-your mind conscious dance experience not to be missed. No experience needed, just an open heart", 
+        "slug": "sweat-your-prayers-at-rhythmwave", 
+        "title": "Sweat Your Prayers at RhythmWave", 
+        "url": "http://www.rhythmwave.org/", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
         "check_location": true, 
         "description": "\"The quickest way to still the mind is to move the body.\" ~ Gabrielle Roth\r\n\r\nThe 5Rhythms is an in-bodied, out of your mind  dance experience not to be missed. It is a simple, powerful moving meditation that anyone \u2013 of any age, size, or physical ability - can practice. There are no steps to follow, no choreography to learn, no way to do it wrong. The only requirement is a body that is still breathing, a heart that is still beating, and mind that is still curious! \r\n\r\nJust like light, sound or ocean waves, a dancing body when moving freely passes through five distinct rhythmic patterns. These patterns continuously repeat themselves in a wave of motion.\r\n\r\nThe 5Rhythms are:\r\n\r\nFLOWING \u2013 the fluid, continuous, grounded glide of our own movements\r\n\r\nSTACCATO \u2013 the percussive, pulsing beat that shapes us a thousand different ways\r\n\r\nCHAOS \u2013 the rhythm of letting go, releasing into the catalytic wildness of our dance that can never be planned or repeated\r\n\r\nLYRICAL \u2013 the rhythm of trance, where the weight of self-consciousness dissolves, where we lighten up and disappear into our own uniqueness\r\n\r\nSTILLNESS \u2013 the quiet emptiness, where gentle movements rise and fall, start and end, in a field of silence\r\n\r\nPlease join RhythmWave as we return to the Black Rock City for our sixth year with this gorgeous dance/meditation practice that we love to share with you!", 
         "hosted_by_camp": {
@@ -44545,47 +45495,6 @@
             {
                 "end_time": "2012-09-02 12:00:00", 
                 "start_time": "2012-09-02 10:00:00"
-            }
-        ], 
-        "other_location": "", 
-        "print_description": "5Rhythms on a shaded bamboo floor-an in-bodied, out-of-your mind conscious dance experience not to be missed. No experience needed, just an open heart", 
-        "slug": "sweat-your-prayers-at-rhythmwave", 
-        "title": "Sweat Your Prayers at RhythmWave", 
-        "url": "http://www.rhythmwave.org/", 
-        "year": {
-            "id": 8, 
-            "year": "2012"
-        }
-    }, 
-    {
-        "all_day": false, 
-        "check_location": false, 
-        "description": "\"The quickest way to still the mind is to move the body.\" ~ Gabrielle Roth\r\n\r\nThe 5Rhythms is an in-bodied, out of your mind  dance experience not to be missed. It is a simple, powerful moving meditation that anyone \u2013 of any age, size, or physical ability - can practice. There are no steps to follow, no choreography to learn, no way to do it wrong. The only requirement is a body that is still breathing, a heart that is still beating, and mind that is still curious! \r\n\r\nJust like light, sound or ocean waves, a dancing body when moving freely passes through five distinct rhythmic patterns. These patterns continuously repeat themselves in a wave of motion.\r\n\r\nThe 5Rhythms are:\r\n\r\nFLOWING \u2013 the fluid, continuous, grounded glide of our own movements\r\n\r\nSTACCATO \u2013 the percussive, pulsing beat that shapes us a thousand different ways\r\n\r\nCHAOS \u2013 the rhythm of letting go, releasing into the catalytic wildness of our dance that can never be planned or repeated\r\n\r\nLYRICAL \u2013 the rhythm of trance, where the weight of self-consciousness dissolves, where we lighten up and disappear into our own uniqueness\r\n\r\nSTILLNESS \u2013 the quiet emptiness, where gentle movements rise and fall, start and end, in a field of silence\r\n\r\nPlease join RhythmWave as we return to the Black Rock City for our sixth year with this gorgeous dance/meditation practice that we love to share with you!", 
-        "hosted_by_camp": {
-            "id": 4328, 
-            "name": "RhythmWave"
-        }, 
-        "id": 6140, 
-        "latitude": "40.775049", 
-        "location": "Foxglove & 4:45", 
-        "longitude": "-119.207548", 
-        "matched_name": "RhythmWave", 
-        "occurrence_set": [
-            {
-                "end_time": "2012-08-27 21:30:00", 
-                "start_time": "2012-08-27 19:30:00"
-            }, 
-            {
-                "end_time": "2012-08-28 21:30:00", 
-                "start_time": "2012-08-28 19:30:00"
-            }, 
-            {
-                "end_time": "2012-08-30 21:30:00", 
-                "start_time": "2012-08-30 19:30:00"
-            }, 
-            {
-                "end_time": "2012-08-31 21:30:00", 
-                "start_time": "2012-08-31 19:30:00"
             }
         ], 
         "other_location": "", 
@@ -44781,9 +45690,7 @@
             "name": "Synesthesia"
         }, 
         "id": 6916, 
-        "latitude": "", 
         "location": "2:00 & Alyssum", 
-        "longitude": "", 
         "matched_name": "Synesthesia", 
         "occurrence_set": [
             {
@@ -44825,6 +45732,35 @@
         "slug": "synerg-gala", 
         "title": "SynerG Gala", 
         "url": "http://www.facebook.com/SynerGproject", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": true, 
+        "description": "This workshop will be a fun, focused, and light-hearted look at some of T'ai Chi and Qigong's basic movements and theories, and philosophies. Aimed at all skill levels. Bring loose cloths, water bottle, and a friend!\r\nThursday, 11:30am, Vain Stage @ Ego Trip. \r\nThanks!", 
+        "hosted_by_camp": {
+            "id": 4695, 
+            "name": "Ego Trip"
+        }, 
+        "id": 8217, 
+        "latitude": "40.795261", 
+        "location": "Geranium & 9:15", 
+        "longitude": "-119.216628", 
+        "matched_name": "Ego Trip", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-30 13:00:00", 
+                "start_time": "2012-08-30 11:30:00"
+            }
+        ], 
+        "other_location": "Shangri-Lawless", 
+        "print_description": "This workshop will be a fun, focused, and light-hearted look at some of T'ai Chi and Qigong's basic movements and theories, and philosophies.", 
+        "slug": "tai-chi-for-beginners", 
+        "title": "T'ai Chi for Beginners", 
+        "url": "http://www.facebook.com/events/261934663918803/?context=create", 
         "year": {
             "id": 8, 
             "year": "2012"
@@ -45714,9 +46650,7 @@
             "name": "Play)A(Skool"
         }, 
         "id": 7994, 
-        "latitude": "", 
         "location": "Esplanade & 9:45", 
-        "longitude": "", 
         "matched_name": "Play)A(Skool", 
         "occurrence_set": [
             {
@@ -46461,9 +47395,7 @@
             "name": "100'th Monkey Camp"
         }, 
         "id": 7880, 
-        "latitude": "", 
         "location": "Edelweiss & 9:45", 
-        "longitude": "", 
         "matched_name": "Laughing Monkey Camp", 
         "occurrence_set": [
             {
@@ -46475,6 +47407,33 @@
         "print_description": "Learn the movements and grace of traditional swordplay. Wooden practice swords provided. Get a good stretch and have some Fun!", 
         "slug": "the-dance-of-the-sword", 
         "title": "The dance of the sword", 
+        "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": true, 
+        "description": "It's 2012! The end is nigh!  Race to the finish and be the first to pop ;-)  Jolly Rancher Cocktails for all, especially the raucous, cheering crowd!", 
+        "hosted_by_camp": {
+            "id": 4876, 
+            "name": "100'th Monkey Camp"
+        }, 
+        "id": 8194, 
+        "location": "Edelweiss & 9:45", 
+        "matched_name": "Laughing Monkey Camp", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-09-01 19:00:00", 
+                "start_time": "2012-09-01 17:00:00"
+            }
+        ], 
+        "other_location": "7:45 & E (BloPopOasis)", 
+        "print_description": "It's 2012! The end is nigh!  Race to the finish and be the first to pop ;-)  Jolly Rancher Cocktails for all, especially the raucous, cheering crowd!", 
+        "slug": "the-end-of-the-world-suck-off", 
+        "title": "The End-of-the-World Suck-off!", 
         "url": "", 
         "year": {
             "id": 8, 
@@ -46629,35 +47588,6 @@
     {
         "all_day": false, 
         "check_location": false, 
-        "description": "The G Spot Party ! 8 \u2013 10:30 pm \u2013 champagne and wine tasting in One Eye\u2019d Jacks Saloon. Come groove to some Deep House, Disco House and Jazzy House tunes. At One Eye'd Jack's bar.", 
-        "hosted_by_camp": {
-            "id": 4208, 
-            "name": "Camp D.O.A."
-        }, 
-        "id": 6548, 
-        "latitude": "40.779166", 
-        "location": "3:00 & Dandelion", 
-        "longitude": "-119.197432", 
-        "matched_name": "Camp D.O.A.", 
-        "occurrence_set": [
-            {
-                "end_time": "2012-08-29 22:30:00", 
-                "start_time": "2012-08-29 20:00:00"
-            }
-        ], 
-        "other_location": "", 
-        "print_description": "8 \u2013 10:30 pm \u2013 champagne and wine tasting in One Eye\u2019d Jacks Saloon. Come groove to some Disco House and Jazzy House tunes. At One Eye'd Jack's bar.", 
-        "slug": "the-g-spot-party", 
-        "title": "The G Spot Party ! ", 
-        "url": "", 
-        "year": {
-            "id": 8, 
-            "year": "2012"
-        }
-    }, 
-    {
-        "all_day": false, 
-        "check_location": false, 
         "description": "10:30 pm \u2013 Midnight, Spark One Up with Sparky McChuggleston at the G Spot !! Port, single malts, cigars,  dancing, hooping and fire hooping !!! Come set the rug ( or your hair ?! ) on fire !!", 
         "hosted_by_camp": {
             "id": 4208, 
@@ -46737,6 +47667,35 @@
         "slug": "the-g-spot-party", 
         "title": "The G Spot Party ! ", 
         "url": "http://sites.google.com/site/campdoa/the_camp/events/events_2012", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
+        "description": "The G Spot Party ! 8 \u2013 10:30 pm \u2013 champagne and wine tasting in One Eye\u2019d Jacks Saloon. Come groove to some Deep House, Disco House and Jazzy House tunes. At One Eye'd Jack's bar.", 
+        "hosted_by_camp": {
+            "id": 4208, 
+            "name": "Camp D.O.A."
+        }, 
+        "id": 6548, 
+        "latitude": "40.779166", 
+        "location": "3:00 & Dandelion", 
+        "longitude": "-119.197432", 
+        "matched_name": "Camp D.O.A.", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-29 22:30:00", 
+                "start_time": "2012-08-29 20:00:00"
+            }
+        ], 
+        "other_location": "", 
+        "print_description": "8 \u2013 10:30 pm \u2013 champagne and wine tasting in One Eye\u2019d Jacks Saloon. Come groove to some Disco House and Jazzy House tunes. At One Eye'd Jack's bar.", 
+        "slug": "the-g-spot-party", 
+        "title": "The G Spot Party ! ", 
+        "url": "", 
         "year": {
             "id": 8, 
             "year": "2012"
@@ -46852,146 +47811,6 @@
         "print_description": "Get aboard the G-Spot Soul Train and shake  dat ass and do the Soul Train Dance Ritual. Peace, Love and Soul!!!", 
         "slug": "the-g-spot-party-wigs-bellbottoms-3-e", 
         "title": "The G-Spot Party - Wigs & Bellbottoms  (3 & E)", 
-        "url": "", 
-        "year": {
-            "id": 8, 
-            "year": "2012"
-        }
-    }, 
-    {
-        "all_day": false, 
-        "check_location": false, 
-        "description": "Real, live music from kick ass rockers. Thursday-Saturday, 4-7P & 9P-12A. \"Life is too damn short for crappy music.\"  Come dance your ass off with Grateful Greg and Guitar Doug, the organic jukebox duo from Whistler, BC.  The Hairfarmers know rock: with a mental catalogue of over 3,000 tracks, these guys can move the crowd like Jagger.\r\n\r\nStar Star Roadhouse is a destination\u2026 a local joint for wayward Burners looking for something different.  Here you can catch a live show: classic rock, moody blues or bluegrass\u2026 a rare experience at Burning Man. The sound system will be modest: what you'd expect to find at a honky tonk venue with live music.  Shows will be twice daily from 4-7, and 9-midnight, with an occasional after hours exception. We will be collaborating with many promoters on playa to book a variety of live bands. Yoga & dance classes will also be offered.\r\n\r\nThe stage will be decked out in classic Americana and vintage California-Nevada highway stylings, with colorful lighting, a sun bleached facade, shaded dance floor and lounge area with comfortable seating. Billiards and darts provide additional play and other interactive games are in the plans.\r\n\r\nFor added excitement and a visually stunning art experience, Artist Jamie Vaida & Crew are building the Fertility Twin mutant vehicles with indirect LED lighting, flame effects, and audio. They will either be parked near the stage or out rocking the playa with classic tunes transporting participants physically and musically.\r\n\r\nWe believe that the live music experience is unique and often absent at Burning Man and \u201cStar Star Roadhouse\u201d would be thrilled to offer it to the community.", 
-        "hosted_by_camp": {
-            "id": 4938, 
-            "name": "Star Star Roadhouse @ Black Star Village"
-        }, 
-        "id": 7951, 
-        "latitude": "40.792214", 
-        "location": "8:30 & Edelweiss", 
-        "longitude": "-119.218265", 
-        "matched_name": "Star Star Roadhouse @ Black Star Village", 
-        "occurrence_set": [
-            {
-                "end_time": "2012-08-30 19:00:00", 
-                "start_time": "2012-08-30 16:00:00"
-            }, 
-            {
-                "end_time": "2012-08-31 19:00:00", 
-                "start_time": "2012-08-31 16:00:00"
-            }, 
-            {
-                "end_time": "2012-09-01 19:00:00", 
-                "start_time": "2012-09-01 16:00:00"
-            }
-        ], 
-        "other_location": "", 
-        "print_description": "Real, live music from kick ass rockers. Dance your ass off Thursday-Saturday, 4-7P & 9P-12A. \"Life is too damn short for crappy music!\" 8:30 & E", 
-        "slug": "the-hairfarmers-live-rock-music", 
-        "title": "The Hairfarmers - LIVE ROCK MUSIC", 
-        "url": "", 
-        "year": {
-            "id": 8, 
-            "year": "2012"
-        }
-    }, 
-    {
-        "all_day": false, 
-        "check_location": false, 
-        "description": "Real, live music from kick ass rockers. Thursday-Saturday, 4-7P & 9P-12A. \"Life is too damn short for crappy music.\"  Come dance your ass off with Grateful Greg and Guitar Doug, the organic jukebox duo from Whistler, BC.  The Hairfarmers know rock: with a mental catalogue of over 3,000 tracks, these guys can move the crowd like Jagger.\r\n\r\nStar Star Roadhouse is a destination\u2026 a local joint for wayward Burners looking for something different.  Here you can catch a live show: classic rock, moody blues or bluegrass\u2026 a rare experience at Burning Man. The sound system will be modest: what you'd expect to find at a honky tonk venue with live music.  Shows will be twice daily from 4-7, and 9-midnight, with an occasional after hours exception. We will be collaborating with many promoters on playa to book a variety of live bands. Yoga & dance classes will also be offered.\r\n\r\nThe stage will be decked out in classic Americana and vintage California-Nevada highway stylings, with colorful lighting, a sun bleached facade, shaded dance floor and lounge area with comfortable seating. Billiards and darts provide additional play and other interactive games are in the plans.\r\n\r\nFor added excitement and a visually stunning art experience, Artist Jamie Vaida & Crew are building the Fertility Twin mutant vehicles with indirect LED lighting, flame effects, and audio. They will either be parked near the stage or out rocking the playa with classic tunes transporting participants physically and musically.\r\n\r\nWe believe that the live music experience is unique and often absent at Burning Man and \u201cStar Star Roadhouse\u201d would be thrilled to offer it to the community.", 
-        "hosted_by_camp": {
-            "id": 4938, 
-            "name": "Star Star Roadhouse @ Black Star Village"
-        }, 
-        "id": 7950, 
-        "latitude": "40.792214", 
-        "location": "8:30 & Edelweiss", 
-        "longitude": "-119.218265", 
-        "matched_name": "Star Star Roadhouse @ Black Star Village", 
-        "occurrence_set": [
-            {
-                "end_time": "2012-08-30 00:00:00", 
-                "start_time": "2012-08-30 21:00:00"
-            }, 
-            {
-                "end_time": "2012-08-31 00:00:00", 
-                "start_time": "2012-08-31 21:00:00"
-            }, 
-            {
-                "end_time": "2012-09-01 00:00:00", 
-                "start_time": "2012-09-01 21:00:00"
-            }
-        ], 
-        "other_location": "8:30 & E", 
-        "print_description": "Real, live music from kick ass rockers. Dance your ass off Thursday-Saturday, 4-7P & 9P-12A. \"Life is too damn short for crappy music!\"", 
-        "slug": "the-hairfarmers-live-rock-music", 
-        "title": "The Hairfarmers - LIVE ROCK MUSIC", 
-        "url": "", 
-        "year": {
-            "id": 8, 
-            "year": "2012"
-        }
-    }, 
-    {
-        "all_day": false, 
-        "check_location": false, 
-        "description": "Real, live music from kick ass rockers. Thursday-Saturday, 4-7P & 9P-12A. \"Life is too damn short for crappy music.\"  Come dance your ass off with Grateful Greg and Guitar Doug, the organic jukebox duo from Whistler, BC.  The Hairfarmers know rock: with a mental catalogue of over 3,000 tracks, these guys can move the crowd like Jagger.\r\n\r\nStar Star Roadhouse is a destination\u2026 a local joint for wayward Burners looking for something different.  Here you can catch a live show: classic rock, moody blues or bluegrass\u2026 a rare experience at Burning Man. The sound system will be modest: what you'd expect to find at a honky tonk venue with live music.  Shows will be twice daily from 4-7, and 9-midnight, with an occasional after hours exception. We will be collaborating with many promoters on playa to book a variety of live bands. Yoga & dance classes will also be offered.\r\n\r\nThe stage will be decked out in classic Americana and vintage California-Nevada highway stylings, with colorful lighting, a sun bleached facade, shaded dance floor and lounge area with comfortable seating. Billiards and darts provide additional play and other interactive games are in the plans.\r\n\r\nFor added excitement and a visually stunning art experience, Artist Jamie Vaida & Crew are building the Fertility Twin mutant vehicles with indirect LED lighting, flame effects, and audio. They will either be parked near the stage or out rocking the playa with classic tunes transporting participants physically and musically.\r\n\r\nWe believe that the live music experience is unique and often absent at Burning Man and \u201cStar Star Roadhouse\u201d would be thrilled to offer it to the community.", 
-        "hosted_by_camp": {
-            "id": 4938, 
-            "name": "Star Star Roadhouse @ Black Star Village"
-        }, 
-        "id": 7952, 
-        "latitude": "40.792214", 
-        "location": "8:30 & Edelweiss", 
-        "longitude": "-119.218265", 
-        "matched_name": "Star Star Roadhouse @ Black Star Village", 
-        "occurrence_set": [
-            {
-                "end_time": "2012-08-30 00:00:00", 
-                "start_time": "2012-08-30 21:00:00"
-            }, 
-            {
-                "end_time": "2012-08-31 00:00:00", 
-                "start_time": "2012-08-31 21:00:00"
-            }, 
-            {
-                "end_time": "2012-09-01 00:00:00", 
-                "start_time": "2012-09-01 21:00:00"
-            }
-        ], 
-        "other_location": "", 
-        "print_description": "Real, live music from kick ass rockers. Dance your ass off Thursday-Saturday, 4-7P & 9P-12A. \"Life is too damn short for crappy music!\" 8:30 & E", 
-        "slug": "the-hairfarmers-live-rock-music", 
-        "title": "The Hairfarmers - LIVE ROCK MUSIC", 
-        "url": "", 
-        "year": {
-            "id": 8, 
-            "year": "2012"
-        }
-    }, 
-    {
-        "all_day": false, 
-        "check_location": false, 
-        "description": "Real, live music from kick ass rockers. Thursday-Saturday, 4-7P & 9P-12A. \"Life is too damn short for crappy music.\"  Come dance your ass off with Grateful Greg and Guitar Doug, the organic jukebox duo from Whistler, BC.  The Hairfarmers know rock: with a mental catalogue of over 3,000 tracks, these guys can move the crowd like Jagger.\r\n\r\nStar Star Roadhouse is a destination\u2026 a local joint for wayward Burners looking for something different.  Here you can catch a live show: classic rock, moody blues or bluegrass\u2026 a rare experience at Burning Man. The sound system will be modest: what you'd expect to find at a honky tonk venue with live music.  Shows will be twice daily from 4-7, and 9-midnight, with an occasional after hours exception. We will be collaborating with many promoters on playa to book a variety of live bands. Yoga & dance classes will also be offered.\r\n\r\nThe stage will be decked out in classic Americana and vintage California-Nevada highway stylings, with colorful lighting, a sun bleached facade, shaded dance floor and lounge area with comfortable seating. Billiards and darts provide additional play and other interactive games are in the plans.\r\n\r\nFor added excitement and a visually stunning art experience, Artist Jamie Vaida & Crew are building the Fertility Twin mutant vehicles with indirect LED lighting, flame effects, and audio. They will either be parked near the stage or out rocking the playa with classic tunes transporting participants physically and musically.\r\n\r\nWe believe that the live music experience is unique and often absent at Burning Man and \u201cStar Star Roadhouse\u201d would be thrilled to offer it to the community.", 
-        "hosted_by_camp": {
-            "id": 4938, 
-            "name": "Star Star Roadhouse @ Black Star Village"
-        }, 
-        "id": 7945, 
-        "latitude": "40.792214", 
-        "location": "8:30 & Edelweiss", 
-        "longitude": "-119.218265", 
-        "matched_name": "Star Star Roadhouse @ Black Star Village", 
-        "occurrence_set": [
-            {
-                "end_time": "2012-09-01 09:00:00", 
-                "start_time": "2012-08-30 19:00:00"
-            }
-        ], 
-        "other_location": "8:30 & E", 
-        "print_description": "Real, live music from kick ass rockers. Dance your ass off Thursday-Saturday, 4-7P & 9P-12A. \"Life is too damn short for crappy music!\"", 
-        "slug": "the-hairfarmers-live-rock-music", 
-        "title": "The Hairfarmers - LIVE ROCK MUSIC", 
         "url": "", 
         "year": {
             "id": 8, 
@@ -47146,35 +47965,6 @@
             "id": 4624, 
             "name": "Oasis 47"
         }, 
-        "id": 8102, 
-        "latitude": "40.780515", 
-        "location": "Columbine & 6:15", 
-        "longitude": "-119.216572", 
-        "matched_name": "Oasis 47", 
-        "occurrence_set": [
-            {
-                "end_time": "2012-08-27 19:00:00", 
-                "start_time": "2012-08-27 18:00:00"
-            }
-        ], 
-        "other_location": "", 
-        "print_description": "A workshop in the lighter side of spanking - Libations will be served", 
-        "slug": "the-joy-of-spanking", 
-        "title": "THE JOY OF SPANKING", 
-        "url": "", 
-        "year": {
-            "id": 8, 
-            "year": "2012"
-        }
-    }, 
-    {
-        "all_day": false, 
-        "check_location": false, 
-        "description": "In this tantalizing audience participation workshop, Professor Leopard\r\nwill instruct students in the three critical components of spanking:\r\nThe Warmup - The Follow Through - The Rub Out", 
-        "hosted_by_camp": {
-            "id": 4624, 
-            "name": "Oasis 47"
-        }, 
         "id": 8104, 
         "latitude": "40.780515", 
         "location": "Columbine & 6:15", 
@@ -47213,6 +48003,35 @@
             {
                 "end_time": "2012-08-28 19:00:00", 
                 "start_time": "2012-08-28 18:00:00"
+            }
+        ], 
+        "other_location": "", 
+        "print_description": "A workshop in the lighter side of spanking - Libations will be served", 
+        "slug": "the-joy-of-spanking", 
+        "title": "THE JOY OF SPANKING", 
+        "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
+        "description": "In this tantalizing audience participation workshop, Professor Leopard\r\nwill instruct students in the three critical components of spanking:\r\nThe Warmup - The Follow Through - The Rub Out", 
+        "hosted_by_camp": {
+            "id": 4624, 
+            "name": "Oasis 47"
+        }, 
+        "id": 8102, 
+        "latitude": "40.780515", 
+        "location": "Columbine & 6:15", 
+        "longitude": "-119.216572", 
+        "matched_name": "Oasis 47", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-27 19:00:00", 
+                "start_time": "2012-08-27 18:00:00"
             }
         ], 
         "other_location": "", 
@@ -47465,6 +48284,59 @@
         }
     }, 
     {
+        "all_day": false, 
+        "check_location": false, 
+        "description": "The Orgasamator is back, at the Camp for Sensual Pleasures. The Orgasmatron had been a fixture at Burning Man for many years, giving thousands of women extreme physical pleasure in an environment that was very safe, comfortable and private. Two years ago we took everything we had learned and completely redesigned the machine for even greater intensity and enjoyment, and we gave it a new name: The Orgasamator. You may have seen it at Spanky\u2019s Wine Bar. This year we\u2019ve taken it that much further with a singular goal of maximizing our guests\u2019 overall pleasure, along with the comfort and sensuality of the environment. When you visit, you will be in a private room with an operator who is experienced, very sensitive to your needs and concerns, and deeply dedicated to giving you an amazing experience in an environment that is safe, comfortable and private, and which leaves you feeling completely respected and in control. Come solo, or better yet, bring a good friend (male or female) to add another dimension to this deeply immersive and personal experience. You can wear as much or as little as you would like while riding this marvelous machine, and you can stop any time if the pleasure becomes too intense. If you are a woman, the Orgasamator Experience at our I-Scream Parlour is something you won't want to miss. Visit us at the Camp for Sensual Pleasures, in Spanky\u2019s Village, and also ask about The Pope\u2019s Massage & Hair washing.", 
+        "hosted_by_camp": {
+            "id": 4342, 
+            "name": "Sensual Pleasures, The Camp for Sensual Pleasures"
+        }, 
+        "id": 6681, 
+        "latitude": "40.788550", 
+        "location": "w/in Spanky's Village  ", 
+        "longitude": "-119.215527", 
+        "matched_name": "Sensual Pleasures, The Camp for Sensual Pleasures", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-27 03:00:00", 
+                "start_time": "2012-08-27 09:00:00"
+            }, 
+            {
+                "end_time": "2012-08-28 03:00:00", 
+                "start_time": "2012-08-28 09:00:00"
+            }, 
+            {
+                "end_time": "2012-08-29 03:00:00", 
+                "start_time": "2012-08-29 09:00:00"
+            }, 
+            {
+                "end_time": "2012-08-30 03:00:00", 
+                "start_time": "2012-08-30 09:00:00"
+            }, 
+            {
+                "end_time": "2012-08-31 03:00:00", 
+                "start_time": "2012-08-31 09:00:00"
+            }, 
+            {
+                "end_time": "2012-09-01 03:00:00", 
+                "start_time": "2012-09-01 09:00:00"
+            }, 
+            {
+                "end_time": "2012-09-02 03:00:00", 
+                "start_time": "2012-09-02 09:00:00"
+            }
+        ], 
+        "other_location": "", 
+        "print_description": "We've upgraded our well-known Orgasmatron this year to give women even more intense physical pleasure, in an environment that's safe and comfortable.", 
+        "slug": "the-orgasamator-experience", 
+        "title": "The Orgasamator Experience", 
+        "url": "http://www.sensualpleasures.com/", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
         "all_day": true, 
         "check_location": false, 
         "description": "The Orgasamator is back, at the Camp for Sensual Pleasures. The Orgasmatron had been a fixture at Burning Man for many years, giving thousands of women extreme physical pleasure in an environment that was very safe, comfortable and private. Two years ago we took everything we had learned and completely redesigned the machine for even greater intensity and enjoyment, and we gave it a new name: The Orgasamator. You may have seen it at Spanky\u2019s Wine Bar. This year we\u2019ve taken it that much further with a singular goal of maximizing our guests\u2019 overall pleasure, along with the comfort and sensuality of the environment. When you visit, you will be in a private room with an operator who is experienced, very sensitive to your needs and concerns, and deeply dedicated to giving you an amazing experience in an environment that is safe, comfortable and private, and which leaves you feeling completely respected and in control. Come solo, or better yet, bring a good friend (male or female) to add another dimension to this deeply immersive and personal experience. You can wear as much or as little as you would like while riding this marvelous machine, and you can stop any time if the pleasure becomes too intense. If you are a woman, the Orgasamator Experience at our I-Scream Parlour is something you won't want to miss. Visit us at the Camp for Sensual Pleasures, in Spanky\u2019s Village, and also ask about The Pope\u2019s Massage & Hair washing.", 
@@ -47516,59 +48388,6 @@
         "slug": "the-orgasamator-experience", 
         "title": "The Orgasamator Experience", 
         "url": "http://www.campsensualpleasures.com/", 
-        "year": {
-            "id": 8, 
-            "year": "2012"
-        }
-    }, 
-    {
-        "all_day": false, 
-        "check_location": false, 
-        "description": "The Orgasamator is back, at the Camp for Sensual Pleasures. The Orgasmatron had been a fixture at Burning Man for many years, giving thousands of women extreme physical pleasure in an environment that was very safe, comfortable and private. Two years ago we took everything we had learned and completely redesigned the machine for even greater intensity and enjoyment, and we gave it a new name: The Orgasamator. You may have seen it at Spanky\u2019s Wine Bar. This year we\u2019ve taken it that much further with a singular goal of maximizing our guests\u2019 overall pleasure, along with the comfort and sensuality of the environment. When you visit, you will be in a private room with an operator who is experienced, very sensitive to your needs and concerns, and deeply dedicated to giving you an amazing experience in an environment that is safe, comfortable and private, and which leaves you feeling completely respected and in control. Come solo, or better yet, bring a good friend (male or female) to add another dimension to this deeply immersive and personal experience. You can wear as much or as little as you would like while riding this marvelous machine, and you can stop any time if the pleasure becomes too intense. If you are a woman, the Orgasamator Experience at our I-Scream Parlour is something you won't want to miss. Visit us at the Camp for Sensual Pleasures, in Spanky\u2019s Village, and also ask about The Pope\u2019s Massage & Hair washing.", 
-        "hosted_by_camp": {
-            "id": 4342, 
-            "name": "Sensual Pleasures, The Camp for Sensual Pleasures"
-        }, 
-        "id": 6681, 
-        "latitude": "40.788550", 
-        "location": "w/in Spanky's Village  ", 
-        "longitude": "-119.215527", 
-        "matched_name": "Sensual Pleasures, The Camp for Sensual Pleasures", 
-        "occurrence_set": [
-            {
-                "end_time": "2012-08-27 03:00:00", 
-                "start_time": "2012-08-27 09:00:00"
-            }, 
-            {
-                "end_time": "2012-08-28 03:00:00", 
-                "start_time": "2012-08-28 09:00:00"
-            }, 
-            {
-                "end_time": "2012-08-29 03:00:00", 
-                "start_time": "2012-08-29 09:00:00"
-            }, 
-            {
-                "end_time": "2012-08-30 03:00:00", 
-                "start_time": "2012-08-30 09:00:00"
-            }, 
-            {
-                "end_time": "2012-08-31 03:00:00", 
-                "start_time": "2012-08-31 09:00:00"
-            }, 
-            {
-                "end_time": "2012-09-01 03:00:00", 
-                "start_time": "2012-09-01 09:00:00"
-            }, 
-            {
-                "end_time": "2012-09-02 03:00:00", 
-                "start_time": "2012-09-02 09:00:00"
-            }
-        ], 
-        "other_location": "", 
-        "print_description": "We've upgraded our well-known Orgasmatron this year to give women even more intense physical pleasure, in an environment that's safe and comfortable.", 
-        "slug": "the-orgasamator-experience", 
-        "title": "The Orgasamator Experience", 
-        "url": "http://www.sensualpleasures.com/", 
         "year": {
             "id": 8, 
             "year": "2012"
@@ -48274,10 +49093,10 @@
             "name": "The Bartery"
         }, 
         "id": 7692, 
-        "latitude": "40.782345", 
-        "location": "Rod's Road @ 9:15", 
-        "longitude": "-119.215067", 
-        "matched_name": "Tarwater", 
+        "latitude": "40.782715", 
+        "location": "Rod's Road @ 10:30", 
+        "longitude": "-119.213748", 
+        "matched_name": "the ARTery", 
         "occurrence_set": [
             {
                 "end_time": "2012-08-27 23:59:00", 
@@ -48648,6 +49467,10 @@
             "name": "The Hive"
         }, 
         "id": 7800, 
+        "latitude": "40.782705", 
+        "location": "Esplanade & 2:30", 
+        "longitude": "-119.198885", 
+        "matched_name": "Hive, The", 
         "occurrence_set": [
             {
                 "end_time": "2012-08-29 23:45:00", 
@@ -48817,15 +49640,15 @@
             "id": 4901, 
             "name": "Camp Tough Love"
         }, 
-        "id": 7533, 
+        "id": 7535, 
         "latitude": "40.780680", 
         "location": "Geranium & 2:30", 
         "longitude": "-119.193794", 
         "matched_name": "Camp Tough Love", 
         "occurrence_set": [
             {
-                "end_time": "2012-08-28 15:30:00", 
-                "start_time": "2012-08-28 14:30:00"
+                "end_time": "2012-08-31 14:30:00", 
+                "start_time": "2012-08-31 13:30:00"
             }
         ], 
         "other_location": "", 
@@ -48846,15 +49669,15 @@
             "id": 4901, 
             "name": "Camp Tough Love"
         }, 
-        "id": 7535, 
+        "id": 7533, 
         "latitude": "40.780680", 
         "location": "Geranium & 2:30", 
         "longitude": "-119.193794", 
         "matched_name": "Camp Tough Love", 
         "occurrence_set": [
             {
-                "end_time": "2012-08-31 14:30:00", 
-                "start_time": "2012-08-31 13:30:00"
+                "end_time": "2012-08-28 15:30:00", 
+                "start_time": "2012-08-28 14:30:00"
             }
         ], 
         "other_location": "", 
@@ -49011,6 +49834,47 @@
         "slug": "transcendance-healing-dance-workshop", 
         "title": "TranscenDance: Healing Dance Workshop", 
         "url": "http://www.heartanyamorgan.wordpress.com/", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": true, 
+        "description": "This yoga class and breath awareness practice is designed to take you deeper within the framework of your own unique physical vehicle. Using the unique pulse of your inhalation and exhalation you will navigate through this realm of connected consciousness with intention and ease. The class will have you flowing through a dance that mirrors the limitless potential of expansion we all hold for ourselves and each other as we work towards co-creating a new dimension of experience.\r\n\r\n\r\n---Depending on time available there will be open reiki sessions given throughout the day on a first come first serve basis!!! Sharing light, love, and blessings for all!!!", 
+        "hosted_by_camp": {
+            "id": 5011, 
+            "name": "Camp Mind Eraser"
+        }, 
+        "id": 8209, 
+        "latitude": "40.773569", 
+        "location": "Iris & 4:45", 
+        "longitude": "-119.207687", 
+        "matched_name": "Camp Mind Eraser", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-28 11:45:00", 
+                "start_time": "2012-08-28 10:15:00"
+            }, 
+            {
+                "end_time": "2012-08-29 11:45:00", 
+                "start_time": "2012-08-29 10:15:00"
+            }, 
+            {
+                "end_time": "2012-08-30 11:45:00", 
+                "start_time": "2012-08-30 10:15:00"
+            }, 
+            {
+                "end_time": "2012-08-31 11:45:00", 
+                "start_time": "2012-08-31 10:15:00"
+            }
+        ], 
+        "other_location": "@ camp mind eraser", 
+        "print_description": "Take a journey deep within the intricate framework of the self through a guided yoga practice and breath activation.\r\n\r\n*Reiki lovingly given to all*", 
+        "slug": "transformative-flow-yogabreath-activationreiki", 
+        "title": "Transformative Flow Yoga&Breath Activation+Reiki!!", 
+        "url": "", 
         "year": {
             "id": 8, 
             "year": "2012"
@@ -49347,10 +50211,10 @@
             "name": "Camp Here"
         }, 
         "id": 6643, 
-        "latitude": "40.779238", 
-        "location": "3:00 & Edelweiss", 
-        "longitude": "-119.196770", 
-        "matched_name": "Campo Alegre", 
+        "latitude": "40.797645", 
+        "location": "10:00 & Geranium", 
+        "longitude": "-119.210794", 
+        "matched_name": "Camp Charlie", 
         "occurrence_set": [
             {
                 "end_time": "2012-08-28 15:00:00", 
@@ -49434,9 +50298,7 @@
             "name": "100'th Monkey Camp"
         }, 
         "id": 6442, 
-        "latitude": "", 
         "location": "Edelweiss & 9:45", 
-        "longitude": "", 
         "matched_name": "Laughing Monkey Camp", 
         "occurrence_set": [
             {
@@ -51130,6 +51992,35 @@
     {
         "all_day": false, 
         "check_location": false, 
+        "description": "Come join Warrior & Melanie in celebrating their marraige.  Warrior's built a fabulous wedding chapel located at 6:00 between D & E.  Come by on Wed at 6 pm to witness the ceremony and than join the celebration.", 
+        "hosted_by_camp": {
+            "id": 4571, 
+            "name": "Silicon Village"
+        }, 
+        "id": 8192, 
+        "latitude": "40.779168", 
+        "location": "Dandelion & 6:00", 
+        "longitude": "-119.216859", 
+        "matched_name": "Silicon Village", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-29 20:00:00", 
+                "start_time": "2012-08-29 18:00:00"
+            }
+        ], 
+        "other_location": "Burning Silicon Pod, 6:00 between D & E", 
+        "print_description": "Warrior built a gorgeous wedding chapel located at 6:00 between D & E.  Come by on Wed at 6 pm to witness the nuptials have champagne & cake", 
+        "slug": "warrior-melanies-wedding", 
+        "title": "Warrior & Melanie's Wedding", 
+        "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
         "description": "Every morning as the sun rises above Black Rock City be amongst the first to see it in a 360 degree view from the comfort of the upper level hammock netting of our dome, 19 feet above the playa!!!   Bring a pillow, blanket, tea and/or coffee.", 
         "hosted_by_camp": {
             "id": 4577, 
@@ -51210,9 +52101,7 @@
             "name": "Playagon"
         }, 
         "id": 7463, 
-        "latitude": "", 
         "location": "Edelweiss & 2:30", 
-        "longitude": "", 
         "matched_name": "Playagon", 
         "occurrence_set": [
             {
@@ -51990,9 +52879,7 @@
             "name": "100'th Monkey Camp"
         }, 
         "id": 7225, 
-        "latitude": "", 
         "location": "Edelweiss & 9:45", 
-        "longitude": "", 
         "matched_name": "Laughing Monkey Camp", 
         "occurrence_set": [
             {
@@ -52215,6 +53102,35 @@
         "slug": "whoofarted-employment-service", 
         "title": "WhoofARTed? \"Employment\" service", 
         "url": "", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
+        "description": "Do you desire to indulge your old world saloon whore fantasy? \r\n\r\nCome to the Black Rock French Quarter Friday evening to get your fill. Dress yourself in corsets bloomers striped stocking bustles parasols lace lace lace and any other variety of old world whore regalia. Bring your well dressed John as long as he brings his best bottle of whiskey and or scotch. \r\nDrape yourself from the balconies of the Quarter and cat call and caterwaul the early evening away. \r\n\r\nThe whoring will take place from 5-8 followed by a burlesque show and the an electro swing dance party. \r\n\r\nBYOWhiskey and Scotch. And whatever else you would like to bring. \r\n\r\nWhat says fertility more than whore house?\r\n\r\nMeow!", 
+        "hosted_by_camp": {
+            "id": 4663, 
+            "name": "Black Rock French Quarter"
+        }, 
+        "id": 8230, 
+        "latitude": "40.785487", 
+        "location": "7:30 & Alyssum", 
+        "longitude": "-119.216904", 
+        "matched_name": "Black Rock French Quarter", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-31 20:00:00", 
+                "start_time": "2012-08-31 17:00:00"
+            }
+        ], 
+        "other_location": "7:30 and A", 
+        "print_description": "Break out your corsets, bloomers, bustles, and old world whore regalia! Drape yourself from the balconies of BRFQ! Catcall and caterwaul! BYOWhiskey!!", 
+        "slug": "whore-it-up-fridays-and-burlqat-the-french-quarter", 
+        "title": "Whore It Up Fridays and BurlQat the French Quarter", 
+        "url": "http://www.facebook.com/blackrockfrenchquarter", 
         "year": {
             "id": 8, 
             "year": "2012"
@@ -52642,9 +53558,7 @@
             "name": "Tsunami Bass Experience ~Wobble tha' ~WaVe~"
         }, 
         "id": 7573, 
-        "latitude": "", 
         "location": "10:00 & Jasmine", 
-        "longitude": "", 
         "matched_name": "Tsunami Bass Experience ~Wobble tha' ~WaVe~", 
         "occurrence_set": [
             {
@@ -52744,10 +53658,10 @@
             "name": "The Bartery"
         }, 
         "id": 7686, 
-        "latitude": "40.782345", 
-        "location": "Rod's Road @ 9:15", 
-        "longitude": "-119.215067", 
-        "matched_name": "Tarwater", 
+        "latitude": "40.782715", 
+        "location": "Rod's Road @ 10:30", 
+        "longitude": "-119.213748", 
+        "matched_name": "the ARTery", 
         "occurrence_set": [
             {
                 "end_time": "2012-08-27 23:59:00", 
@@ -53065,9 +53979,7 @@
             "name": "100'th Monkey Camp"
         }, 
         "id": 7222, 
-        "latitude": "", 
         "location": "Edelweiss & 9:45", 
-        "longitude": "", 
         "matched_name": "Laughing Monkey Camp", 
         "occurrence_set": [
             {
@@ -53175,35 +54087,6 @@
     {
         "all_day": false, 
         "check_location": false, 
-        "description": "Using the opposing forces of Ying and Yang to create a balanced life path.", 
-        "hosted_by_camp": {
-            "id": 4311, 
-            "name": "HeeBeeGeeBee Healers"
-        }, 
-        "id": 6593, 
-        "latitude": "40.781931", 
-        "location": "w/in Nectar Village  ", 
-        "longitude": "-119.219022", 
-        "matched_name": "HeeBeeGeeBee Healers", 
-        "occurrence_set": [
-            {
-                "end_time": "2012-08-31 12:30:00", 
-                "start_time": "2012-08-31 11:30:00"
-            }
-        ], 
-        "other_location": "", 
-        "print_description": "Using the opposing forces of Ying and Yang to create a balanced life path.", 
-        "slug": "ying-and-yang-fusion", 
-        "title": "Ying and Yang Fusion", 
-        "url": "http://heebeegeebeehealers.org/", 
-        "year": {
-            "id": 8, 
-            "year": "2012"
-        }
-    }, 
-    {
-        "all_day": false, 
-        "check_location": false, 
         "description": "Blend the forces of Ying and Yang to create harmony and balance in your life.", 
         "hosted_by_camp": {
             "id": 4311, 
@@ -53222,6 +54105,35 @@
         ], 
         "other_location": "", 
         "print_description": "Blend the forces of Ying and Yang to create harmony and balance in your life.", 
+        "slug": "ying-and-yang-fusion", 
+        "title": "Ying and Yang Fusion", 
+        "url": "http://heebeegeebeehealers.org/", 
+        "year": {
+            "id": 8, 
+            "year": "2012"
+        }
+    }, 
+    {
+        "all_day": false, 
+        "check_location": false, 
+        "description": "Using the opposing forces of Ying and Yang to create a balanced life path.", 
+        "hosted_by_camp": {
+            "id": 4311, 
+            "name": "HeeBeeGeeBee Healers"
+        }, 
+        "id": 6593, 
+        "latitude": "40.781931", 
+        "location": "w/in Nectar Village  ", 
+        "longitude": "-119.219022", 
+        "matched_name": "HeeBeeGeeBee Healers", 
+        "occurrence_set": [
+            {
+                "end_time": "2012-08-31 12:30:00", 
+                "start_time": "2012-08-31 11:30:00"
+            }
+        ], 
+        "other_location": "", 
+        "print_description": "Using the opposing forces of Ying and Yang to create a balanced life path.", 
         "slug": "ying-and-yang-fusion", 
         "title": "Ying and Yang Fusion", 
         "url": "http://heebeegeebeehealers.org/", 

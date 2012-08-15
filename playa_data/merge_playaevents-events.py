@@ -1,12 +1,16 @@
 import Levenshtein
 import json
 from string_util import cleanString
-
+'''
+    This script merges event locations from camp-locations-2012.json
+    into events from playaevents-events-2012.json
+    (The Playa Events API Events feed)
+'''
 # Threshold under which to discard partial string matches
 MATCH_THRESHOLD = .6
 
-location_file = open('camp_locations.json')
-events_file = open('events_data.json')
+location_file = open('./data/camp-locations-2012.json')
+events_file = open('./data/playaevents-events-2012.json')
 
 location_json = json.loads(location_file.read())
 events_json = json.loads(events_file.read())
@@ -30,8 +34,9 @@ for index, event in enumerate(events_json):
         #print "Best match for " + event['name'] + " : " + max_match_location['name'] + " (confidence: " + str(max_match) + ")"
         if max_match > MATCH_THRESHOLD:
             # Match found
-            event['latitude'] = max_match_location['latitude']
-            event['longitude'] = max_match_location['longitude']
+            if 'latitude' in max_match_location and max_match_location['latitude'] != "":
+                event['latitude'] = max_match_location['latitude']
+                event['longitude'] = max_match_location['longitude']
             event['location'] = max_match_location['location']
             event['matched_name'] = max_match_location['name']
         else:
